@@ -1,4 +1,4 @@
-const experiences = [
+"use client";\nimport { useState, type ReactNode } from "react";\n\nconst experiences = [
   {
     title: "Meta",
     role: "Robotics Hardware Integration Engineer",
@@ -314,7 +314,7 @@ const heroImages = [
   },
 ];
 
-function SectionLabel({ children }: { children: React.ReactNode }) {
+function SectionLabel({ children }: { children: ReactNode }) {
   return <p className="eyebrow">{children}</p>;
 }
 
