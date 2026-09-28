@@ -477,7 +477,7 @@ export default function Home() {
         <div className="build-layout">
           <div className="build-list">
             {buildPlaces.map((item, index) => (
-              <a className="build-card" key={item.title} href={["UC Berkeley", "Personal Shop"].includes(item.title) ? "#berkeley" : `/experience/${experienceSlug(item.title)}`}>
+              <a className="build-card" key={item.title} href={item.title === "UC Berkeley" ? "#berkeley" : item.title === "Personal Shop" ? "#about" : `/experience/${experienceSlug(item.title)}`}>
                 <span className="build-index">{String(index + 1).padStart(2, "0")}</span>
                 <span className="build-card-main"><small>{item.meta}</small><strong>{item.title}</strong><em>{item.subtitle}</em><span>{item.description}</span></span>
                 <span className="build-arrow">↗</span>
@@ -485,9 +485,9 @@ export default function Home() {
             ))}
           </div>
           <div className="build-feature">
-            <SectionLabel>THE RULE</SectionLabel>
+            <SectionLabel>HOW THE ARCHIVE IS ORGANIZED</SectionLabel>
             <div className="build-feature-number">01</div>
-            <h3>Company ≠ project.</h3>
+            <h3>Organizations contain the work.</h3>
             <p className="role">The archive keeps the hierarchy clean.</p>
             <p><strong>Keiser</strong> is the company. <strong>Wire Raceway</strong> is a project I did there. The same structure applies everywhere else: organizations contain the work, and projects contain the technical story.</p>
             <div className="build-feature-meta"><span>PEOPLE</span><span>PLACE</span><span>PROJECT</span></div>
