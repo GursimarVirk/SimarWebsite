@@ -241,6 +241,8 @@ const legacy = [
   ["Hobbies / Other", "Technical hobbies, motorcycles, cars, machining, and heavy machinery."],
 ];
 
+const resumeUrl = "https://sites.google.com/view/gvirk/resume";
+
 const heroImages = [
   {
     src: "https://sites.google.com/sitesv-images-rt/AMxu72sKrS6x-hWqxIjFJHkXU2mmqM7cCzTphE39JsTjp9L7R1GW0--tCR2QnYSUfj-nVlRl9i6bauc9il1ghyY0CezMgOB8SKSAGNFb6YYFmg6cUXCFpYdu5X0QMnIDvllizJcnFPaUxcn9n4fPKIfIx3-DE-RonvI1W8EVq4twwXVOgZR9GY23Fbdlc2N098aakNxmZju_-mG3qTofdlsDAl5qFnLSj3OWU41vYBWECNo%3Dw1280",
@@ -333,6 +335,16 @@ export default function Home() {
           <a href="#projects">Projects</a>
           <a href="#skills">Skills</a>
           <a href="#media">As Seen On</a>
+          <details className="resume-menu">
+            <summary>Resume <span>↗</span></summary>
+            <div className="resume-popover">
+              <SectionLabel>RESUME</SectionLabel>
+              <h3>Want the one-page version?</h3>
+              <p>Open my resume for a quick, recruiter-friendly overview of my engineering experience.</p>
+              <a className="resume-button" href={resumeUrl} target="_blank" rel="noreferrer">View Resume ↗</a>
+              <a className="resume-secondary" href="https://www.linkedin.com/in/gursimarvirk" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+            </div>
+          </details>
           <a href="#contact">Contact</a>
         </div>
       </nav>
