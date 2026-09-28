@@ -367,7 +367,8 @@ export default function Home() {
   const [buildFilter, setBuildFilter] = useState("all");
   const [projectFilter, setProjectFilter] = useState("all");
   const filteredBuildPlaces = buildFilter === "all" ? buildPlaces : buildPlaces.filter((item) => item.category === buildFilter);
-  const filteredProjects = projectFilter === "all" ? projects : projects.filter((item) => item.group.includes("Combat") ? projectFilter === "robotics" : projectFilter === "berkeley");
+  const roboticsProjectTitles = ["30 lb Combat Robot", "15 lb Combat Robots", "12 lb Combat Robot", "Combat Box", "Humanoid Robotics"];
+  const filteredProjects = projectFilter === "all" ? projects : projects.filter((item) => projectFilter === "robotics" ? roboticsProjectTitles.includes(item.title) : !roboticsProjectTitles.includes(item.title));
   return (
     <main>
       <nav className="nav">
