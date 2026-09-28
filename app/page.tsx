@@ -364,6 +364,10 @@ function ProjectCard({ project }: { project: (typeof projects)[number] }) {
 }
 
 export default function Home() {
+  const [buildFilter, setBuildFilter] = useState("all");
+  const [projectFilter, setProjectFilter] = useState("all");
+  const filteredBuildPlaces = buildFilter === "all" ? buildPlaces : buildPlaces.filter((item) => item.category === buildFilter);
+  const filteredProjects = projectFilter === "all" ? projects : projects.filter((item) => item.group.includes("Combat") ? projectFilter === "robotics" : projectFilter === "berkeley");
   return (
     <main>
       <nav className="nav">
@@ -462,12 +466,11 @@ export default function Home() {
           <p>Explore the environments behind the work. Filter the archive, then jump into the technical projects that came out of each one.</p>
         </div>
         <div className="filter-row">
-          <button className="selected">ALL</button>
-          <button>PROFESSIONAL</button><button>ROBOTICS</button><button>BERKELEY</button><button>PERSONAL</button>
+          {["all", "professional", "robotics", "berkeley", "personal"].map((value) => <button key={value} className={buildFilter === value ? "selected" : ""} onClick={() => setBuildFilter(value)}>{value}</button>)}
         </div>
         <div className="build-layout">
           <div className="build-list">
-            {buildPlaces.map((item, index) => (
+            {filteredBuildPlaces.map((item, index) => (
               <a className="build-card" key={item.title} href={item.title === "UC Berkeley" ? "#berkeley" : item.title === "Combat Robotics at Berkeley" || item.title === "Ultimate Fight Bots" ? "#robotics" : "#experience"}>
                 <span className="build-index">{String(index + 1).padStart(2, "0")}</span>
                 <span className="build-card-main"><small>{item.meta}</small><strong>{item.title}</strong><em>{item.subtitle}</em><span>{item.description}</span></span>
@@ -523,8 +526,11 @@ export default function Home() {
           <div><SectionLabel>03 · PROJECT ARCHIVE</SectionLabel><h2>Builds I can actually point at.</h2></div>
           <p>Open a card to see the technical story. The archive stays broad while we keep drilling into your exact contribution project by project.</p>
         </div>
+        <div className="filter-row secondary">
+          {["all", "robotics", "berkeley"].map((value) => <button key={value} className={projectFilter === value ? "selected" : ""} onClick={() => setProjectFilter(value)}>{value === "all" ? "ALL WORK" : value.toUpperCase()}</button>)}
+        </div>
         <div className="project-grid">
-          {projects.map((project) => <ProjectCard key={project.title} project={project} />)}
+          {filteredProjects.map((project) => <ProjectCard key={project.title} project={project} />)}
         </div>
       </section>
 
