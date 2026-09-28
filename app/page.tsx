@@ -468,7 +468,7 @@ export default function Home() {
       <section className="page-width section build-section" id="build">
         <div className="section-heading">
           <div><SectionLabel>01 · WHERE I BUILT THINGS</SectionLabel><h2>Not just projects. Places, teams, shops, and systems.</h2></div>
-          <p>Explore the environments behind the work. Filter the archive, then jump into the technical projects that came out of each one.</p>
+          <p>Explore the environments behind the work, then open an experience to see the engineering details.</p>
         </div>
         <div className="filter-row">
           <button className="selected">ALL</button>
@@ -477,7 +477,7 @@ export default function Home() {
         <div className="build-layout">
           <div className="build-list">
             {buildPlaces.map((item, index) => (
-              <a className="build-card" key={item.title} href={item.title === "UC Berkeley" ? "#berkeley" : item.title === "Combat Robotics at Berkeley" || item.title === "Ultimate Fight Bots" ? "#robotics" : "#experience"}>
+              <a className="build-card" key={item.title} href={["UC Berkeley", "Personal Shop"].includes(item.title) ? "#berkeley" : `/experience/${experienceSlug(item.title)}`}>
                 <span className="build-index">{String(index + 1).padStart(2, "0")}</span>
                 <span className="build-card-main"><small>{item.meta}</small><strong>{item.title}</strong><em>{item.subtitle}</em><span>{item.description}</span></span>
                 <span className="build-arrow">↗</span>
@@ -530,7 +530,7 @@ export default function Home() {
       <section className="page-width section" id="projects">
         <div className="section-heading">
           <div><SectionLabel>03 · PROJECT ARCHIVE</SectionLabel><h2>Builds I can actually point at.</h2></div>
-          <p>Open a card to see the technical story. The archive stays broad while we keep drilling into your exact contribution project by project.</p>
+          <p>Projects spanning robotics, manufacturing, embedded systems, mechanical design, and product development.</p>
         </div>
         <div className="project-grid">
           {projects.map((project) => <ProjectCard key={project.title} project={project} />)}
@@ -566,7 +566,7 @@ export default function Home() {
       </section>
 
       <section className="page-width section" id="media">
-        <div className="section-heading"><div><SectionLabel>07 · MEDIA</SectionLabel><h2>Somehow, the robots made the papers.</h2></div><p>UFB event coverage, international press, photography, and conversations. Event coverage is kept distinct from personally verified appearances while we finish the media hunt.</p></div>
+        <div className="section-heading"><div><SectionLabel>07 · MEDIA</SectionLabel><h2>Somehow, the robots made the papers.</h2></div><p>UFB event coverage, international press, photography, and conversations around the robots.</p></div>
         <div className="media-wall">
           {media.map(([title, subtitle, status, number, description]) => <article key={title}><div className="media-number">{number}</div><SectionLabel>{status}</SectionLabel><h3>{title}</h3><p className="role">{subtitle}</p><p>{description}</p>{title === "jobTopia with Tony Moore" && <a href="https://podscan.fm/podcasts/jobtopia-with-tony-moore/episodes/robo-fight-club-ucb-berkeleys-glitch-and-malware-with-gursimar-virk-club-co-president-episode-297" target="_blank" rel="noreferrer">Open feature ↗</a>}</article>)}
         </div>
@@ -582,7 +582,7 @@ export default function Home() {
       <section className="page-width section archive">
         <SectionLabel>09 · LEGACY ARCHIVE</SectionLabel>
         <h2>Everything from the old portfolio stays in the record.</h2>
-        <p className="archive-intro">The original Google Site had more projects than fit the first pass. Nothing gets thrown away; weaker or older material can stay searchable until we decide where it belongs.</p>
+        <p className="archive-intro">Older projects, technical experiments, coursework, and personal builds preserved from the original portfolio.</p>
         <div className="archive-list">{legacy.map(([title, description]) => <div key={title}><strong>{title}</strong><span>{description}</span></div>)}</div>
       </section>
 
