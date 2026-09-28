@@ -1,3 +1,7 @@
+"use client";
+
+import { useEffect, useRef, useState, type CSSProperties } from "react";
+
 const experiences = [
   {
     title: "Meta",
