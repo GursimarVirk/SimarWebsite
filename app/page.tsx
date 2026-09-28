@@ -437,8 +437,12 @@ export default function Home() {
         <div>MECHANICAL DESIGN</div><div>ROBOTICS INTEGRATION</div><div>ROS2</div><div>MANUFACTURING</div><div>HARDWARE BRING-UP</div><div>TECHNICAL LEADERSHIP</div>
       </section>
 
-      <section className="page-width intro-section">
-        <div>
+      <section className="page-width how-work-section">
+        <div className="how-work-photo">
+          <img src="https://lh3.googleusercontent.com/sitesv/AAzXCkXbrWgtaAijXDQ_PBxYuweZnmUAx0P4qoHPTM1pXW-RtDYR-6XcNi3nSM52GEBNVfMZJo_11f4I6dL2qtySnsEIqt6HGoEtAI2KbgRzJA4ip6E_KbnEq3caSba3EjAF-5GAR-Xxr7l7RjxMlT4VlKiiGJwXL2IhyhboM9m9nPq7K0TowRwI2QzAuaG9cBgudLYHW-ZP_VSDqdk9Z5GtB2AcBcM%3Dw1280" alt="Gursimar Virk" />
+          <div className="how-work-photo-tag">GURSIMAR · ENGINEER</div>
+        </div>
+        <div className="how-work-copy">
           <SectionLabel>HOW I WORK</SectionLabel>
           <h2>Broad enough to see the whole system. Hands-on enough to fix the part that broke.</h2>
         </div>
