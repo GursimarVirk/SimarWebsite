@@ -152,11 +152,11 @@ const projects = [
     title: "Autonomous 6-DOF Vision-Based Grasping",
     group: "UC Berkeley · GroceryGizmo",
     description:
-      "A robotic-arm project involving perception, planning, control, and manipulation. The original portfolio links the completed project site.",
+      "A robotic-arm project involving perception, planning, control, and manipulation.",
     details: [
-      "The old portfolio links the GroceryGizmo project directly.",
+      "The completed GroceryGizmo site documents a six-degree-of-freedom Omron TM5-700 arm using AR-tag perception, ROS 2, MoveIt2, a wrist-mounted RealSense camera, and a Robotiq gripper.",
+      "My listed role on the project was Manipulation & CAD Engineer.",
       "I will separate the overall team system from my personal contribution once the project slides/materials are reviewed.",
-      "This project will be presented as part of the broader robotics/autonomy path rather than as an isolated class assignment.",
     ],
     links: [["GroceryGizmo Project", "https://grocerygizmo.pchrisoc.com/"]],
   },
@@ -241,6 +241,39 @@ const legacy = [
   ["Hobbies / Other", "Technical hobbies, motorcycles, cars, machining, and heavy machinery."],
 ];
 
+const heroImages = [
+  {
+    src: "https://sites.google.com/sitesv-images-rt/AMxu72sKrS6x-hWqxIjFJHkXU2mmqM7cCzTphE39JsTjp9L7R1GW0--tCR2QnYSUfj-nVlRl9i6bauc9il1ghyY0CezMgOB8SKSAGNFb6YYFmg6cUXCFpYdu5X0QMnIDvllizJcnFPaUxcn9n4fPKIfIx3-DE-RonvI1W8EVq4twwXVOgZR9GY23Fbdlc2N098aakNxmZju_-mG3qTofdlsDAl5qFnLSj3OWU41vYBWECNo%3Dw1280",
+    label: "HUMANOIDS",
+    className: "photo-a",
+  },
+  {
+    src: "https://sites.google.com/sitesv-images-rt/AMxu72sKO8MIuLZRTc2E_2I-DqjoOnRIN4AgDGHFbB7B-NAXw7LoWn6R1Z5UgPLhTMZ-o2cqne9iXtfzwm6QrZKaWs83_JZoYdOV_6z_XcncoxCjm7gDwAY9CNZTj_rgZobAGfve8ncaqAei_2VHNkiZDMi00PZ-Ef-CV8q5-lRDikMk3587dWWETgP_jx0NOhw5bIwcTbtcHKMayPxYuBCUL1Sgn2-kDBGyJaPESftSACA%3Dw1280",
+    label: "30 LB ROBOT",
+    className: "photo-b",
+  },
+  {
+    src: "https://sites.google.com/sitesv-images-rt/AMxu72uRXqYXsejAavet79fXc4WVQMbAGUSX9Mwr4M-nyO410D7TFfy5cvOuvpX0ZHUhy0xw1UmK5T0m_s6TGMSXVyE4QaGH5AtfcEnX0G36TJFkzgSFuh7osYTHj8PePfwwmYdSzntiQ0ei9cT2tXfjYJVcXqzcgn-_xPvxVeTZRK2opLOsus6TdOKTQC7FoXvcSzGqE3vgL0KGnyHsIOxO3vubX0jz9Ld9Pq7R6Ms%3Dw1280",
+    label: "ROBOTIC HAND",
+    className: "photo-c",
+  },
+  {
+    src: "https://sites.google.com/sitesv-images-rt/AMxu72vv9B-OoCaTbJpEIqg8E_K_G1qou6hB-s-1-zP_WfmRFoNb05ghSxAtZthSul0qNdSxMeQ2XHos895-bxekrwSXXRjVykMDxBSr9_WIvagi9OirkJ9hhFu5JxX1jzkCnXUhyVnJSpTSKG1Unl5EEj4Akluj9ul9uScZ1SMMEI1ejxl0kwTAu5NBn6UcXFOVj7kosSUHdk4pvVTaVQuxGfPJD8ipAEIS2PKib1JE%3Dw1280",
+    label: "AMAZON ROBOTICS",
+    className: "photo-d",
+  },
+  {
+    src: "https://sites.google.com/sitesv-images-rt/AMxu72uREjFXsVIRyq8U7fxB14uHEFG_StZYFTX4cGq4D0h-rO60q37mQ4ti8WLncv3HcIw5Zen4Hu0SNHwgvAwY-xxYYk0w0nXIVCXuqQNuLFsXpxWwd0SV6tFTauveb5G2OOu4K7kGuL46O-POIbHBeIHqE-_wGYnym2vTJSvnFDvw1ExhOkAHTkkKfYGtVbl_nUGWWV0qQ1MFB2ISLC3L4_pitjrek5zBMLfPA2dvef4%3Dw1280",
+    label: "15 LB ROBOT",
+    className: "photo-e",
+  },
+  {
+    src: "https://sites.google.com/sitesv-images-rt/AMxu72sg-T38vR_JYQMTp719HR9EwZJx4KfcLhNEnRl4xAAni9-N53zArhZTtMcAnpYGhBpOHTDSzluGKME0A78B2jTPdhIT3s1gkK2k161SrEzE3yVmwRoH0d1ruI5E49ZUXuA2eH1cF_p85P7b-AqIXJoxmDuq32WchoyPMeAeTmQlrQ7W5TJRg_B7twZpobeeLe4WCtVZNxgPfa_34wGueS5s_nNnBX88Ajf0-lH8Mj0%3Dw1280",
+    label: "AUTOPALLET",
+    className: "photo-f",
+  },
+];
+
 function SectionLabel({ children }: { children: React.ReactNode }) {
   return <p className="eyebrow">{children}</p>;
 }
@@ -304,25 +337,47 @@ export default function Home() {
         </div>
       </nav>
 
-      <section className="hero page-width" id="top">
-        <div className="hero-copy">
-          <SectionLabel>ROBOTICS ENGINEER · BUILDER · TECHNICAL LEAD</SectionLabel>
-          <h1>I build the robot — and the systems around it.</h1>
-          <p className="hero-text">
-            I’m a mechanical engineer working across robotics hardware, integration, manufacturing,
-            software, and technical leadership. I like owning problems all the way from a messy
-            first prototype to a robot that actually works in the real world.
+      <section className="hero-collage page-width" id="top">
+        <div className="hero-name">
+          <SectionLabel>MECHANICAL ENGINEER · ROBOTICS</SectionLabel>
+          <h1>GURSIMAR<br /><span>VIRK</span></h1>
+          <p>
+            I build robots, break them, fix them, and then figure out how to make the next one
+            easier to build.
           </p>
-          <div className="hero-actions">
-            <a className="button primary" href="#experience">Explore my work</a>
-            <a className="button" href="mailto:gursimvirk3@gmail.com">Email me</a>
-          </div>
         </div>
-        <div className="hero-stat">
-          <div><strong>30+</strong><span>robots / systems integrated</span></div>
-          <div><strong>50+</strong><span>UMI systems</span></div>
-          <div><strong>120+</strong><span>robotics organization members led</span></div>
-          <div><strong>7×</strong><span>production scaling at Sorcerer.Earth</span></div>
+
+        <div className="photo-field" aria-label="A selection of robotics work">
+          {heroImages.map((image) => (
+            <figure className={`hero-photo ${image.className}`} key={image.src}>
+              <img src={image.src} alt={image.label} />
+              <figcaption>{image.label}</figcaption>
+            </figure>
+          ))}
+          <div className="photo-orbit orbit-one" />
+          <div className="photo-orbit orbit-two" />
+        </div>
+
+        <div className="hero-note">
+          <span>01 / 06</span>
+          <span>BUILT, TESTED, REBUILT</span>
+        </div>
+      </section>
+
+      <section className="snapshot page-width" aria-label="Quick snapshot">
+        <div className="snapshot-intro">
+          <SectionLabel>QUICK SNAPSHOT</SectionLabel>
+          <h2>A few numbers tell you more than a job title.</h2>
+        </div>
+        <div className="snapshot-stats">
+          <div><strong>120+</strong><span>members in the robotics org</span></div>
+          <div><strong>26+</strong><span>teams mentored</span></div>
+          <div><strong>20+</strong><span>robotics projects supervised</span></div>
+          <div><strong>2</strong><span>15 lb combat robots built</span></div>
+          <div><strong>30 lb</strong><span>combat robot programs</span></div>
+          <div><strong>1 → 21</strong><span>units/week at Amazon Robotics</span></div>
+          <div><strong>1 → 7</strong><span>units/week at Sorcerer.Earth</span></div>
+          <div><strong>BS</strong><span>Mechanical Engineering · UC Berkeley</span></div>
         </div>
       </section>
 
