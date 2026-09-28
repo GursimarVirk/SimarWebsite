@@ -368,6 +368,60 @@ function ProjectCard({ project }: { project: (typeof projects)[number] }) {
   );
 }
 
+function RevealSystemsSection() {
+  const sectionRef = useRef<HTMLElement | null>(null);
+  const [visible, setVisible] = useState(false);
+
+  useEffect(() => {
+    const node = sectionRef.current;
+    if (!node) return;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => setVisible(entry.isIntersecting),
+      { threshold: 0.18, rootMargin: "-8% 0px -8% 0px" }
+    );
+
+    observer.observe(node);
+    return () => observer.disconnect();
+  }, []);
+
+  const cards = [
+    { number: "01", title: "DESIGN", headline: "CAD → mechanism → manufacturable part", copy: "I start with the physical problem: geometry, interfaces, materials, loads, tolerances, and how the part will actually get made.", tags: ["CAD", "DFM / DFA", "MECHANISMS"] },
+    { number: "02", title: "INTEGRATE", headline: "Hardware → electronics → software", copy: "A robot is a stack, not a collection of isolated disciplines. I connect mechanical hardware, wiring, sensors, firmware, networking, ROS 2, and the software that makes the system move.", tags: ["ROS 2", "EMBEDDED", "SYSTEMS"] },
+    { number: "03", title: "DEBUG", headline: "Find the failure. Fix the real thing.", copy: "Bring-up, calibration, weird intermittent faults, broken parts, communication problems, bad assumptions — this is where the pieces have to make sense together.", tags: ["BRING-UP", "DEBUGGING", "VALIDATION"] },
+    { number: "04", title: "DEPLOY", headline: "Make it work outside the workbench", copy: "The finish line is a system that can be built, tested, operated, repaired, and handed to the next person without everything depending on the original builder.", tags: ["FLEET", "OPERATIONS", "MANUFACTURING"] },
+  ];
+
+  return (
+    <section ref={sectionRef} className={`systems-section ${visible ? "is-visible" : ""}`}>
+      <div className="page-width">
+        <div className="systems-heading">
+          <div>
+            <SectionLabel>HOW I BUILD</SectionLabel>
+            <h2>CAD to controls to a robot that has to work tomorrow.</h2>
+          </div>
+          <p>I like the messy middle: the point where mechanical design, electronics, software, manufacturing, and real-world constraints stop being separate problems.</p>
+        </div>
+        <div className="systems-stage">
+          <div className="systems-spine" aria-hidden="true" />
+          {cards.map((card, index) => (
+            <article className="system-card" style={{ "--card-index": index } as React.CSSProperties} key={card.number}>
+              <span className="system-number">{card.number}</span>
+              <div className="system-card-main">
+                <SectionLabel>{card.title}</SectionLabel>
+                <h3>{card.headline}</h3>
+                <p>{card.copy}</p>
+                <div className="system-tags">{card.tags.map((tag) => <span key={tag}>{tag}</span>)}</div>
+              </div>
+              <span className="system-arrow">↗</span>
+            </article>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
 export default function Home() {
   return (
     <main>
@@ -405,7 +459,6 @@ export default function Home() {
           <div className="hero-portrait">
             <img src="https://lh3.googleusercontent.com/sitesv/AAzXCkXbrWgtaAijXDQ_PBxYuweZnmUAx0P4qoHPTM1pXW-RtDYR-6XcNi3nSM52GEBNVfMZJo_11f4I6dL2qtySnsEIqt6HGoEtAI2KbgRzJA4ip6E_KbnEq3caSba3EjAF-5GAR-Xxr7l7RjxMlT4VlKiiGJwXL2IhyhboM9m9nPq7K0TowRwI2QzAuaG9cBgudLYHW-ZP_VSDqdk9Z5GtB2AcBcM%3Dw1280" alt="Gursimar Virk" />
           </div>
-          <div className="hero-snapshot-label"><SectionLabel>QUICK SNAPSHOT</SectionLabel><span>↓</span></div>
         </div>
 
         <div className="photo-field" aria-label="A selection of robotics work">
@@ -451,17 +504,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="page-width how-work-section">
-        <div className="how-work-copy">
-          <SectionLabel>HARDWARE + SOFTWARE</SectionLabel>
-          <h2>From CAD to controls to a robot that has to work tomorrow.</h2>
-        </div>
-        <div className="intro-copy">
-          <p><strong>Mechanical:</strong> CAD, mechanisms, DFM/DFA, machining, fabrication, fixtures, and physical testing.</p>
-          <p><strong>Electrical + embedded:</strong> wiring, soldering, sensors, PCB work, firmware integration, networking, and debugging.</p>
-          <p><strong>Robotics:</strong> ROS 2, C++, Python, MoveIt2, MuJoCo, motion, manipulation, system bring-up, and deployment.</p>
-        </div>
-      </section>
+      <RevealSystemsSection />
 
       <section className="page-width section" id="work">
         <div className="section-heading">
