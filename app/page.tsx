@@ -140,8 +140,8 @@ const projects = [
       "Worked on a 15-DOF humanoid robotic hand. The original portfolio specifically identifies my contribution as the sensor component of the hand plus work on the robotic portion.",
     details: [
       "The old portfolio links the HANDI final report and a machine-shop presentation.",
-      "I want to rebuild this page around my actual contribution rather than the generic project description, using the technical material in those documents as supporting evidence.",
-      "Detailed contribution, architecture, sensor design, fabrication, and testing notes will be added after reviewing the source slides/report.",
+      "The technical story centers on my work on the sensor component and the robotic portion of the hand.",
+      "Supporting documentation includes the final report and machine-shop presentation linked below.",
     ],
     links: [
       ["HANDI Final Report", "https://drive.google.com/open?id=1AvCRkP0JC-o5meU10HXgGXU879HWbJR_sAYAJnsuo3Y"],
@@ -156,7 +156,7 @@ const projects = [
     details: [
       "The completed GroceryGizmo site documents a six-degree-of-freedom Omron TM5-700 arm using AR-tag perception, ROS 2, MoveIt2, a wrist-mounted RealSense camera, and a Robotiq gripper.",
       "My listed role on the project was Manipulation & CAD Engineer.",
-      "I will separate the overall team system from my personal contribution once the project slides/materials are reviewed.",
+      "The team system combined perception, planning, manipulation, and hardware integration; my listed role was Manipulation & CAD Engineer.",
     ],
     links: [["GroceryGizmo Project", "https://grocerygizmo.pchrisoc.com/"]],
   },
@@ -194,7 +194,7 @@ const projects = [
       "Led a student engineering project developing magnetic boots intended to help traverse ship hulls; the team reached National Semi-Finalist status.",
     details: [
       "This is an older project and currently has limited detail in the original portfolio.",
-      "The original site links the MES presentation, which should be used to reconstruct the technical story.",
+      "The original project documentation includes the MES presentation and competition result.",
       "Leadership and the competition result are worth preserving even if the project is not one of the main homepage features.",
     ],
   },
@@ -497,7 +497,7 @@ export default function Home() {
             <SectionLabel>HOW THE ARCHIVE IS ORGANIZED</SectionLabel>
             <div className="build-feature-number">01</div>
             <h3>Organizations contain the work.</h3>
-            <p className="role">The archive keeps the hierarchy clean.</p>
+            <p className="role">Organizations show where I worked; project pages show what I built.</p>
             <p><strong>Keiser</strong> is the company. <strong>Wire Raceway</strong> is a project I did there. The same structure applies everywhere else: organizations contain the work, and projects contain the technical story.</p>
             <div className="build-feature-meta"><span>PEOPLE</span><span>PLACE</span><span>PROJECT</span></div>
           </div>
