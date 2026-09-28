@@ -402,6 +402,10 @@ export default function Home() {
             I build robots, break them, fix them, and then figure out how to make the next one
             easier to build.
           </p>
+          <div className="hero-portrait">
+            <img src="https://lh3.googleusercontent.com/sitesv/AAzXCkXbrWgtaAijXDQ_PBxYuweZnmUAx0P4qoHPTM1pXW-RtDYR-6XcNi3nSM52GEBNVfMZJo_11f4I6dL2qtySnsEIqt6HGoEtAI2KbgRzJA4ip6E_KbnEq3caSba3EjAF-5GAR-Xxr7l7RjxMlT4VlKiiGJwXL2IhyhboM9m9nPq7K0TowRwI2QzAuaG9cBgudLYHW-ZP_VSDqdk9Z5GtB2AcBcM%3Dw1280" alt="Gursimar Virk" />
+          </div>
+          <div className="hero-snapshot-label"><SectionLabel>QUICK SNAPSHOT</SectionLabel><span>↓</span></div>
         </div>
 
         <div className="photo-field" aria-label="A selection of robotics work">
@@ -438,15 +442,20 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="marquee">
-        <div>MECHANICAL DESIGN</div><div>ROBOTICS INTEGRATION</div><div>ROS2</div><div>MANUFACTURING</div><div>HARDWARE BRING-UP</div><div>TECHNICAL LEADERSHIP</div>
+      <section className="marquee" aria-label="Technical skills">
+        <div className="marquee-track">
+          {[
+            "MECHANICAL DESIGN","ROBOTICS INTEGRATION","ROS2","C++","PYTHON","CAD",
+            "FABRICATION","ELECTRICAL","HARDWARE BRING-UP","MANUFACTURING",
+            "SYSTEMS INTEGRATION","DEBUGGING","MUJOCO",
+            "MECHANICAL DESIGN","ROBOTICS INTEGRATION","ROS2","C++","PYTHON","CAD",
+            "FABRICATION","ELECTRICAL","HARDWARE BRING-UP","MANUFACTURING",
+            "SYSTEMS INTEGRATION","DEBUGGING","MUJOCO"
+          ].map((skill, index) => <span className="marquee-skill" key={`${skill}-${index}`}>{skill}</span>)}
+        </div>
       </section>
 
       <section className="page-width how-work-section">
-        <div className="how-work-photo">
-          <img src="https://lh3.googleusercontent.com/sitesv/AAzXCkXbrWgtaAijXDQ_PBxYuweZnmUAx0P4qoHPTM1pXW-RtDYR-6XcNi3nSM52GEBNVfMZJo_11f4I6dL2qtySnsEIqt6HGoEtAI2KbgRzJA4ip6E_KbnEq3caSba3EjAF-5GAR-Xxr7l7RjxMlT4VlKiiGJwXL2IhyhboM9m9nPq7K0TowRwI2QzAuaG9cBgudLYHW-ZP_VSDqdk9Z5GtB2AcBcM%3Dw1280" alt="Gursimar Virk" />
-          <div className="how-work-photo-tag">GURSIMAR · ENGINEER</div>
-        </div>
         <div className="how-work-copy">
           <SectionLabel>HOW I WORK</SectionLabel>
           <h2>Broad enough to see the whole system. Hands-on enough to fix the part that broke.</h2>
