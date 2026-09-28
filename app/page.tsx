@@ -241,6 +241,44 @@ const legacy = [
   ["Hobbies / Other", "Technical hobbies, motorcycles, cars, machining, and heavy machinery."],
 ];
 
+
+const buildPlaces = [
+  { title: "Meta", subtitle: "Robotics Integration", category: "professional", meta: "CURRENT · ROBOTICS SYSTEMS", description: "Fleet integration, robot bring-up, deployment, custom hardware, networking, validation." },
+  { title: "Amazon Robotics", subtitle: "Hardware + Process Engineering", category: "professional", meta: "INTERNSHIP · MANUFACTURING", description: "Fixtures, production flow, takt time, tooling, parts management, scaling." },
+  { title: "Combat Robotics at Berkeley", subtitle: "Technical Leadership + Shop", category: "robotics", meta: "120+ MEMBERS · 26+ TEAMS MENTORED", description: "Combat robots, manufacturing, shop operations, mentorship, competition logistics." },
+  { title: "Ultimate Fight Bots", subtitle: "Humanoid Robotics", category: "robotics", meta: "UFB · UNITREE · BOOSTER", description: "Humanoid integration, motion, calibration, debugging, driving, live events." },
+  { title: "Sorcerer.Earth", subtitle: "Airborne Sensor Systems", category: "professional", meta: "HARDWARE · PRODUCTION", description: "Sensors, PCB assembly, fabrication, production scaling, equipment repair." },
+  { title: "AutoPallet Robotics", subtitle: "Rapid Prototyping", category: "professional", meta: "R&D · INTEGRATION", description: "Low-cost robots, mechanical/electrical integration, soldering, debugging." },
+  { title: "Keiser", subtitle: "Industrial Engineering", category: "professional", meta: "MANUFACTURING · PRODUCT", description: "Fixtures, manufacturing, raceway design, equipment, installation." },
+  { title: "UC Berkeley", subtitle: "Engineering + Student Life", category: "berkeley", meta: "B.S. ME · MATERIALS SCIENCE", description: "Engineering projects, DeCal teaching, organizations, rowing, outreach." },
+  { title: "Personal Shop", subtitle: "Cars + Machines", category: "personal", meta: "6+ YEARS MACHINING", description: "Machining, welding, restoration, motorcycles, cars, and things with engines." },
+];
+
+const berkeley = [
+  ["Combat Robotics at Berkeley", "LEADERSHIP", "President / technical leadership, shop operations, robot R&D, mentorship, manufacturing, and competition logistics."],
+  ["Ultimate Fight Bots", "HUMANOIDS", "Driver, team lead, humanoid integration, motion, live competitions, and demonstrations."],
+  ["Engineering 98 DeCal", "TEACHING", "Instructor for the Insider's Guide to Berkeley Engineering student-run DeCal."],
+  ["ASME", "LEADERSHIP", "Programs Coordinator."],
+  ["Cal ITE", "TRANSPORTATION", "Officer and transportation engineering involvement."],
+  ["Cal Transpo", "TRANSPORTATION", "Student transportation engineering organization involvement."],
+  ["Cal AREMA", "RAIL / TRANSPORTATION", "Railway and transportation engineering organization involvement."],
+  ["Cal Lightweight Crew", "ROWING", "Lightweight team rower / coxswain."],
+  ["The Herositic Squlech", "CREATIVE", "Graphic design involvement."],
+  ["Rotaract", "COMMUNITY", "Campus community involvement."],
+  ["TechWomen", "OUTREACH", "Networking guest / robotics demonstration expert at a Berkeley event."],
+  ["Women's Summit", "VOLUNTEERING", "Volunteer involvement; event details to be expanded."],
+  ["Berkeley Engineering Tour", "OUTREACH", "Gave a group of Australian students a tour of Berkeley Engineering; event details to be expanded."],
+];
+
+const media = [
+  ["San Francisco Examiner", "Berkeley × Stanford UFB", "EVENT COVERAGE", "01", "San Francisco Examiner photography and coverage from the Berkeley–Stanford Ultimate Fighting Bots event."],
+  ["San Francisco Standard", "UFB in San Francisco", "EVENT COVERAGE", "02", "Coverage of the San Francisco robot-fighting scene and UFB events."],
+  ["The New York Times", "Robot fight / San Francisco", "EVENT COVERAGE", "03", "Major-publication coverage of UFB's San Francisco robot fighting scene."],
+  ["Washington Post", "Pictures of the Year", "EVENT PHOTOGRAPHY", "04", "UFB event photography appeared in the Washington Post's 2025 Pictures of the Year collection."],
+  ["AFP + International Press", "UFB · Las Vegas", "INTERNATIONAL SYNDICATION", "05", "The Las Vegas UFB event generated AFP photography and international newspaper syndication, including French-language coverage."],
+  ["jobTopia with Tony Moore", "Episode #297", "PODCAST", "06", "Featured in a conversation about Berkeley Combat Robotics, GLITCH, MALWARE, competition robotics, and student robotics leadership."],
+];
+
 const resumeUrl = "https://sites.google.com/view/gvirk/resume";
 
 const heroImages = [
@@ -331,10 +369,12 @@ export default function Home() {
       <nav className="nav">
         <a className="brand" href="#top">GURSIMAR VIRK</a>
         <div className="nav-links">
+          <a href="#build">Build</a>
+          <a href="#robotics">Robotics</a>
           <a href="#experience">Experience</a>
-          <a href="#projects">Projects</a>
-          <a href="#skills">Skills</a>
-          <a href="#media">As Seen On</a>
+          <a href="#berkeley">Berkeley</a>
+          <a href="#media">Media</a>
+          <a href="#about">About</a>
           <details className="resume-menu">
             <summary>Resume <span>↗</span></summary>
             <div className="resume-popover">
@@ -416,38 +456,91 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="page-width section" id="experience">
-        <SectionLabel>EXPERIENCE</SectionLabel>
-        <h2>Where I’ve built things</h2>
-        <div className="experience-grid">
-          {experiences.map((item) => <ExperienceCard key={item.title} item={item} />)}
+      <section className="page-width section build-section" id="build">
+        <div className="section-heading">
+          <div><SectionLabel>01 · WHERE I BUILT THINGS</SectionLabel><h2>Not just projects. Places, teams, shops, and systems.</h2></div>
+          <p>Explore the environments behind the work. Filter the archive, then jump into the technical projects that came out of each one.</p>
+        </div>
+        <div className="filter-row">
+          <button className="selected">ALL</button>
+          <button>PROFESSIONAL</button><button>ROBOTICS</button><button>BERKELEY</button><button>PERSONAL</button>
+        </div>
+        <div className="build-layout">
+          <div className="build-list">
+            {buildPlaces.map((item, index) => (
+              <a className="build-card" key={item.title} href={item.title === "UC Berkeley" ? "#berkeley" : item.title === "Combat Robotics at Berkeley" || item.title === "Ultimate Fight Bots" ? "#robotics" : "#experience"}>
+                <span className="build-index">{String(index + 1).padStart(2, "0")}</span>
+                <span className="build-card-main"><small>{item.meta}</small><strong>{item.title}</strong><em>{item.subtitle}</em><span>{item.description}</span></span>
+                <span className="build-arrow">↗</span>
+              </a>
+            ))}
+          </div>
+          <div className="build-feature">
+            <SectionLabel>THE RULE</SectionLabel>
+            <div className="build-feature-number">01</div>
+            <h3>Company ≠ project.</h3>
+            <p className="role">The archive keeps the hierarchy clean.</p>
+            <p><strong>Keiser</strong> is the company. <strong>Wire Raceway</strong> is a project I did there. The same structure applies everywhere else: organizations contain the work, and projects contain the technical story.</p>
+            <div className="build-feature-meta"><span>PEOPLE</span><span>PLACE</span><span>PROJECT</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section className="dark-section robotics-section" id="robotics">
+        <div className="page-width">
+          <SectionLabel>02 · ROBOTICS</SectionLabel>
+          <div className="section-heading">
+            <div><h2>The rabbit hole.</h2></div>
+            <p>Combat robots, humanoids, manipulation, embedded systems, and the machinery around them.</p>
+          </div>
+          <div className="robotics-groups">
+            <article className="robotics-group featured">
+              <span>COMBAT ROBOTICS AT BERKELEY</span><strong>120+ MEMBERS</strong>
+              <p>Technical leadership, shop operations, 1 / 3 / 12 / 15 / 30 lb programs, mentorship, manufacturing, and competition logistics.</p>
+              <a href="#projects">Explore robots ↓</a>
+            </article>
+            <article className="robotics-group" id="humanoid-project">
+              <span>ULTIMATE FIGHT BOTS</span><strong>HUMANOIDS</strong>
+              <p>Unitree and Booster integration, motion, calibration, debugging, live competitions, and driving.</p>
+              <a href="#projects">Open UFB ↓</a>
+            </article>
+            <article className="robotics-group">
+              <span>MANIPULATION</span><strong>GROCERYGIZMO</strong>
+              <p>6-DOF arm, vision, AR tags, RealSense, ROS 2, MoveIt2, and custom CAD.</p>
+              <a href="#projects">See project ↓</a>
+            </article>
+            <article className="robotics-group">
+              <span>SENSING + HARDWARE</span><strong>HANDI</strong>
+              <p>15-DOF teleoperated hand with my work on the sensor component and robotic portion.</p>
+              <a href="#projects">See project ↓</a>
+            </article>
+          </div>
         </div>
       </section>
 
       <section className="page-width section" id="projects">
         <div className="section-heading">
-          <div>
-            <SectionLabel>SELECTED WORK</SectionLabel>
-            <h2>Projects, grouped around the work they came from.</h2>
-          </div>
-          <p>
-            This is the first transfer from my old Google Site. The project archive is intentionally
-            broad right now; we’ll go through it section by section and make the strongest technical
-            contributions much deeper.
-          </p>
+          <div><SectionLabel>03 · PROJECT ARCHIVE</SectionLabel><h2>Builds I can actually point at.</h2></div>
+          <p>Open a card to see the technical story. The archive stays broad while we keep drilling into your exact contribution project by project.</p>
         </div>
         <div className="project-grid">
           {projects.map((project) => <ProjectCard key={project.title} project={project} />)}
         </div>
       </section>
 
+      <section className="page-width section" id="experience">
+        <SectionLabel>04 · EXPERIENCE</SectionLabel>
+        <h2>Where the work became real.</h2>
+        <div className="experience-grid">{experiences.map((item) => <ExperienceCard key={item.title} item={item} />)}</div>
+      </section>
+
       <section className="dark-section" id="skills">
         <div className="page-width">
-          <SectionLabel>TECHNICAL TOOLBOX</SectionLabel>
+          <SectionLabel>05 · TECHNICAL TOOLBOX</SectionLabel>
           <h2>The stack is bigger than CAD.</h2>
           <div className="skills-grid">
             <div><h3>Robotics</h3><p>ROS2 · robot integration · controls · motion · manipulation · humanoids · sensors · system bring-up</p></div>
-            <div><h3>Software</h3><p>Python · MATLAB · Simulink · ROS2 · MuJoCo · mjlab · video-to-robot motion pipelines</p></div>
+            <div><h3>Software</h3><p>Python · C++ · MATLAB · Simulink · ROS2 · MuJoCo · mjlab · video-to-robot motion pipelines</p></div>
             <div><h3>Mechanical</h3><p>SolidWorks · Fusion 360 · Onshape · Inventor · FEA · GD&T · DFM/DFA · mechanism design</p></div>
             <div><h3>Manufacturing</h3><p>CNC milling · turning · 3D printing · sheet metal · soldering · reflow · TIG welding · fabrication</p></div>
             <div><h3>Systems</h3><p>hardware bring-up · firmware integration · networking · validation · debugging · deployment · fleet operations</p></div>
@@ -456,46 +549,32 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="page-width section" id="berkeley">
+        <div className="section-heading"><div><SectionLabel>06 · BERKELEY</SectionLabel><h2>More than a degree.</h2></div><p>Engineering organizations, teaching, transportation, rowing, creative work, outreach, and the projects that happened in between.</p></div>
+        <div className="berkeley-grid">
+          {berkeley.map(([title, kind, description], index) => <article key={title}><span className="berkeley-index">{String(index + 1).padStart(2, "0")}</span><SectionLabel>{kind}</SectionLabel><h3>{title}</h3><p>{description}</p></article>)}
+        </div>
+      </section>
+
       <section className="page-width section" id="media">
-        <SectionLabel>AS SEEN ON / INVOLVEMENT</SectionLabel>
-        <h2>Robotics outside the workbench.</h2>
-        <div className="media-grid">
-          <article>
-            <span>🎙</span>
-            <h3>jobTopia with Tony Moore</h3>
-            <p>Featured on an episode about Berkeley Combat Robotics, GLITCH, MALWARE, competition robotics, and leading a large student robotics organization.</p>
-            <a href="https://podscan.fm/podcasts/jobtopia-with-tony-moore/episodes/robo-fight-club-ucb-berkeleys-glitch-and-malware-with-gursimar-virk-club-co-president-episode-297" target="_blank" rel="noreferrer">Listen to the episode ↗</a>
-          </article>
-          <article>
-            <span>🤖</span>
-            <h3>Fight Club / Humanoids</h3>
-            <p>Hands-on humanoid robotics through Ultimate Fight Bots, including live competitions, demonstrations, integration, and volunteering around emerging robot platforms.</p>
-          </article>
-          <article>
-            <span>🏁</span>
-            <h3>Combat Robotics & BattleBots</h3>
-            <p>Competition robotics, driving, technical leadership, mentorship, and live-event support across Berkeley Combat Robotics and BattleBots-related events.</p>
-          </article>
-          <article>
-            <span>🎓</span>
-            <h3>UC Berkeley</h3>
-            <p>Mechanical Engineering, engineering instruction, student organization leadership, shop operations, and hands-on robotics programs.</p>
-          </article>
+        <div className="section-heading"><div><SectionLabel>07 · MEDIA</SectionLabel><h2>Somehow, the robots made the papers.</h2></div><p>UFB event coverage, international press, photography, and conversations. Event coverage is kept distinct from personally verified appearances while we finish the media hunt.</p></div>
+        <div className="media-wall">
+          {media.map(([title, subtitle, status, number, description]) => <article key={title}><div className="media-number">{number}</div><SectionLabel>{status}</SectionLabel><h3>{title}</h3><p className="role">{subtitle}</p><p>{description}</p>{title === "jobTopia with Tony Moore" && <a href="https://podscan.fm/podcasts/jobtopia-with-tony-moore/episodes/robo-fight-club-ucb-berkeleys-glitch-and-malware-with-gursimar-virk-club-co-president-episode-297" target="_blank" rel="noreferrer">Open feature ↗</a>}</article>)}
+        </div>
+      </section>
+
+      <section className="page-width section" id="about">
+        <div className="about-grid">
+          <div><SectionLabel>08 · OUTSIDE THE SHOP</SectionLabel><h2>Still building things when nobody asked.</h2></div>
+          <div className="about-copy"><p><strong>Kawasaki Ninja 300.</strong> Cars. Machining. Rowing. Photography. Music. Machines that are probably too old to be worth fixing.</p><p>I’ve spent years around shops and mechanical systems because I like understanding how things work by taking them apart, making something, and putting it back together.</p><div className="about-facts"><span>6+ YEARS <small>MACHINING</small></span><span>NINJA 300 <small>MOTORCYCLE</small></span><span>BERKELEY <small>ME + MATERIALS</small></span></div></div>
         </div>
       </section>
 
       <section className="page-width section archive">
-        <SectionLabel>LEGACY ARCHIVE</SectionLabel>
+        <SectionLabel>09 · LEGACY ARCHIVE</SectionLabel>
         <h2>Everything from the old portfolio stays in the record.</h2>
-        <p className="archive-intro">
-          These are additional pages from the original Google Site that we can expand, combine, or
-          turn into supporting material as we work through the portfolio.
-        </p>
-        <div className="archive-list">
-          {legacy.map(([title, description]) => (
-            <div key={title}><strong>{title}</strong><span>{description}</span></div>
-          ))}
-        </div>
+        <p className="archive-intro">The original Google Site had more projects than fit the first pass. Nothing gets thrown away; weaker or older material can stay searchable until we decide where it belongs.</p>
+        <div className="archive-list">{legacy.map(([title, description]) => <div key={title}><strong>{title}</strong><span>{description}</span></div>)}</div>
       </section>
 
       <section className="prompt-section">
