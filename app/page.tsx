@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef, useState, type CSSProperties, type ReactNode } from "react";
+import type { ReactNode } from "react";
 
 const experiences = [
   {
@@ -372,60 +372,6 @@ function ProjectCard({ project }: { project: (typeof projects)[number] }) {
   );
 }
 
-function RevealSystemsSection() {
-  const sectionRef = useRef<HTMLElement | null>(null);
-  const [visible, setVisible] = useState(false);
-
-  useEffect(() => {
-    const node = sectionRef.current;
-    if (!node) return;
-
-    const observer = new IntersectionObserver(
-      ([entry]) => setVisible(entry.isIntersecting),
-      { threshold: 0.18, rootMargin: "-8% 0px -8% 0px" }
-    );
-
-    observer.observe(node);
-    return () => observer.disconnect();
-  }, []);
-
-  const cards = [
-    { number: "01", title: "DESIGN", headline: "CAD → mechanism → manufacturable part", copy: "I start with the physical problem: geometry, interfaces, materials, loads, tolerances, and how the part will actually get made.", tags: ["CAD", "DFM / DFA", "MECHANISMS"] },
-    { number: "02", title: "INTEGRATE", headline: "Hardware → electronics → software", copy: "A robot is a stack, not a collection of isolated disciplines. I connect mechanical hardware, wiring, sensors, firmware, networking, ROS 2, and the software that makes the system move.", tags: ["ROS 2", "EMBEDDED", "SYSTEMS"] },
-    { number: "03", title: "DEBUG", headline: "Find the failure. Fix the real thing.", copy: "Bring-up, calibration, weird intermittent faults, broken parts, communication problems, bad assumptions — this is where the pieces have to make sense together.", tags: ["BRING-UP", "DEBUGGING", "VALIDATION"] },
-    { number: "04", title: "DEPLOY", headline: "Make it work outside the workbench", copy: "The finish line is a system that can be built, tested, operated, repaired, and handed to the next person without everything depending on the original builder.", tags: ["FLEET", "OPERATIONS", "MANUFACTURING"] },
-  ];
-
-  return (
-    <section ref={sectionRef} className={`systems-section ${visible ? "is-visible" : ""}`}>
-      <div className="page-width">
-        <div className="systems-heading">
-          <div>
-            <SectionLabel>HOW I BUILD</SectionLabel>
-            <h2>CAD to controls to a robot that has to work tomorrow.</h2>
-          </div>
-          <p>I like the messy middle: the point where mechanical design, electronics, software, manufacturing, and real-world constraints stop being separate problems.</p>
-        </div>
-        <div className="systems-stage">
-          <div className="systems-spine" aria-hidden="true" />
-          {cards.map((card, index) => (
-            <article className="system-card" style={{ "--card-index": index } as CSSProperties} key={card.number}>
-              <span className="system-number">{card.number}</span>
-              <div className="system-card-main">
-                <SectionLabel>{card.title}</SectionLabel>
-                <h3>{card.headline}</h3>
-                <p>{card.copy}</p>
-                <div className="system-tags">{card.tags.map((tag) => <span key={tag}>{tag}</span>)}</div>
-              </div>
-              <span className="system-arrow">↗</span>
-            </article>
-          ))}
-        </div>
-      </div>
-    </section>
-  );
-}
-
 export default function Home() {
   return (
     <main>
@@ -495,22 +441,60 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="marquee" aria-label="Technical skills">
-        <div className="marquee-track">
-          {[
-            "MECHANICAL DESIGN","ROBOTICS INTEGRATION","ROS2","C++","PYTHON","CAD",
-            "FABRICATION","ELECTRICAL","HARDWARE BRING-UP","MANUFACTURING",
-            "SYSTEMS INTEGRATION","DEBUGGING","MUJOCO",
-            "MECHANICAL DESIGN","ROBOTICS INTEGRATION","ROS2","C++","PYTHON","CAD",
-            "FABRICATION","ELECTRICAL","HARDWARE BRING-UP","MANUFACTURING",
-            "SYSTEMS INTEGRATION","DEBUGGING","MUJOCO"
-          ].map((skill, index) => <span className="marquee-skill" key={`${skill}-${index}`}>{skill}</span>)}
+      <section className="marquee">
+        <div>MECHANICAL DESIGN</div><div>ROBOTICS INTEGRATION</div><div>ROS2</div><div>MANUFACTURING</div><div>HARDWARE BRING-UP</div><div>TECHNICAL LEADERSHIP</div>
+      </section>
+
+      <section className="page-width intro-section">
+        <div>
+          <SectionLabel>HOW I WORK</SectionLabel>
+          <h2>Broad enough to see the whole system. Hands-on enough to fix the part that broke.</h2>
+        </div>
+        <div className="intro-copy">
+          <p>
+            My strongest work sits at the boundaries between disciplines. I’m comfortable designing
+            mechanical hardware, making parts in a shop, wiring and debugging a robot, working with
+            firmware and software, bringing up a new system, and then figuring out how a team can
+            build and operate it repeatedly.
+          </p>
+          <p>
+            I’m especially interested in robotics because the problems refuse to stay inside one
+            engineering discipline.
+          </p>
         </div>
       </section>
 
-      <RevealSystemsSection />
+      <section className="page-width section build-section" id="build">
+        <div className="section-heading">
+          <div><SectionLabel>01 · WHERE I BUILT THINGS</SectionLabel><h2>Not just projects. Places, teams, shops, and systems.</h2></div>
+          <p>Explore the environments behind the work. Filter the archive, then jump into the technical projects that came out of each one.</p>
+        </div>
+        <div className="filter-row">
+          <button className="selected">ALL</button>
+          <button>PROFESSIONAL</button><button>ROBOTICS</button><button>BERKELEY</button><button>PERSONAL</button>
+        </div>
+        <div className="build-layout">
+          <div className="build-list">
+            {buildPlaces.map((item, index) => (
+              <a className="build-card" key={item.title} href={item.title === "UC Berkeley" ? "#berkeley" : item.title === "Combat Robotics at Berkeley" || item.title === "Ultimate Fight Bots" ? "#robotics" : "#experience"}>
+                <span className="build-index">{String(index + 1).padStart(2, "0")}</span>
+                <span className="build-card-main"><small>{item.meta}</small><strong>{item.title}</strong><em>{item.subtitle}</em><span>{item.description}</span></span>
+                <span className="build-arrow">↗</span>
+              </a>
+            ))}
+          </div>
+          <div className="build-feature">
+            <SectionLabel>THE RULE</SectionLabel>
+            <div className="build-feature-number">01</div>
+            <h3>Company ≠ project.</h3>
+            <p className="role">The archive keeps the hierarchy clean.</p>
+            <p><strong>Keiser</strong> is the company. <strong>Wire Raceway</strong> is a project I did there. The same structure applies everywhere else: organizations contain the work, and projects contain the technical story.</p>
+            <div className="build-feature-meta"><span>PEOPLE</span><span>PLACE</span><span>PROJECT</span></div>
+          </div>
+        </div>
+      </section>
 
-      <section className="page-width section" id="work">
+            <section className="page-width section" id="work">
         <div className="section-heading">
           <div>
             <SectionLabel>WHERE I&apos;VE WORKED</SectionLabel>
