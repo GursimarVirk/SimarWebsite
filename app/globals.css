@@ -656,7 +656,8 @@ h2 { font-size:clamp(38px,5vw,70px); line-height:.95; letter-spacing:-.06em; mar
 }
 
 @media (max-width: 850px) {
-  .nav-links { display:none; }
+  .nav-links { display:flex; max-width:72vw; overflow-x:auto; gap:18px; scrollbar-width:none; white-space:nowrap; }
+  .nav-links::-webkit-scrollbar { display:none; }
   .hero-collage, .intro-section, .section-heading, .snapshot { grid-template-columns:1fr; }
   .hero-collage { min-height:850px; padding-top:70px; }
   .hero-name { padding-left:0; }
