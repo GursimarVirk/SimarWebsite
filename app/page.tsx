@@ -318,21 +318,26 @@ function SectionLabel({ children }: { children: React.ReactNode }) {
   return <p className="eyebrow">{children}</p>;
 }
 
+function experienceSlug(title: string) {
+  return title.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+}
+
 function ExperienceCard({ item }: { item: (typeof experiences)[number] }) {
   return (
-    <article className="experience-card">
+    <a className="experience-card experience-card-link" href={`/experience/${experienceSlug(item.title)}`}>
       <div className="card-top">
         <div>
           <SectionLabel>{item.tag}</SectionLabel>
           <h3>{item.title}</h3>
           <p className="role">{item.role}</p>
         </div>
+        <span className="card-open">OPEN ↗</span>
       </div>
       <p className="lead">{item.intro}</p>
       <ul>
-        {item.bullets.map((bullet) => <li key={bullet}>{bullet}</li>)}
+        {item.bullets.slice(0, 3).map((bullet) => <li key={bullet}>{bullet}</li>)}
       </ul>
-    </article>
+    </a>
   );
 }
 
