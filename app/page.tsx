@@ -80,7 +80,7 @@ const experiences = [
     ],
   },
   {
-    title: "Keiser Wire Raceway",
+    title: "Keiser",
     role: "Mechanical Design · Manufacturing · Product Development",
     tag: "MECHANICAL · MANUFACTURING · PRODUCT",
     intro:
@@ -419,10 +419,6 @@ export default function Home() {
           <div className="photo-orbit orbit-two" />
         </div>
 
-        <div className="hero-note">
-          <span>01 / 06</span>
-          <span>BUILT, TESTED, REBUILT</span>
-        </div>
       </section>
 
       <section className="snapshot page-width" aria-label="Quick snapshot">
@@ -474,63 +470,52 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="page-width section build-section" id="build">
+      <section className="page-width section" id="work">
         <div className="section-heading">
-          <div><SectionLabel>01 · WHERE I BUILT THINGS</SectionLabel><h2>Not just projects. Places, teams, shops, and systems.</h2></div>
-          <p>Explore the environments behind the work, then open an experience to see the engineering details.</p>
-        </div>
-        <div className="filter-row">
-          <button className="selected">ALL</button>
-          <button>PROFESSIONAL</button><button>ROBOTICS</button><button>BERKELEY</button><button>PERSONAL</button>
-        </div>
-        <div className="build-layout">
-          <div className="build-list">
-            {buildPlaces.map((item, index) => (
-              <a className="build-card" key={item.title} href={item.title === "UC Berkeley" ? "#berkeley" : item.title === "Personal Shop" ? "#about" : `/experience/${experienceSlug(item.title)}`}>
-                <span className="build-index">{String(index + 1).padStart(2, "0")}</span>
-                <span className="build-card-main"><small>{item.meta}</small><strong>{item.title}</strong><em>{item.subtitle}</em><span>{item.description}</span></span>
-                <span className="build-arrow">↗</span>
-              </a>
-            ))}
+          <div>
+            <SectionLabel>WHERE I&apos;VE WORKED</SectionLabel>
+            <h2>Robotics, manufacturing, and the systems between them.</h2>
           </div>
-          <div className="build-feature">
-            <SectionLabel>HOW THE ARCHIVE IS ORGANIZED</SectionLabel>
-            <div className="build-feature-number">01</div>
-            <h3>Organizations contain the work.</h3>
-            <p className="role">Organizations show where I worked; project pages show what I built.</p>
-            <p><strong>Keiser</strong> is the company. <strong>Wire Raceway</strong> is a project I did there. The same structure applies everywhere else: organizations contain the work, and projects contain the technical story.</p>
-            <div className="build-feature-meta"><span>PEOPLE</span><span>PLACE</span><span>PROJECT</span></div>
-          </div>
+          <p>
+            The places where I&apos;ve had to take a robot or machine from an idea to something that
+            actually works.
+          </p>
+        </div>
+        <div className="experience-grid">
+          {experiences.map((item) => <ExperienceCard key={item.title} item={item} />)}
         </div>
       </section>
 
-      <section className="dark-section robotics-section" id="robotics">
+      <section className="dark-section robotics-section" id="selected-work">
         <div className="page-width">
-          <SectionLabel>02 · ROBOTICS</SectionLabel>
+          <SectionLabel>SELECTED WORK</SectionLabel>
           <div className="section-heading">
-            <div><h2>The rabbit hole.</h2></div>
-            <p>Combat robots, humanoids, manipulation, embedded systems, and the machinery around them.</p>
+            <div><h2>Things I&apos;ve actually built.</h2></div>
+            <p>
+              A few projects that show the range: combat robots, humanoids, manipulation, embedded
+              hardware, manufacturing, and product development.
+            </p>
           </div>
           <div className="robotics-groups">
             <article className="robotics-group featured">
-              <span>COMBAT ROBOTICS AT BERKELEY</span><strong>120+ MEMBERS</strong>
-              <p>Technical leadership, shop operations, 1 / 3 / 12 / 15 / 30 lb programs, mentorship, manufacturing, and competition logistics.</p>
-              <a href="#projects">Explore robots ↓</a>
-            </article>
-            <article className="robotics-group" id="humanoid-project">
-              <span>ULTIMATE FIGHT BOTS</span><strong>HUMANOIDS</strong>
-              <p>Unitree and Booster integration, motion, calibration, debugging, live competitions, and driving.</p>
-              <a href="#projects">Open UFB ↓</a>
+              <span>COMBAT ROBOTICS</span><strong>30 LB</strong>
+              <p>Robot design, machining, heat treatment, wiring, troubleshooting, technical program management, and competition driving.</p>
+              <a href="#projects">See the combat builds ↓</a>
             </article>
             <article className="robotics-group">
-              <span>MANIPULATION</span><strong>GROCERYGIZMO</strong>
-              <p>6-DOF arm, vision, AR tags, RealSense, ROS 2, MoveIt2, and custom CAD.</p>
-              <a href="#projects">See project ↓</a>
+              <span>HUMANOIDS</span><strong>UFB</strong>
+              <p>Unitree and Booster integration, calibration, motion behaviors, debugging, and live event operation.</p>
+              <a href="#projects">See humanoid work ↓</a>
             </article>
             <article className="robotics-group">
-              <span>SENSING + HARDWARE</span><strong>HANDI</strong>
-              <p>15-DOF teleoperated hand with my work on the sensor component and robotic portion.</p>
-              <a href="#projects">See project ↓</a>
+              <span>MANIPULATION</span><strong>6-DOF</strong>
+              <p>GroceryGizmo: Omron TM5-700, RealSense, AR tags, ROS 2, MoveIt2, Robotiq, and custom CAD.</p>
+              <a href="#projects">See manipulation work ↓</a>
+            </article>
+            <article className="robotics-group">
+              <span>SENSING + HARDWARE</span><strong>15-DOF</strong>
+              <p>HANDI: work on the sensor component and robotic portion of a teleoperated humanoid hand.</p>
+              <a href="#projects">See hardware work ↓</a>
             </article>
           </div>
         </div>
@@ -538,23 +523,17 @@ export default function Home() {
 
       <section className="page-width section" id="projects">
         <div className="section-heading">
-          <div><SectionLabel>03 · PROJECT ARCHIVE</SectionLabel><h2>Builds I can actually point at.</h2></div>
-          <p>Projects spanning robotics, manufacturing, embedded systems, mechanical design, and product development.</p>
+          <div><SectionLabel>PROJECTS I&apos;VE BUILT</SectionLabel><h2>The deeper archive.</h2></div>
+          <p>Open a project when you want the technical details, documentation, and supporting links.</p>
         </div>
         <div className="project-grid">
           {projects.map((project) => <ProjectCard key={project.title} project={project} />)}
         </div>
       </section>
 
-      <section className="page-width section" id="experience">
-        <SectionLabel>04 · EXPERIENCE</SectionLabel>
-        <h2>Where the work became real.</h2>
-        <div className="experience-grid">{experiences.map((item) => <ExperienceCard key={item.title} item={item} />)}</div>
-      </section>
-
       <section className="dark-section" id="skills">
         <div className="page-width">
-          <SectionLabel>05 · TECHNICAL TOOLBOX</SectionLabel>
+          <SectionLabel>TECHNICAL TOOLBOX</SectionLabel>
           <h2>The stack is bigger than CAD.</h2>
           <div className="skills-grid">
             <div><h3>Robotics</h3><p>ROS2 · robot integration · controls · motion · manipulation · humanoids · sensors · system bring-up</p></div>
@@ -568,14 +547,14 @@ export default function Home() {
       </section>
 
       <section className="page-width section" id="berkeley">
-        <div className="section-heading"><div><SectionLabel>06 · BERKELEY</SectionLabel><h2>More than a degree.</h2></div><p>Engineering organizations, teaching, transportation, rowing, creative work, outreach, and the projects that happened in between.</p></div>
+        <div className="section-heading"><div><SectionLabel>BERKELEY</SectionLabel><h2>More than a degree.</h2></div><p>Engineering organizations, teaching, transportation, rowing, creative work, outreach, and the projects that happened in between.</p></div>
         <div className="berkeley-grid">
           {berkeley.map(([title, kind, description], index) => <article key={title}><span className="berkeley-index">{String(index + 1).padStart(2, "0")}</span><SectionLabel>{kind}</SectionLabel><h3>{title}</h3><p>{description}</p></article>)}
         </div>
       </section>
 
       <section className="page-width section" id="media">
-        <div className="section-heading"><div><SectionLabel>07 · MEDIA</SectionLabel><h2>Somehow, the robots made the papers.</h2></div><p>UFB event coverage, international press, photography, and conversations around the robots.</p></div>
+        <div className="section-heading"><div><SectionLabel>RECOGNITION + MEDIA</SectionLabel><h2>Somehow, the robots made the papers.</h2></div><p>UFB event coverage, international press, photography, and conversations around the robots.</p></div>
         <div className="media-wall">
           {media.map(([title, subtitle, status, number, description]) => <article key={title}><div className="media-number">{number}</div><SectionLabel>{status}</SectionLabel><h3>{title}</h3><p className="role">{subtitle}</p><p>{description}</p>{title === "jobTopia with Tony Moore" && <a href="https://podscan.fm/podcasts/jobtopia-with-tony-moore/episodes/robo-fight-club-ucb-berkeleys-glitch-and-malware-with-gursimar-virk-club-co-president-episode-297" target="_blank" rel="noreferrer">Open feature ↗</a>}</article>)}
         </div>
@@ -583,13 +562,13 @@ export default function Home() {
 
       <section className="page-width section" id="about">
         <div className="about-grid">
-          <div><SectionLabel>08 · OUTSIDE THE SHOP</SectionLabel><h2>Still building things when nobody asked.</h2></div>
+          <div><SectionLabel>OUTSIDE THE SHOP</SectionLabel><h2>Still building things when nobody asked.</h2></div>
           <div className="about-copy"><p><strong>Kawasaki Ninja 300.</strong> Cars. Machining. Rowing. Photography. Music. Machines that are probably too old to be worth fixing.</p><p>I’ve spent years around shops and mechanical systems because I like understanding how things work by taking them apart, making something, and putting it back together.</p><div className="about-facts"><span>6+ YEARS <small>MACHINING</small></span><span>NINJA 300 <small>MOTORCYCLE</small></span><span>BERKELEY <small>ME + MATERIALS</small></span></div></div>
         </div>
       </section>
 
       <section className="page-width section archive">
-        <SectionLabel>09 · LEGACY ARCHIVE</SectionLabel>
+        <SectionLabel>LEGACY ARCHIVE</SectionLabel>
         <h2>Everything from the old portfolio stays in the record.</h2>
         <p className="archive-intro">Older projects, technical experiments, coursework, and personal builds preserved from the original portfolio.</p>
         <div className="archive-list">{legacy.map(([title, description]) => <div key={title}><strong>{title}</strong><span>{description}</span></div>)}</div>
