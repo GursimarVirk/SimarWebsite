@@ -453,20 +453,13 @@ export default function Home() {
 
       <section className="page-width how-work-section">
         <div className="how-work-copy">
-          <SectionLabel>HOW I WORK</SectionLabel>
-          <h2>Broad enough to see the whole system. Hands-on enough to fix the part that broke.</h2>
+          <SectionLabel>HARDWARE + SOFTWARE</SectionLabel>
+          <h2>From CAD to controls to a robot that has to work tomorrow.</h2>
         </div>
         <div className="intro-copy">
-          <p>
-            My strongest work sits at the boundaries between disciplines. I’m comfortable designing
-            mechanical hardware, making parts in a shop, wiring and debugging a robot, working with
-            firmware and software, bringing up a new system, and then figuring out how a team can
-            build and operate it repeatedly.
-          </p>
-          <p>
-            I’m especially interested in robotics because the problems refuse to stay inside one
-            engineering discipline.
-          </p>
+          <p><strong>Mechanical:</strong> CAD, mechanisms, DFM/DFA, machining, fabrication, fixtures, and physical testing.</p>
+          <p><strong>Electrical + embedded:</strong> wiring, soldering, sensors, PCB work, firmware integration, networking, and debugging.</p>
+          <p><strong>Robotics:</strong> ROS 2, C++, Python, MoveIt2, MuJoCo, motion, manipulation, system bring-up, and deployment.</p>
         </div>
       </section>
 
