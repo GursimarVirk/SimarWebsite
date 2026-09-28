@@ -405,7 +405,7 @@ function RevealSystemsSection() {
         <div className="systems-stage">
           <div className="systems-spine" aria-hidden="true" />
           {cards.map((card, index) => (
-            <article className="system-card" style={{ "--card-index": index } as React.CSSProperties} key={card.number}>
+            <article className="system-card" style={{ "--card-index": index } as CSSProperties} key={card.number}>
               <span className="system-number">{card.number}</span>
               <div className="system-card-main">
                 <SectionLabel>{card.title}</SectionLabel>
