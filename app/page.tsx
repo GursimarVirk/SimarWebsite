@@ -1,4 +1,6 @@
-"use client";\nimport { useState, type ReactNode } from "react";\n\nconst experiences = [
+"use client";
+import { useState, type ReactNode } from "react";
+\nconst experiences = [
   {
     title: "Meta",
     role: "Robotics Hardware Integration Engineer",
