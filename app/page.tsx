@@ -594,10 +594,14 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="page-width section" id="media">
-        <div className="section-heading"><div><SectionLabel>RECOGNITION + MEDIA</SectionLabel><h2>Somehow, the robots made the papers.</h2></div><p>UFB event coverage, international press, photography, and conversations around the robots.</p></div>
-        <div className="media-wall">
-          {media.map(([title, subtitle, status, number, description]) => <article key={title}><div className="media-number">{number}</div><SectionLabel>{status}</SectionLabel><h3>{title}</h3><p className="role">{subtitle}</p><p>{description}</p>{title === "jobTopia with Tony Moore" && <a href="https://podscan.fm/podcasts/jobtopia-with-tony-moore/episodes/robo-fight-club-ucb-berkeleys-glitch-and-malware-with-gursimar-virk-club-co-president-episode-297" target="_blank" rel="noreferrer">Open feature ↗</a>}</article>)}
+      <section className="dark-section media-teaser" aria-label="Media archive">
+        <div className="page-width media-teaser-inner">
+          <div>
+            <SectionLabel>07 · PUBLIC FOOTPRINT</SectionLabel>
+            <h2>Want to see the robots in the wild?</h2>
+            <p>Press, video, photography, interviews, and competition records — collected in one place.</p>
+          </div>
+          <a className="media-teaser-button" href="/media">OPEN MEDIA ARCHIVE ↗</a>
         </div>
       </section>
 
