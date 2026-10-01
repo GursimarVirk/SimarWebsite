@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import styles from "./stats.module.css";
-import styles from "./stats.module.css";
 
 export const metadata: Metadata = {
   title: "Robot Competition Stats · Gursimar Virk",
@@ -44,26 +43,26 @@ export default function StatsPage() {
         <div><strong>5+</strong><span>COMPETITIONS IN THE CLUB ARCHIVE</span></div>
       </section>
 
-      <section className={`${styles.section} page-width`}>
+      <section id="competitions" className={`${styles.section} page-width`}>
         <div className={styles.heading}><p className="eyebrow">01 · COMPETITIONS</p><h2>WHERE I SHOWED UP</h2><p>Competition roles vary from piloting and system integration to organizing the event, mentoring teams, and keeping robots alive between fights.</p></div>
         <div className={styles.rows}>
           {competitions.map((c) => <a href={c.href} target="_blank" rel="noreferrer" className={styles.row} key={c.event}><span>{c.year}</span><div><h3>{c.event}</h3><p>{c.note}</p></div><b>{c.role}</b><i>↗</i></a>)}
         </div>
       </section>
 
-      <section className={`${styles.section} page-width`}>
+      <section id="robots" className={`${styles.section} page-width`}>
         <div className={styles.heading}><p className="eyebrow">02 · ROBOTS + FIGHTS</p><h2>FOLLOW THE BOTS</h2><p>Every robot has a trail: competition records, match results, footage, repairs, and the people who built it.</p></div>
         <div className={styles.robotGrid}>
           {robotArchives.map((r) => <article className={styles.robot} key={r.name}><p className="eyebrow">{r.className}</p><h3>{r.name}</h3><p>{r.result}</p><div><a href={r.href} target="_blank" rel="noreferrer">RECORD ↗</a><a href={r.video} target="_blank" rel="noreferrer">FIGHTS / VIDEO ↗</a></div></article>)}
         </div>
       </section>
 
-      <section className={`${styles.mentoring} page-width`}>
+      <section id="mentoring" className={`${styles.mentoring} page-width`}>
         <div><p className="eyebrow">03 · MENTORSHIP</p><h2>BUILDING THE NEXT TEAMS</h2><p>CRB's model is deliberately broad: new members start with small robots, learn the full build cycle, and move toward larger, more complex machines. Gursimar's leadership work included mentoring teams through design, fabrication, testing, competition preparation, repairs, and event logistics.</p></div>
         <div className={styles.bigStat}><strong>26+</strong><span>MENTORED TEAM / PROJECT GROUPS</span><a href="https://combatrobotics.studentorg.berkeley.edu/" target="_blank" rel="noreferrer">SEE CRB PROGRAM ↗</a></div>
       </section>
 
-      <section className={`${styles.note} page-width`}>
+      <section id="sources" className={`${styles.note} page-width`}>
         <p className="eyebrow">DATA NOTE</p>
         <p>The 120+, 26+, 20+, and 5+ figures combine the club-scale public record with Gursimar's reported mentoring history. The next research pass will replace the aggregate 26+ line with a named team-by-team ledger, competition result, and direct fight/VOD link wherever those public recordings can be recovered.</p>
       </section>
