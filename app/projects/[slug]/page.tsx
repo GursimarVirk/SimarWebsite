@@ -65,7 +65,7 @@ const projects = {
       ["My role","I was the Manipulation & CAD Engineer. My work included the custom RealSense mount and manipulation testing, including grasp-offset calibration, safe approach sequences into the refrigerator, motion-stop safety conditions, soft-limit handling, and manual recovery procedures."],
       ["What it taught me","The hard part was not getting an arm to move. It was making the motion predictable around a real refrigerator, camera offsets, grasp alignment, collision constraints, and failure recovery."],
     ],
-    links: [["GroceryGizmo project site","https://grocerygizmo.pchrisoc.com/"],["GroceryGizmo code / project archive","https://github.com/"]]
+    links: [["GroceryGizmo project site","https://grocerygizmo.pchrisoc.com/"],["GroceryGizmo project site","https://grocerygizmo.pchrisoc.com/"]]
   },
   "humanoid-robotics": {
     title: "Humanoid Robotics",
