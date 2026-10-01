@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import styles from "./media.module.css";
 
 export const metadata: Metadata = {
   title: "Media · Gursimar Virk",
@@ -116,23 +117,23 @@ const mediaItems = [
 function MediaCard({ item, index }: { item: (typeof mediaItems)[number]; index: number }) {
   return (
     <a
-      className={`media-card ${item.image ? "has-image" : "no-image"}`}
+      className={`${styles.card} ${item.image ? "" : styles.noImage}`}
       href={item.href}
       target="_blank"
       rel="noreferrer"
       style={item.image ? { backgroundImage: `linear-gradient(180deg, rgba(5,4,12,.05) 20%, rgba(5,4,12,.92) 100%), url("${item.image}")` } : undefined}
     >
-      <div className="media-card-visual">
-        <span className="media-card-index">{String(index + 1).padStart(2, "0")}</span>
-        {!item.image && <span className="media-card-mark">{item.type}</span>}
-        <span className="media-card-arrow">↗</span>
+      <div className={styles.visual}>
+        <span className={styles.index}>{String(index + 1).padStart(2, "0")}</span>
+        {!item.image && <span className={styles.mark}>{item.type}</span>}
+        <span className={styles.arrow}>↗</span>
       </div>
-      <div className="media-card-copy">
-        <div className="media-card-meta"><span>{item.type}</span><span>{item.date}</span></div>
-        <p className="media-card-source">{item.source}</p>
+      <div className={styles.copy}>
+        <div className={styles.meta}><span>{item.type}</span><span>{item.date}</span></div>
+        <p className={styles.source}>{item.source}</p>
         <h2>{item.title}</h2>
         <p>{item.description}</p>
-        <span className="media-card-open">OPEN SOURCE ↗</span>
+        <span className={styles.open}>OPEN SOURCE ↗</span>
       </div>
     </a>
   );
@@ -150,21 +151,21 @@ export default function MediaPage() {
           <a href="/#berkeley">Berkeley</a>
           <a className="nav-active" href="/media">Media</a>
           <a href="/#about">About</a>
-          <a href={`/resume`} className="nav-resume">Resume ↗</a>
+          <a href="https://sites.google.com/view/gvirk/resume" target="_blank" rel="noreferrer" className="nav-resume">Resume ↗</a>
           <a href="/#contact">Contact</a>
         </div>
       </nav>
 
-      <section className="media-page-hero page-width">
+      <section className={`${styles.pageHero} page-width`}>
         <div>
           <p className="eyebrow">07 · PUBLIC FOOTPRINT</p>
           <h1>MEDIA</h1>
-          <p className="media-page-lede">
+          <p className={styles.lede}>
             Robots, competitions, interviews, photographs, and the occasional newspaper.
             This is the public trail behind the work.
           </p>
         </div>
-        <div className="media-page-aside">
+        <div className={styles.aside}>
           <span>PRESS</span>
           <span>VIDEO</span>
           <span>PHOTOGRAPHY</span>
@@ -174,11 +175,11 @@ export default function MediaPage() {
         </div>
       </section>
 
-      <section className="page-width media-grid-page">
+      <section className={`${styles.grid} page-width`}>
         {mediaItems.map((item, index) => <MediaCard item={item} index={index} key={item.title} />)}
       </section>
 
-      <section className="page-width media-note">
+      <section className={`${styles.note} page-width`}>
         <p className="eyebrow">ARCHIVE NOTE</p>
         <h2>This page will keep growing.</h2>
         <p>
