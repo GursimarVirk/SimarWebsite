@@ -30,6 +30,7 @@ const projects = {
     links: [["Combat Robotics at Berkeley","https://combatrobotics.studentorg.berkeley.edu/"],["Robot Combat Events","https://www.robotcombatevents.com/events/7353"]]
   },
   "combat-box": {
+    image: "",
     title: "Combat Box",
     kicker: "COMBAT ROBOTICS AT BERKELEY · FABRICATION",
     role: "Designer · Fabricator · Project Lead",
@@ -55,6 +56,7 @@ const projects = {
     links: [["HANDI Final Report","https://drive.google.com/open?id=1AvCRkP0JC-o5meU10HXgGXU879HWbJR_sAYAJnsuo3Y"],["Machine Shop Presentation","https://docs.google.com/presentation/d/1EurbqNbWvZzMdbJHNEz-lKYVH1hz9U8cfXV7Ef7xOoQ/present"]]
   },
   "grocerygizmo": {
+    image: "",
     title: "Autonomous 6-DOF Vision-Based Grasping",
     kicker: "UC BERKELEY · GROCERYGIZMO",
     role: "Manipulation & CAD Engineer",
@@ -81,6 +83,7 @@ const projects = {
     links: [["UFB competition archive","https://roboxing.tv/competitions/ufb"],["Linus Tech Tips — I Joined Robot Fight Club","https://www.youtube.com/watch?v=VJqMPFNP4to"],["BattleBots UFB audience page","https://battlebots.com/audience-waiver-ufb/"]]
   },
   "motorcycle-communication-system": {
+    image: "",
     title: "Motorcycle Communication System",
     kicker: "PRODUCT DEVELOPMENT · MOTORCYCLE",
     role: "Technical Lead · Product Development",
@@ -94,6 +97,7 @@ const projects = {
     links: [["Final Team Presentation","https://docs.google.com/presentation/d/1PtgBqGz5OtcBSldxkl2myrix2rrQJnmgBT-T3LMhKNM/present"],["Project Files","https://drive.google.com/open?id=10YD4BgO1cErMJDVZd0fNw2fc2POT41JBLmXO1r42Nz8"]]
   },
   "nasa-hunch-magnetic-boots": {
+    image: "",
     title: "NASA HUNCH — Magnetic Boots",
     kicker: "NASA HUNCH · STUDENT ENGINEERING",
     role: "Team Lead",
@@ -106,6 +110,7 @@ const projects = {
     links: [["NASA HUNCH project archive","https://www.nasahunch.com/"]]
   },
   "iot-millipede-monitor": {
+    image: "",
     title: "IoT Millipede Monitor",
     kicker: "UC BERKELEY · IOT",
     role: "Embedded / IoT Project",
@@ -117,6 +122,7 @@ const projects = {
     links: []
   },
   "towel-holder-innovation": {
+    image: "",
     title: "Towel Holder Innovation",
     kicker: "FRESHMAN DESIGN · MANUFACTURING",
     role: "Team Lead · CAD",
@@ -129,6 +135,7 @@ const projects = {
     links: []
   },
   "statistics-data-project": {
+    image: "",
     title: "Statistics / Data Project",
     kicker: "PROGRAMMING · DATA",
     role: "Data Analysis",
@@ -141,6 +148,7 @@ const projects = {
     links: []
   },
   "robotic-arms": {
+    image: "",
     title: "Robotic Arms",
     kicker: "ROBOTICS · MANIPULATION",
     role: "Coursework / Research / Industry Exposure",
@@ -153,6 +161,7 @@ const projects = {
     links: [["GroceryGizmo","https://grocerygizmo.pchrisoc.com/"]]
   },
   "cars-and-machines": {
+    image: "",
     title: "Cars & Machines",
     kicker: "PERSONAL SHOP · MACHINING",
     role: "Machinist · Restorer · Lifelong Tinkerer",
