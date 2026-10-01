@@ -380,7 +380,7 @@ export default function Home() {
         <div className="nav-links">
           <a href="#build">Build</a>
           <a href="#selected-work">Robotics</a>
-          <a href="#experience">Experience</a>
+          <a href="#work">Experience</a>
           <a href="#berkeley">Berkeley</a>
           <a className="nav-media-link" href="/media">Media ↗</a>
           <a href="#about">About</a>
