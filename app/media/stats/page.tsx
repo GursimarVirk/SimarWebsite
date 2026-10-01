@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import styles from "./stats.module.css";
+import styles from "./stats.module.css";
 
 export const metadata: Metadata = {
   title: "Robot Competition Stats · Gursimar Virk",
