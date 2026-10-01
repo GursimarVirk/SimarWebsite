@@ -645,6 +645,20 @@ export default function Home() {
         </div>
         <p className="copyright">© 2026 Gursimar Virk · Built for robots, not just résumés.</p>
       </footer>
+      <style>{`
+        .nav-media-link{color:#fff!important;border-bottom:1px solid rgba(185,144,255,.65)}
+        .quick-nav{display:grid;grid-template-columns:.7fr 2.3fr;gap:30px;align-items:center;margin-top:10px;margin-bottom:30px;padding:14px 0;border-block:1px solid var(--line)}
+        .quick-nav-label{display:flex;flex-direction:column;gap:5px}
+        .quick-nav-label .eyebrow{margin:0}
+        .quick-nav-label>span{color:var(--muted);font-size:10px;line-height:1.4}
+        .quick-nav-links{display:grid;grid-template-columns:repeat(4,1fr);gap:7px}
+        .quick-nav-links a{display:flex;justify-content:space-between;align-items:center;min-height:43px;padding:11px 13px;border:1px solid var(--line);border-radius:9px;color:#dcd6e9;background:rgba(16,13,29,.55);text-decoration:none;font:800 9px/1 Arial,Helvetica,sans-serif;letter-spacing:.11em;transition:transform .22s ease,border-color .22s ease,background .22s ease,color .22s ease}
+        .quick-nav-links a span{color:#887c9f;font-size:12px}
+        .quick-nav-links a:hover{transform:translateY(-2px);border-color:rgba(185,144,255,.35);color:#fff;background:rgba(30,24,51,.82)}
+        .quick-nav-links .quick-nav-media{color:#0a0810;background:#f7f5ff;border-color:#f7f5ff}
+        .quick-nav-links .quick-nav-media span{color:#6d617d}
+        @media(max-width:850px){.quick-nav{grid-template-columns:1fr;gap:14px;margin-top:0}.quick-nav-links{grid-template-columns:repeat(2,1fr)}}
+      `}</style>
     </main>
   );
 }
