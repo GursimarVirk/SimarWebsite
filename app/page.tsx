@@ -378,11 +378,11 @@ export default function Home() {
       <nav className="nav">
         <a className="brand" href="#top">GURSIMAR VIRK</a>
         <div className="nav-links">
-          <a href="#build">Build</a>
+          <a href="#work">Work</a>
           <a href="#selected-work">Robotics</a>
-          <a href="#work">Experience</a>
-          <a href="#berkeley">Berkeley</a>
           <a className="nav-media-link" href="/media">Media ↗</a>
+          <a href="#projects">Projects</a>
+          <a href="#berkeley">Berkeley</a>
           <a href="#about">About</a>
           <details className="resume-menu">
             <summary>Resume <span>↗</span></summary>
@@ -430,11 +430,11 @@ export default function Home() {
           <span>Jump straight to the part you care about.</span>
         </div>
         <div className="quick-nav-links">
-          <a href="#build">Build <span>↘</span></a>
+          <a href="#work">Work <span>↘</span></a>
           <a href="#selected-work">Robotics <span>↘</span></a>
-          <a href="#work">Experience <span>↘</span></a>
-          <a href="#berkeley">Berkeley <span>↘</span></a>
           <a className="quick-nav-media" href="/media">MEDIA <span>↗</span></a>
+          <a href="#projects">Projects <span>↘</span></a>
+          <a href="#berkeley">Berkeley <span>↘</span></a>
           <a href="#about">About <span>↘</span></a>
           <a href={resumeUrl} target="_blank" rel="noreferrer">Resume <span>↗</span></a>
           <a href="#contact">Contact <span>↘</span></a>
