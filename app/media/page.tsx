@@ -127,15 +127,6 @@ const articles: MediaItem[] = [
 
 const archive: MediaItem[] = [
   {
-    type: "SCIENCE FAIR",
-    source: "CALIFORNIA SCIENCE & ENGINEERING FAIR",
-    title: "Watt's the Deal with Waterwheels?",
-    description: "Gursimar Virk, Grade 8, Sanger Academy Charter School. A published CSEF project investigating how paddle geometry affects waterwheel performance.",
-    date: "2018",
-    href: "https://csef.usc.edu/History/2018/Projects/J0123.pdf",
-    tag: "DIRECT PUBLIC RECORD",
-  },
-  {
     type: "OUTREACH",
     source: "TECHWOMEN × UC BERKELEY",
     title: "Robotics Demo Expert",
@@ -181,15 +172,6 @@ const archive: MediaItem[] = [
     tag: "BERKELEY RECORD",
   },
   {
-    type: "FIRST",
-    source: "FIRST",
-    title: "FY22 Annual Impact Report",
-    description: "Gursimar Virk appears in FIRST's public FY22 report. This belongs in the long-form archive as an early robotics/public-record marker.",
-    date: "FY22",
-    href: "https://www.firstinspires.org/hubfs/web/about/report/annual_report_2022.pdf?hsLang=en",
-    tag: "PUBLIC RECORD",
-  },
-  {
     type: "BERKELEY",
     source: "E29 · MANUFACTURING & DESIGN COMMUNICATION",
     title: "E29 project / manufacturing archive",
@@ -198,6 +180,25 @@ const archive: MediaItem[] = [
     href: "https://asme.studentorg.berkeley.edu/student-resources/course-guide/",
     tag: "PROJECT SITE TO RESTORE",
   },
+  {
+    type: "SCIENCE FAIR",
+    source: "CALIFORNIA SCIENCE & ENGINEERING FAIR",
+    title: "Watt's the Deal with Waterwheels?",
+    description: "Gursimar Virk, Grade 8, Sanger Academy Charter School. A published CSEF project investigating how paddle geometry affects waterwheel performance.",
+    date: "2018",
+    href: "https://csef.usc.edu/History/2018/Projects/J0123.pdf",
+    tag: "DIRECT PUBLIC RECORD",
+  },
+  {
+    type: "FIRST",
+    source: "FIRST",
+    title: "FY22 Annual Impact Report",
+    description: "Gursimar Virk appears in FIRST's public FY22 report. This belongs in the long-form archive as an early robotics/public-record marker.",
+    date: "FY22",
+    href: "https://www.firstinspires.org/hubfs/web/about/report/annual_report_2022.pdf?hsLang=en",
+    tag: "PUBLIC RECORD",
+  },
+
 ];
 
 function FeatureCard({ item, number }: { item: MediaItem; number: string }) {
