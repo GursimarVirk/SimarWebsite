@@ -379,10 +379,10 @@ export default function Home() {
         <a className="brand" href="#top">GURSIMAR VIRK</a>
         <div className="nav-links">
           <a href="#build">Build</a>
-          <a href="#robotics">Robotics</a>
+          <a href="#selected-work">Robotics</a>
           <a href="#experience">Experience</a>
           <a href="#berkeley">Berkeley</a>
-          <a href="#media">Media</a>
+          <a className="nav-media-link" href="/media">Media ↗</a>
           <a href="#about">About</a>
           <details className="resume-menu">
             <summary>Resume <span>↗</span></summary>
@@ -422,6 +422,23 @@ export default function Home() {
           <div className="photo-orbit orbit-two" />
         </div>
 
+      </section>
+
+      <section className="quick-nav page-width" aria-label="Explore the site">
+        <div className="quick-nav-label">
+          <SectionLabel>EXPLORE</SectionLabel>
+          <span>Jump straight to the part you care about.</span>
+        </div>
+        <div className="quick-nav-links">
+          <a href="#build">Build <span>↘</span></a>
+          <a href="#selected-work">Robotics <span>↘</span></a>
+          <a href="#work">Experience <span>↘</span></a>
+          <a href="#berkeley">Berkeley <span>↘</span></a>
+          <a className="quick-nav-media" href="/media">MEDIA <span>↗</span></a>
+          <a href="#about">About <span>↘</span></a>
+          <a href={resumeUrl} target="_blank" rel="noreferrer">Resume <span>↗</span></a>
+          <a href="#contact">Contact <span>↘</span></a>
+        </div>
       </section>
 
       <section className="snapshot page-width" aria-label="Quick snapshot">
