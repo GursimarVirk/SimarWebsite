@@ -44,8 +44,8 @@ const videos: MediaItem[] = [
     title: "UFB Fight Footage Archive",
     description: "The UFB fights were streamed live on Twitch and YouTube. This is the archive hub for the original streams, recovered VODs, clips, and individual fights; exact Gursimar appearances will be timestamped as the footage is recovered.",
     date: "2025–2026",
-    href: "https://ufb.gg/",
-    tag: "TWITCH + YOUTUBE",
+    href: "https://www.twitch.tv/ufb0ts",
+    tag: "TWITCH CHANNEL",
   },
   {
     type: "UFB",
@@ -53,8 +53,8 @@ const videos: MediaItem[] = [
     title: "Watch the original UFB broadcasts",
     description: "UFB has publicly described its events as globally streamed competitions. The league's public footprint points to Twitch and YouTube as the primary broadcast platforms.",
     date: "2025–2026",
-    href: "https://ufb.gg/",
-    tag: "BROADCAST HUB",
+    href: "https://www.ultimatebots.com/",
+    tag: "OFFICIAL ARCHIVE",
   },
 ];
 
@@ -74,8 +74,8 @@ const articles: MediaItem[] = [
     title: "Robot fight coverage",
     description: "The Berkeley–Stanford humanoid fight became part of the local robot-fighting press cycle. The event footage and coverage are being collected here as part of the UFB / Berkeley archive.",
     date: "2025",
-    href: "https://www.linkedin.com/in/gursimarvirk",
-    tag: "EVENT ARCHIVE",
+    href: "https://www.linkedin.com/in/craigleephoto",
+    tag: "EXAMINER PHOTO TRAIL",
   },
   {
     type: "PHOTOGRAPHY",
