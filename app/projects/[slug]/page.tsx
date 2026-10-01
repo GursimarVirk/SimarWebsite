@@ -17,6 +17,7 @@ const projects = {
     links: [["Combat Robotics at Berkeley","https://combatrobotics.studentorg.berkeley.edu/"],["BattleBots / GLITCH archive","https://battlebots.com/robot/glitch-2021/"],["Robot fight archive","https://www.youtube.com/results?search_query=Combat+Robotics+at+Berkeley+30+lb+robot"]]
   },
   "15-lb-combat-robots": {
+    image: "https://sites.google.com/sitesv-images-rt/AMxu72uREjFXsVIRyq8U7fxB14uHEFG_StZYFTX4cGq4D0h-rO60q37mQ4ti8WLncv3HcIw5Zen4Hu0SNHwgvAwY-xxYYk0w0nXIVCXuqQNuLFsXpxWwd0SV6tFTauveb5G2OOu4K7kGuL46O-POIbHBeIHqE-_wGYnym2vTJSvnFDvw1ExhOkAHTkkKfYGtVbl_nUGWWV0qQ1MFB2ISLC3L4_pitjrek5zBMLfPA2dvef4%3Dw1280",
     title: "15 lb Combat Robots",
     kicker: "COMBAT ROBOTICS AT BERKELEY · 15 LB",
     role: "Technical Lead · CAD · Manufacturing · Mentor",
@@ -44,6 +45,7 @@ const projects = {
     links: [["Combat Robotics at Berkeley","https://combatrobotics.studentorg.berkeley.edu/"],["Berkeley Bot Bash","https://www.robotcombatevents.com/events/7353"]]
   },
   "robotic-hand": {
+    image: "https://sites.google.com/sitesv-images-rt/AMxu72uRXqYXsejAavet79fXc4WVQMbAGUSX9Mwr4M-nyO410D7TFfy5cvOuvpX0ZHUhy0xw1UmK5T0m_s6TGMSXVyE4QaGH5AtfcEnX0G36TJFkzgSFuh7osYTHj8PePfwwmYdSzntiQ0ei9cT2tXfjYJVcXqzcgn-_xPvxVeTZRK2opLOsus6TdOKTQC7FoXvcSzGqE3vgL0KGnyHsIOxO3vubX0jz9Ld9Pq7R6Ms%3Dw1280",
     title: "15-DOF Teleoperated Humanoid Robotic Hand",
     kicker: "UC BERKELEY · ROBOTIC HAND",
     role: "Sensor Component · Robotic Portion",
@@ -70,6 +72,7 @@ const projects = {
     links: [["GroceryGizmo project site","https://grocerygizmo.pchrisoc.com/"],["GroceryGizmo project site","https://grocerygizmo.pchrisoc.com/"]]
   },
   "humanoid-robotics": {
+    image: "https://sites.google.com/sitesv-images-rt/AMxu72sKrS6x-hWqxIjFJHkXU2mmqM7cCzTphE39JsTjp9L7R1GW0--tCR2QnYSUfj-nVlRl9i6bauc9il1ghyY0CezMgOB8SKSAGNFb6YYFmg6cUXCFpYdu5X0QMnIDvllizJcnFPaUxcn9n4fPKIfIx3-DE-RonvI1W8EVq4twwXVOgZR9GY23Fbdlc2N098aakNxmZju_-mG3qTofdlsDAl5qFnLSj3OWU41vYBWECNo%3Dw1280",
     title: "Humanoid Robotics",
     kicker: "ULTIMATE FIGHT BOTS · UNITREE · BOOSTER",
     role: "Driver · Team Lead · Integration",
