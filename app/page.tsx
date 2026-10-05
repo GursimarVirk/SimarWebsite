@@ -86,23 +86,29 @@ const projects = [
 ];
 
 const archive = [
-  ["Humanoids","OLD SITE · ROBOTICS","/projects/humanoid-robotics"],
-  ["Amazon Robotics","OLD SITE · EXPERIENCE","/experience/amazon-robotics"],
-  ["30 LB Combat Robot","OLD SITE · COMBAT ROBOTICS","/projects/30-lb-combat-robot"],
-  ["15 LB Combat Robot","OLD SITE · COMBAT ROBOTICS","/projects/15-lb-combat-robots"],
-  ["Robotic Hand","OLD SITE · UC BERKELEY","/projects/robotic-hand"],
-  ["Experience at Auto Pallet Robotics","OLD SITE · EXPERIENCE","/experience/autopallet-robotics"],
-  ["Motorcycle Helmet Comms","OLD SITE · PRODUCT DEVELOPMENT","/projects/motorcycle-communication-system"],
-  ["Keiser Wire Raceway","OLD SITE · MANUFACTURING","/projects/keiser-wire-raceway"],
-  ["1 LB Combat Box","OLD SITE · COMBAT ROBOTICS","/projects/combat-box"],
-  ["Class Projects","OLD SITE · COURSEWORK","/projects/class-projects"],
-  ["Hobbies / Other","OLD SITE · PERSONAL","/projects/hobbies-other"],
-  ["NASA HUNCH · Magnetic Boots","OLD SITE · EARLY ENGINEERING","/projects/nasa-hunch-magnetic-boots"],
-  ["IoT Millipede Monitor","OLD SITE · IOT","/projects/iot-millipede-monitor"],
-  ["Towel Holder Innovation","OLD SITE · FRESHMAN DESIGN","/projects/towel-holder-innovation"],
-  ["Statistics / Data Project","OLD SITE · PROGRAMMING","/projects/statistics-data-project"],
-  ["Robotic Arms","OLD SITE · ROBOTICS","/projects/robotic-arms"],
-  ["Sorcerer.Earth","OLD SITE · EXPERIENCE","/experience/sorcerer-earth"],
+  ["Original Home","LEGACY · HOME","/legacy/home"],
+  ["Projects","LEGACY · PROJECT INDEX","/legacy/projects"],
+  ["Internship Experience","LEGACY · EXPERIENCE INDEX","/legacy/internship-experience"],
+  ["Amazon Robotics","LEGACY · EXPERIENCE","/legacy/amazon-robotics"],
+  ["Auto Pallet Robotics","LEGACY · EXPERIENCE","/legacy/auto-pallet"],
+  ["Keiser Wire Raceway","LEGACY · MANUFACTURING","/legacy/keiser-wire-raceway"],
+  ["Sorcerer.Earth","LEGACY · EXPERIENCE","/legacy/sorcerer-earth"],
+  ["30 LB Combat Robot","LEGACY · COMBAT ROBOTICS","/legacy/30lb-robot"],
+  ["15 LB Combat Robot","LEGACY · COMBAT ROBOTICS","/legacy/15lb-robot"],
+  ["Combat Robotics","LEGACY · COMBAT ROBOTICS","/legacy/combat-robotics"],
+  ["1 LB Combat Box","LEGACY · COMBAT ROBOTICS","/legacy/combat-box"],
+  ["Humanoids","LEGACY · HUMANOID ROBOTICS","/legacy/humanoids"],
+  ["Robotic Hand","LEGACY · UC BERKELEY","/legacy/robotic-hand"],
+  ["Robotic Arms","LEGACY · ROBOTICS","/legacy/robotic-arms"],
+  ["Motorcycle Helmet Comms","LEGACY · PRODUCT DEVELOPMENT","/legacy/motorcycle-comms"],
+  ["IoT Millipede Monitor","LEGACY · IOT","/legacy/iot-millipede-monitor"],
+  ["Towel Holder Innovation","LEGACY · FRESHMAN DESIGN","/legacy/towel-holder"],
+  ["Statistics / Data Project","LEGACY · PROGRAMMING","/legacy/stats-project"],
+  ["Class Projects","LEGACY · COURSEWORK","/legacy/class-projects"],
+  ["Cars & Machines","LEGACY · PERSONAL SHOP","/legacy/cars-and-machines"],
+  ["Hobbies / Other","LEGACY · PERSONAL","/legacy/hobbies-other"],
+  ["NASA HUNCH","LEGACY · EARLY ENGINEERING","/legacy/nasa-hunch"],
+  ["Resume","LEGACY · DOCUMENT","/legacy/resume"],
 ];
 
 const berkeley = [
@@ -220,7 +226,7 @@ export default function Home(){
     </section>
 
     <section className="page-width legacy-section">
-      <div className="section-head"><div><Label>07 · LEGACY ARCHIVE</Label><h2>The old site, without the Google Sites limitations.</h2></div><p>The old Google Site had eleven project tiles. All eleven survive here, with the strongest work expanded into the new technical pages and the rest kept as a searchable archive.</p></div>
+      <div className="section-head"><div><Label>07 · LEGACY ARCHIVE</Label><h2>The old site, without the Google Sites limitations.</h2></div><p>The old Google Site has now been preserved as a searchable archive alongside the redesigned technical pages, including its writing, documents, presentations, media embeds, links, and recovered photography.</p></div>
       <div className="legacy-grid">{archive.map(([title,kind,href])=><a href={href} key={href}><span>{kind}</span><strong>{title}</strong><em>OPEN ↗</em></a>)}</div>
     </section>
 
