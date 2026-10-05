@@ -112,7 +112,7 @@ export default async function ExperiencePage({ params }: { params: Promise<{ slu
   return (
     <main className="detail-page">
       <div className="page-width">
-        <a className="detail-back" href="/#experience">← BACK TO EXPERIENCE</a>
+        <a className="detail-back" href="/#work">← BACK TO EXPERIENCE</a>
         <header className="detail-hero" style={{backgroundImage: `linear-gradient(90deg, rgba(9,8,15,.96) 0%, rgba(9,8,15,.78) 48%, rgba(9,8,15,.35) 100%), url(${item.image})`}}>
           <span className="section-label">{item.tag}</span>
           <h1>{item.title}</h1>
