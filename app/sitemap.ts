@@ -26,6 +26,9 @@ const routes = [
   "/projects/towel-holder-innovation",
   "/projects/statistics-data-project",
   "/projects/robotic-arms",
+  "/projects/keiser-wire-raceway",
+  "/projects/class-projects",
+  "/projects/hobbies-other",
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {
