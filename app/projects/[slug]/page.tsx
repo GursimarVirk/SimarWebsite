@@ -227,7 +227,7 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
       <nav className="nav">
         <a className="brand" href="/">GURSIMAR VIRK</a>
         <div className="nav-links">
-          <a href="/#work">Work</a><a href="/#selected-work">Robotics</a><a href="/media">Media</a>
+          <a href="/#work">Work</a><a href="/#projects">Robotics</a><a href="/media">Media</a>
           <a href="/#projects">Projects</a><a href="/#berkeley">Berkeley</a><a href="/#about">About</a>
           <a href="/#contact">Contact</a>
         </div>
