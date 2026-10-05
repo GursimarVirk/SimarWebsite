@@ -114,17 +114,17 @@ const berkeley = [
 const publicFootprint = [
   ["jobTopia","Robo Fight Club — Episode #297","PODCAST","https://podscan.fm/podcasts/jobtopia-with-tony-moore/episodes/robo-fight-club-ucb-berkeleys-glitch-and-malware-with-gursimar-virk-club-co-president-episode-297"],
   ["Linus Tech Tips","I Joined Robot Fight Club","VIDEO","https://www.youtube.com/watch?v=VJqMPFNP4to"],
-  ["Washington Post","Pictures of the Year 2025","PHOTOGRAPHY","https://www.washingtonpost.com/nation/interactive/2025/pictures-of-the-year-2025/"],
   ["The New York Times","Robot fight / San Francisco","PRESS","https://www.nytimes.com/2025/09/19/technology/san-francisco-robot-fight.html"],
   ["San Francisco Standard","Robot boxing in San Francisco","PRESS","https://sfstandard.com/2025/08/10/robot-boxing-match-sf/"],
   ["AFP / International Press","Humanoid robots go for knockout","PRESS","https://kuwaittimes.com/article/38267/technology/humanoid-robots-go-for-knockout-in-high-tech-vegas-fight-night/"],
+  ["UC Berkeley Mechanical Engineering","Combat Robotics on BattleBots","UNIVERSITY","https://me.berkeley.edu/news/me-student-group-berkeley-combat-robotics-competes-on-battlebots/"],
 ];
 
 function Label({children}:{children:ReactNode}){return <p className="eyebrow">{children}</p>;}
 
 function ProjectCard({project}:{project:(typeof projects)[number]}){
   return <a className={`project-tile ${project.size}`} href={`/projects/${project.slug}`}>
-    {project.image && <img src={project.image} alt="" />}
+    {project.image && <img src={project.image} alt={project.title} loading="lazy" />}
     <div className="project-shade"/>
     <div className="project-tile-content">
       <Label>{project.group}</Label>
