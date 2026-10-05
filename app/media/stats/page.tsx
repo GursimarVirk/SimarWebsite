@@ -7,10 +7,12 @@ export const metadata: Metadata = {
 };
 
 const competitions=[
-  {year:"2025",event:"UFB · Berkeley vs Stanford",role:"PILOT / TEAM",href:"https://www.twitch.tv/ufb0ts",note:"Oct. 3, 2025 at Frontier Tower. The public UFB archive includes the Stanford vs UC Berkeley fight clip/VOD trail."},
-  {year:"2025",event:"UFB · Bay Area",role:"PILOT / INTEGRATION",href:"https://www.youtube.com/watch?v=5qLi2gIFSko",note:"The first UFB event and the start of the public humanoid fight circuit in San Francisco."},
-  {year:"2026",event:"UFB5 · Las Vegas",role:"PILOT / TEAM",href:"https://www.youtube.com/watch?v=VJqMPFNP4to",note:"BattleBots Arena in Las Vegas; documented by Linus Tech Tips and international press."},
-  {year:"2026",event:"Berkeley Bot Bash",role:"CRB ORGANIZER / MENTOR",href:"https://www.robotcombatevents.com/events/7353",note:"Berkeley student-run combat robotics competition with public event records."},
+  {year:"2025",event:"UFB 1 · Automata",role:"PILOT / INTEGRATION",href:"https://www.youtube.com/watch?v=5qLi2gIFSko",note:"July 5, 2025 · Frontier Tower, San Francisco. Official UFB event record / film."},
+  {year:"2025",event:"UFB 2 · Cyberpunk Alley",role:"PILOT / INTEGRATION",href:"https://www.twitch.tv/ufb0ts",note:"August 8, 2025 · Frontier Tower, San Francisco. Preserved in the official UFB broadcast archive."},
+  {year:"2025",event:"UFB 3 · Stanford vs UC Berkeley",role:"PILOT / TEAM",href:"https://www.twitch.tv/videos/2663272267?tt_content=vod&tt_medium=mobile_web_share",note:"October 3, 2025 · Frontier Tower, San Francisco. Berkeley vs Stanford card; the old portfolio preserved the official UFB VOD."},
+  {year:"2025",event:"UFB 4 · Venice LA Spectacle",role:"PILOT / INTEGRATION",href:"https://www.twitch.tv/ufb0ts",note:"October 17, 2025 · Venice Beach, Los Angeles. Preserved in the official UFB channel archive."},
+  {year:"2026",event:"UFB 5 · Humanoids vs Vegas",role:"PILOT / TEAM",href:"https://www.youtube.com/watch?v=VJqMPFNP4to",note:"January 6, 2026 · BattleBots Arena, Las Vegas. Linus Tech Tips documented the event."},
+  {year:"2026",event:"Berkeley Bot Bash",role:"CRB ORGANIZER / MENTOR",href:"https://www.robotcombatevents.com/events/7353",note:"Berkeley student-run combat robotics competition with a public event record."},
 ];
 
 const robots=[
@@ -23,6 +25,8 @@ const robots=[
 const footage=[
   ["UFB 1 — San Francisco, July 5 2025","Official UFB YouTube","https://www.youtube.com/watch?v=5qLi2gIFSko"],
   ["UFB 1 — full event archive","Official UFB YouTube","https://www.youtube.com/watch?v=l0UuS83-jaE"],
+  ["UFB 3 — Berkeley vs Stanford VOD","Original UFB Twitch VOD","https://www.twitch.tv/videos/2663272267?tt_content=vod&tt_medium=mobile_web_share"],
+  ["UFB — original preserved clip","Original UFB Twitch clip","https://www.twitch.tv/ufb0ts/clip/SavoryHelpfulLeopardBrokeBack-BqkU3nvMaIOeVJJ8?tt_content=clip&tt_medium=mobile_web_share"],
   ["UFB5 — Las Vegas","Linus Tech Tips","https://www.youtube.com/watch?v=VJqMPFNP4to"],
   ["Original UFB broadcast channel","UFB Twitch","https://www.twitch.tv/ufb0ts"],
   ["UFB competition archive","Ultimate Bots","https://www.ultimatebots.com/"],
@@ -51,7 +55,7 @@ export default function StatsPage(){
       <div className={styles.robotGrid}>{robots.map(r=><article className={styles.robot} key={r.name}><p className="eyebrow">{r.className}</p><h3>{r.name}</h3><p>{r.result}</p><div><a href={r.record} target="_blank" rel="noreferrer">RECORD ↗</a><a href={r.video} target="_blank" rel="noreferrer">FIGHTS / VIDEO ↗</a></div></article>)}</div>
     </section>
 
-    <section className={`${styles.footage} page-width`}><div className={styles.heading}><div><p className="eyebrow">03 · FOOTAGE</p><h2>WATCH THE MACHINES</h2></div><p>The public links we can verify right now. The original UFB Twitch channel is preserved here while individual VOD timestamps are recovered.</p></div><div className={styles.footageList}>{footage.map(([title,source,href],i)=><a href={href} target="_blank" rel="noreferrer" key={href}><span>{String(i+1).padStart(2,"0")}</span><div><strong>{title}</strong><small>{source}</small></div><b>↗</b></a>)}</div></section>
+    <section className={`${styles.footage} page-width`}><div className={styles.heading}><div><p className="eyebrow">03 · FOOTAGE</p><h2>WATCH THE MACHINES</h2></div><p>The old portfolio's original UFB clip/VOD links are preserved here alongside the official event films and the current competition archive.</p></div><div className={styles.footageList}>{footage.map(([title,source,href],i)=><a href={href} target="_blank" rel="noreferrer" key={href}><span>{String(i+1).padStart(2,"0")}</span><div><strong>{title}</strong><small>{source}</small></div><b>↗</b></a>)}</div></section>
 
     <section id="mentoring" className={`${styles.mentoring} page-width`}><div><p className="eyebrow">04 · MENTORSHIP</p><h2>BUILDING THE NEXT TEAMS</h2><p>CRB's model is hands-on: newer members start with smaller machines, learn the complete build cycle, and move toward more complex robots. My leadership work included design reviews, fabrication, testing, competition preparation, repairs, shop training, and event logistics.</p></div><div className={styles.bigStat}><strong>26+</strong><span>MENTORED TEAMS / PROJECT GROUPS</span><a href="https://combatrobotics.studentorg.berkeley.edu/" target="_blank" rel="noreferrer">SEE CRB PROGRAM ↗</a></div></section>
 
