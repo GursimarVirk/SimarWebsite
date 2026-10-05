@@ -85,12 +85,17 @@ const projects = [
 ];
 
 const archive = [
-  ["NASA HUNCH — Magnetic Boots","NASA HUNCH","nasa-hunch-magnetic-boots"],
-  ["IoT Millipede Monitor","UC BERKELEY / IOT","iot-millipede-monitor"],
-  ["Towel Holder Innovation","FRESHMAN DESIGN","towel-holder-innovation"],
-  ["Statistics / Data Project","PROGRAMMING / DATA","statistics-data-project"],
-  ["Robotic Arms","ROBOTICS / MANIPULATION","robotic-arms"],
-  ["Cars & Machines","PERSONAL SHOP","cars-and-machines"],
+  ["Humanoids","OLD SITE · ROBOTICS","/projects/humanoid-robotics"],
+  ["Amazon Robotics","OLD SITE · EXPERIENCE","/experience/amazon-robotics"],
+  ["30 LB Combat Robot","OLD SITE · COMBAT ROBOTICS","/projects/30-lb-combat-robot"],
+  ["15 LB Combat Robot","OLD SITE · COMBAT ROBOTICS","/projects/15-lb-combat-robots"],
+  ["Robotic Hand","OLD SITE · UC BERKELEY","/projects/robotic-hand"],
+  ["Experience at Auto Pallet Robotics","OLD SITE · EXPERIENCE","/experience/autopallet-robotics"],
+  ["Motorcycle Helmet Comms","OLD SITE · PRODUCT DEVELOPMENT","/projects/motorcycle-communication-system"],
+  ["Keiser Wire Raceway","OLD SITE · MANUFACTURING","/projects/keiser-wire-raceway"],
+  ["1 LB Combat Box","OLD SITE · COMBAT ROBOTICS","/projects/combat-box"],
+  ["Class Projects","OLD SITE · COURSEWORK","/projects/class-projects"],
+  ["Hobbies / Other","OLD SITE · PERSONAL","/projects/hobbies-other"],
 ];
 
 const berkeley = [
@@ -208,8 +213,8 @@ export default function Home(){
     </section>
 
     <section className="page-width legacy-section">
-      <div className="section-head"><div><Label>07 · LEGACY ARCHIVE</Label><h2>The old site, without the Google Sites limitations.</h2></div><p>Everything that deserved to survive the migration stays searchable here — even the smaller projects.</p></div>
-      <div className="legacy-grid">{archive.map(([title,kind,slug])=><a href={`/projects/${slug}`} key={slug}><span>{kind}</span><strong>{title}</strong><em>OPEN ↗</em></a>)}</div>
+      <div className="section-head"><div><Label>07 · LEGACY ARCHIVE</Label><h2>The old site, without the Google Sites limitations.</h2></div><p>The old Google Site had eleven project tiles. All eleven survive here, with the strongest work expanded into the new technical pages and the rest kept as a searchable archive.</p></div>
+      <div className="legacy-grid">{archive.map(([title,kind,href])=><a href={href} key={href}><span>{kind}</span><strong>{title}</strong><em>OPEN ↗</em></a>)}</div>
     </section>
 
     <section className="prompt-band">
