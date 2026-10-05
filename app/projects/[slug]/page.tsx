@@ -163,6 +163,34 @@ const projects = {
     ],
     links: [["GroceryGizmo","https://grocerygizmo.pchrisoc.com/"]]
   },
+  "class-projects": {
+    image: "https://sites.google.com/sitesv-images-rt/AMxu72v7B4bK5oKIHrtfGMBbrWgtaAijXDQ_PBxYuweZnmUAx0P4qoHPTM1pXW-RtDYR-6XcNi3nSM52GEBNVfMZJo_11f4I6dL2qtySnsEIqt6HGoEtAI2KbgRzJA4ip6E_KbnEq3caSba3EjAF-5GAR-Xxr7l7RjxMlT4VlKiiGJwXL2IhyhboM9m9nPq7K0TowRwI2QzAuaG9cBgudLYHW-ZP_VSDqdk9Z5GtB2AcBc%3Dw1280",
+    title: "Class Projects",
+    kicker: "UC BERKELEY · COURSEWORK",
+    role: "Mechanical Engineering · Robotics · Design",
+    intro: "The coursework side of the original portfolio: the projects that built the engineering habits behind the larger robots.",
+    stats: [["ME","DEGREE"],["CAD","DESIGN"],["SHOP","FABRICATION"],["ROBOTS","SYSTEMS"]],
+    sections: [
+      ["What belongs here","Mechanical design, manufacturing, programming, robotics, materials, controls, electronics, and data-analysis work from Berkeley coursework."],
+      ["Representative work","The new archive expands the strongest class projects into dedicated pages, including GroceryGizmo, the teleoperated hand, robotic arms, the towel-holder design, and the statistics/data project."],
+      ["Why keep it","The small projects show the progression: not every useful engineering lesson came from a competition robot."],
+    ],
+    links: [["GroceryGizmo","https://grocerygizmo.pchrisoc.com/"],["E29 course reference","https://asme.studentorg.berkeley.edu/student-resources/course-guide/"]]
+  },
+  "hobbies-other": {
+    image: "https://sites.google.com/sitesv-images-rt/AMxu72vFKS5F-A0nJU3qBYodUrH4zk9o1Qtd1FiCtAB16zPVtcf7XCSnOxkZNSf_CMZzWRi4r-ICcVSp4-a1-7xkIFTPtb5RSU3wLO8H2Dgz38huIcw9Jlm9GFZ3cfG8MJWATUNx0ew9c8QXB1x-Myu5D2sMk7QSjXVNTzqR7K7WIJpTEJX89tWg5xC7H1lkduqJDToXoOp0zlw5ArszwLYj5h0prywIxGbkarwK0zEAHKs%3Dw1280",
+    title: "Hobbies / Other",
+    kicker: "PERSONAL · MACHINES · LIFE OUTSIDE WORK",
+    role: "Cars · Motorcycles · Machining · Making",
+    intro: "The original site also had a place for the machines and hobbies that explain why I ended up liking engineering in the first place.",
+    stats: [["6+ YEARS","MACHINING"],["NINJA 300","MOTORCYCLE"],["C4","CORVETTE"],["JEEP","RESTORATION"]],
+    sections: [
+      ["Machines","Motorcycles, classic cars, restoration work, machining, welding, and the endless small repairs that teach you how real hardware behaves."],
+      ["Shop","Lathe training, milling, fabrication, maintenance, and restoring an abandoned lathe became a parallel education to formal coursework."],
+      ["Keep exploring","Cars & Machines is the deeper technical archive; this page preserves the broader personality of the original portfolio."],
+    ],
+    links: [["Cars & Machines","/projects/cars-and-machines"]]
+  },
   "cars-and-machines": {
     image: "",
     title: "Cars & Machines",
