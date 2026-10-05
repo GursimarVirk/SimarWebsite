@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import styles from "./media.module.css";
+import { legacyImage } from "../legacy-image";
 
 export const metadata: Metadata = {
   title: "Media · Gursimar Virk",
@@ -208,7 +209,7 @@ function FeatureCard({ item, number }: { item: MediaItem; number: string }) {
       href={item.href}
       target="_blank"
       rel="noreferrer"
-      style={item.image ? { backgroundImage: `linear-gradient(180deg,rgba(6,5,12,.02) 18%,rgba(6,5,12,.94) 100%),url("${item.image}")` } : undefined}
+      style={item.image ? { backgroundImage: `linear-gradient(180deg,rgba(6,5,12,.02) 18%,rgba(6,5,12,.94) 100%),url("${legacyImage(item.image)}")` } : undefined}
     >
       <div className={styles.featureTop}>
         <span>{number}</span>
@@ -246,8 +247,8 @@ export default function MediaPage() {
       <nav className="nav">
         <a className="brand" href="/">GURSIMAR VIRK</a>
         <div className="nav-links">
-          <a href="/#build">Build</a>
-          <a href="/#selected-work">Robotics</a>
+          <a href="/#projects">Build</a>
+          <a href="/#projects">Robotics</a>
           <a href="/#work">Experience</a>
           <a href="/#berkeley">Berkeley</a>
           <a className="nav-active" href="/media">Media</a>
