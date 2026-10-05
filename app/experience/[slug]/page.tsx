@@ -4,10 +4,12 @@ import { legacyImage } from "../../legacy-image";
 
 const experiences = {
   meta: {
+    image: "https://sites.google.com/sitesv-images-rt/AMxu72v7B4bK5oKIHrtfGMBbrWgtaAijXDQ_PBxYuweZnmUAx0P4qoHPTM1pXW-RtDYR-6XcNi3nSM52GEBNVfMZJo_11f4I6dL2qtySnsEIqt6HGoEtAI2KbgRzJA4ip6E_KbnEq3caSba3EjAF-5GAR-Xxr7l7RjxMlT4VlKiiGJwXL2IhyhboM9m9nPq7K0TowRwI2QzAuaG9cBgudLYHW-ZP_VSDqdk9Z5GtB2AcBc%3Dw1280",
     title: "Meta",
     role: "Robotics Hardware Integration Engineer",
     tag: "ROBOTICS · SYSTEMS · FLEET · TECHNICAL LEADERSHIP",
     intro: "End-to-end robotics integration and deployment across mechanical hardware, electrical interfaces, firmware, software configuration, networking, validation, and fleet recovery.",
+    links: [["Portfolio / public profile","https://www.linkedin.com/in/gursimarvirk"]],
     bullets: [
       "Own integration and deployment of a growing fleet of 30+ robotic and 50+ UMI systems used for continuous research data collection.",
       "Lead and coordinate robotics technicians across integration, troubleshooting, hardware modification, and fleet operations.",
@@ -21,6 +23,7 @@ const experiences = {
     role: "Hardware & Process Engineering Intern",
     tag: "MANUFACTURING · PROCESS ENGINEERING · HARDWARE",
     intro: "Prototype-to-production hardware and manufacturing process work during an alpha-to-beta transition.",
+    links: [["Original Amazon intern presentation","https://drive.google.com/open?id=1mHuAOM-98gY6ZJ9IKt7LfPZfKQrDEQE1"]],
     bullets: [
       "Designed custom fixtures that improved assembly speed by about 20%.",
       "Built a modular restocking and storage approach for about 1,000 unique parts, saving about 10% of build time.",
@@ -47,6 +50,7 @@ const experiences = {
     role: "Humanoid Robotics · Driver · Team Lead",
     tag: "HUMANOIDS · INTEGRATION · MOTION",
     intro: "Hands-on integration of Unitree and Booster humanoid platforms for live events, system bring-up, debugging, and custom motion behaviors.",
+    links: [["UFB competition archive","https://roboxing.tv/competitions/ufb"],["Original UFB Twitch channel","https://www.twitch.tv/ufb0ts"],["Linus Tech Tips showcase","https://www.youtube.com/watch?v=VJqMPFNP4to"]],
     bullets: [
       "Integrated humanoid platforms across hardware bring-up, debugging, calibration, communication, and competition readiness.",
       "Developed custom humanoid motion behaviors and combat movesets using video-to-robot motion pipelines and MuJoCo/mjlab.",
@@ -60,6 +64,7 @@ const experiences = {
     role: "R&D Design & Integration Technician",
     tag: "HARDWARE · ELECTRICAL · FABRICATION",
     intro: "High-altitude airborne sensor systems through mechanical/electrical prototyping, PCB assembly, fabrication infrastructure, and production scaling.",
+    links: [["Sorcerer.Earth public profile / archive","https://www.linkedin.com/company/sorcerer-earth/"],["Original project file","https://drive.google.com/open?id=15GQicXgj5nFkklDKfCBIKUr-iOYQyRgY"]],
     bullets: [
       "Prototyped and integrated mechanical and electrical subsystems for high-altitude airborne sensors.",
       "Hand-assembled and reflowed densely populated PCBs with 100+ components and fine-pitch soldering.",
@@ -73,6 +78,7 @@ const experiences = {
     role: "R&D Design & Robotics Integration Technician",
     tag: "ROBOTICS · PROTOTYPING · DEBUGGING",
     intro: "Rapid robot prototyping combining mechanical design, electronics, soldering, and troubleshooting.",
+    links: [["AutoPallet Robotics","https://www.autopalletrobotics.com/"]],
     bullets: [
       "Designed controlled-failure components and internal mounts for batteries and pumps using low-cost manufacturing methods.",
       "Built and troubleshot robots for investor showcases and internal validation.",
@@ -85,6 +91,7 @@ const experiences = {
     role: "Mechanical Design · Manufacturing · Product Development",
     tag: "MECHANICAL · MANUFACTURING · PRODUCT",
     intro: "Manufacturing engineering and product-development work spanning electrical, pneumatic, safety, cost, installation, and production constraints.",
+    links: [["Wire Raceway project","/projects/keiser-wire-raceway"]],
     bullets: [
       "Designed a modular raceway combining pneumatic lines and electrical wiring.",
       "Worked with electrical and safety teams and contacted manufacturers to evaluate materials and manufacturing approaches.",
@@ -124,6 +131,7 @@ export default async function ExperiencePage({ params }: { params: Promise<{ slu
           <section className="detail-main">
             <h2>What I worked on</h2>
             <ul>{item.bullets.map((bullet) => <li key={bullet}>{bullet}</li>)}</ul>
+            {"links" in item && item.links && item.links.length > 0 && <div className="detail-links"><span className="section-label">ORIGINAL / EXTERNAL MATERIAL</span>{item.links.map(([label,href]) => <a key={href} href={href} target="_blank" rel="noreferrer">{label} ↗</a>)}</div>}
           </section>
           <aside className="detail-side">
             <h3>Related</h3>
