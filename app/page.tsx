@@ -1,6 +1,7 @@
 "use client";
 
 import type { ReactNode } from "react";
+import { legacyImage } from "./legacy-image";
 
 const resumeUrl = "https://sites.google.com/view/gvirk/resume";
 
@@ -96,6 +97,12 @@ const archive = [
   ["1 LB Combat Box","OLD SITE · COMBAT ROBOTICS","/projects/combat-box"],
   ["Class Projects","OLD SITE · COURSEWORK","/projects/class-projects"],
   ["Hobbies / Other","OLD SITE · PERSONAL","/projects/hobbies-other"],
+  ["NASA HUNCH · Magnetic Boots","OLD SITE · EARLY ENGINEERING","/projects/nasa-hunch-magnetic-boots"],
+  ["IoT Millipede Monitor","OLD SITE · IOT","/projects/iot-millipede-monitor"],
+  ["Towel Holder Innovation","OLD SITE · FRESHMAN DESIGN","/projects/towel-holder-innovation"],
+  ["Statistics / Data Project","OLD SITE · PROGRAMMING","/projects/statistics-data-project"],
+  ["Robotic Arms","OLD SITE · ROBOTICS","/projects/robotic-arms"],
+  ["Sorcerer.Earth","OLD SITE · EXPERIENCE","/experience/sorcerer-earth"],
 ];
 
 const berkeley = [
@@ -124,7 +131,7 @@ function Label({children}:{children:ReactNode}){return <p className="eyebrow">{c
 
 function ProjectCard({project}:{project:(typeof projects)[number]}){
   return <a className={`project-tile ${project.size}`} href={`/projects/${project.slug}`}>
-    {project.image && <img src={project.image} alt={project.title} loading="lazy" />}
+    {project.image && <img src={legacyImage(project.image)} alt={project.title} loading="lazy" />}
     <div className="project-shade"/>
     <div className="project-tile-content">
       <Label>{project.group}</Label>
@@ -155,8 +162,8 @@ export default function Home(){
         <div className="hero-meta"><span>NOW · ROBOTICS HARDWARE INTEGRATION</span><span>REDWOOD CITY / BAY AREA</span></div>
       </div>
       <div className="hero-visual">
-        <div className="hero-main-photo"><img src={heroImages[0][0]} alt="Gursimar Virk portfolio image"/><span>01 / HUMANOIDS</span></div>
-        <div className="hero-photo-stack"><img src={heroImages[1][0]} alt="Humanoid robotics"/><img src={heroImages[5][0]} alt="15 lb combat robot"/></div>
+        <div className="hero-main-photo"><img src={legacyImage(heroImages[0][0])} alt="Gursimar Virk portfolio image"/><span>01 / HUMANOIDS</span></div>
+        <div className="hero-photo-stack"><img src={legacyImage(heroImages[1][0])} alt="Humanoid robotics"/><img src={legacyImage(heroImages[5][0])} alt="15 lb combat robot"/></div>
         <div className="hero-stamp">CAD<br/>→<br/>SHOP<br/>→<br/>ROBOT</div>
       </div>
     </section>
