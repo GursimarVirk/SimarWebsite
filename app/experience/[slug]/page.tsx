@@ -78,7 +78,7 @@ const experiences = {
     role: "R&D Design & Robotics Integration Technician",
     tag: "ROBOTICS · PROTOTYPING · DEBUGGING",
     intro: "Rapid robot prototyping combining mechanical design, electronics, soldering, and troubleshooting.",
-    links: [["AutoPallet Robotics","https://www.autopalletrobotics.com/"]],
+    links: [["AutoPallet Robotics","https://autopallet.bot/"]],
     bullets: [
       "Designed controlled-failure components and internal mounts for batteries and pumps using low-cost manufacturing methods.",
       "Built and troubleshot robots for investor showcases and internal validation.",
