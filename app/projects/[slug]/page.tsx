@@ -15,7 +15,7 @@ const projects = {
       ["Engineering","I worked across weapon design, machining, heat treatment, wiring, assembly, troubleshooting, materials, and final validation. The eggbeater weapon and armor geometry were iterated with heat treatment and Rockwell testing to improve structural resilience."],
       ["Program ownership","I coordinated 15+ people, parts flow, schedules, machine time, design reviews, and the inevitable last-minute failures. I also drove the finished robot in competition."],
     ],
-    links: [["Combat Robotics at Berkeley","https://combatrobotics.studentorg.berkeley.edu/"],["BattleBots / GLITCH archive","https://battlebots.com/robot/glitch-2021/"],["Robot fight archive","https://www.youtube.com/results?search_query=Combat+Robotics+at+Berkeley+30+lb+robot"]]
+    links: [["Combat Robotics at Berkeley","https://combatrobotics.studentorg.berkeley.edu/"],["BattleBots / GLITCH archive","https://battlebots.com/robot/glitch-2021/"],["Robot fight archive","https://www.youtube.com/results?search_query=Combat+Robotics+at+Berkeley+30+lb+robot"],["Original build video — IMG_3117","https://drive.google.com/open?id=1U0sGefeTy-mgxSCmwakIn-yLlCH2FqND"],["Original build video — IMG_1216","https://drive.google.com/open?id=1fH7ez-kV6GPiqSfBAdNE74UVMMxthJfs"]]
   },
   "15-lb-combat-robots": {
     image: "https://sites.google.com/sitesv-images-rt/AMxu72uREjFXsVIRyq8U7fxB14uHEFG_StZYFTX4cGq4D0h-rO60q37mQ4ti8WLncv3HcIw5Zen4Hu0SNHwgvAwY-xxYYk0w0nXIVCXuqQNuLFsXpxWwd0SV6tFTauveb5G2OOu4K7kGuL46O-POIbHBeIHqE-_wGYnym2vTJSvnFDvw1ExhOkAHTkkKfYGtVbl_nUGWWV0qQ1MFB2ISLC3L4_pitjrek5zBMLfPA2dvef4%3Dw1280",
@@ -111,7 +111,7 @@ const projects = {
       ["Concept","The project explored magnetic boots intended to help traverse ship hulls."],
       ["Leadership","I led the student team through development and presentation, with the competition result becoming one of the earliest public markers of my engineering work."],
     ],
-    links: [["NASA HUNCH project archive","https://www.nasahunch.com/"]]
+    links: [["NASA HUNCH project archive","https://www.nasahunch.com/"],["Original MES presentation","https://drive.google.com/open?id=1kWWs35ymY47IgBklKLPiP0Gaa6mUgs5U"]]
   },
   "iot-millipede-monitor": {
     image: "https://sites.google.com/sitesv-images-rt/AMxu72uE7IRyV7jLfu8c47rMSsk9lcrwQyic8n7x8w9ud7YkC4EOHjgjV75nRHfDjoYFetG5oPVmsNo9Nvtc9vCJAj54RUak9SAcf0tJQViiK0CQFxQLbRGNNwzRSgr79C3dNqhqQ9KbAHnsHc1XPtAk5RKt1ujZ1sxwRxkRM0bFcktSU0Cca4iM5CJfwJELsPdLsBjeeMpqEdT7nFCZOHvhCfS6VJw8cVDdd32TtYuI%3Dw1280",
@@ -123,7 +123,7 @@ const projects = {
     sections: [
       ["Archive","The original Google Site included this project as a dedicated page with imagery and project documentation. The page is preserved in the new archive even where the old linked files are not currently indexed."],
     ],
-    links: []
+    links: [["Final E29 Group 1014 Report","https://drive.google.com/open?id=10EKXcRYNI4yIqnktIm28kWT_yl87F7WZ"]]
   },
   "towel-holder-innovation": {
     image: "https://sites.google.com/sitesv-images-rt/AMxu72sg-T38vR_JYQMTp719HR9EwZJx4KfcLhNEnRl4xAAni9-N53zArhZTtMcAnpYGhBpOHTDSzluGKME0A78B2jTPdhIT3s1gkK2k161SrEzE3yVmwRoH0d1ruI5E49ZUXuA2eH1cF_p85P7b-AqIXJoxmDuq32WchoyPMeAeTmQlrQ7W5TJRg_B7twZpobeeLe4WCtVZNxgPfa_34wGueS5s_nNnBX88Ajf0-lH8Mj0%3Dw1280",
@@ -136,7 +136,7 @@ const projects = {
       ["Design","Led CAD and concept development with manufacturability, efficiency, and scalability as core requirements."],
       ["Team","Coordinated teammates while they handled report writing and drawing contributions, keeping the technical concept moving toward a manufacturable solution."],
     ],
-    links: []
+    links: [["Final Project Report","https://drive.google.com/open?id=1StqncetTzhLofEB4IHNGd_RE-WSRPR8V_fhoEn94NMc"]]
   },
   "statistics-data-project": {
     image: "https://sites.google.com/sitesv-images-rt/AMxu72v7B4bK5oKIHrtfGMBbrWgtaAijXDQ_PBxYuweZnmUAx0P4qoHPTM1pXW-RtDYR-6XcNi3nSM52GEBNVfMZJo_11f4I6dL2qtySnsEIqt6HGoEtAI2KbgRzJA4ip6E_KbnEq3caSba3EjAF-5GAR-Xxr7l7RjxMlT4VlKiiGJwXL2IhyhboM9m9nPq7K0TowRwI2QzAuaG9cBgudLYHW-ZP_VSDqdk9Z5GtB2AcBc%3Dw1280",
@@ -149,7 +149,7 @@ const projects = {
       ["Technical work","Applied statistical methods including one-hot encoding to transform categorical variables for analysis and modeling."],
       ["Archive","The original portfolio linked the final project report because the Jupyter environment itself could not be shared publicly."],
     ],
-    links: []
+    links: [["Final Project Report","https://drive.google.com/open?id=1StqncetTzhLofEB4IHNGd_RE-WSRPR8V_fhoEn94NMc"]]
   },
   "robotic-arms": {
     image: "https://sites.google.com/sitesv-images-rt/AMxu72v7B4bK5oKIHrtfGMBbrWgtaAijXDQ_PBxYuweZnmUAx0P4qoHPTM1pXW-RtDYR-6XcNi3nSM52GEBNVfMZJo_11f4I6dL2qtySnsEIqt6HGoEtAI2KbgRzJA4ip6E_KbnEq3caSba3EjAF-5GAR-Xxr7l7RjxMlT4VlKiiGJwXL2IhyhboM9m9nPq7K0TowRwI2QzAuaG9cBgudLYHW-ZP_VSDqdk9Z5GtB2AcBc%3Dw1280",
@@ -162,7 +162,7 @@ const projects = {
       ["Scope","The original portfolio kept robotic arms as a broader category spanning multi-DOF manipulators, planning, control, perception, hardware integration, and industrial-arm familiarity."],
       ["Connection","GroceryGizmo is the strongest standalone example from this category and now lives as its own technical project."],
     ],
-    links: [["GroceryGizmo","https://grocerygizmo.pchrisoc.com/"]]
+    links: [["GroceryGizmo","https://grocerygizmo.pchrisoc.com/"],["Original Robotic Arms project files","https://drive.google.com/open?id=1GsRopkHQfxFNaJGNeoxqZqlqboKadXVn"],["Original Robotic Arms video / file","https://drive.google.com/open?id=1a5LYMUZ90Gz9tzDCJB7CowEVaLreWUcM"]]
   },
   "class-projects": {
     image: "https://sites.google.com/sitesv-images-rt/AMxu72v7B4bK5oKIHrtfGMBbrWgtaAijXDQ_PBxYuweZnmUAx0P4qoHPTM1pXW-RtDYR-6XcNi3nSM52GEBNVfMZJo_11f4I6dL2qtySnsEIqt6HGoEtAI2KbgRzJA4ip6E_KbnEq3caSba3EjAF-5GAR-Xxr7l7RjxMlT4VlKiiGJwXL2IhyhboM9m9nPq7K0TowRwI2QzAuaG9cBgudLYHW-ZP_VSDqdk9Z5GtB2AcBc%3Dw1280",
@@ -203,7 +203,7 @@ const projects = {
       ["Shop experience","The original portfolio documents six-plus years around machining, including lathe training at ADCO, milling, welding, bending, and machine maintenance."],
       ["Machines","I restored an abandoned lathe and have worked on a C4 Corvette and a roughly $3k Jeep restoration — the kind of projects where diagnostics, fabrication, and persistence matter more than a perfect parts list."],
     ],
-    links: []
+    links: [["GroceryGizmo","https://grocerygizmo.pchrisoc.com/"]]
   },
 };
 
