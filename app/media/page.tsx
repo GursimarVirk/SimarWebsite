@@ -107,6 +107,15 @@ const articles: MediaItem[] = [
   },
   {
     type: "PRESS",
+    source: "AFP / LE QUOTIDIEN",
+    title: "États-Unis : quand les robots montent sur le ring",
+    description: "French-language AFP coverage of UFB5 at the Las Vegas BattleBots Arena. It documents the humanoid fight format, pilot-controlled motion, the R&D/data-collection angle, and the Bay Area UFB scene. It is useful external context for the work; it does not name Gursimar directly.",
+    date: "JAN 21, 2026",
+    href: "https://lequotidien.lu/culture/magazine-etats-unis-quand-les-robots-montent-sur-le-ring/",
+    tag: "FRENCH PRESS",
+  },
+  {
+    type: "PRESS",
     source: "AFP / KUWAIT TIMES",
     title: "Humanoid robots go for knockout in high-tech Vegas fight night",
     description: "AFP reporting from the January 2026 Las Vegas UFB event, syndicated internationally. This is one of the strongest external records of the event surrounding UFB5.",
@@ -305,7 +314,7 @@ export default function MediaPage() {
         <p className="eyebrow">VERIFICATION NOTE</p>
         <div>
           <h2>I'm keeping the archive honest.</h2>
-          <p>Some links document the scene or the organizations Gursimar worked with; others directly feature her. Cards marked as verification leads are intentionally described that way until the exact name, photograph, or timestamp is matched. The next pass is to recover the original UFB Twitch VODs, YouTube fight uploads, Berkeley × Stanford footage, the French-language article reference, and the original E29 project URL.</p>
+          <p>Source quality is intentional: direct interviews and personal project links are separated from broader press and organization records. The French AFP piece is preserved as event context rather than presented as a personal profile. The old portfolio's original UFB Twitch clip/VOD trail and Google Drive / Slides deliverables are also preserved through the relevant project pages.</p>
         </div>
       </section>
 
