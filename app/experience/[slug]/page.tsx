@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 
 const experiences = {
-  meta: {
+  meta: { image: "",
     title: "Meta",
     role: "Robotics Hardware Integration Engineer",
     tag: "ROBOTICS · SYSTEMS · FLEET · TECHNICAL LEADERSHIP",
@@ -14,7 +14,7 @@ const experiences = {
       "Coordinate mobile UMI capabilities for offsite data collection across hardware, networking, software configuration, and operations."
     ]
   },
-  "amazon-robotics": {
+  "amazon-robotics": { image: "",
     image: "https://sites.google.com/sitesv-images-rt/AMxu72vv9B-OoCaTbJpEIqg8E_K_G1qou6hB-s-1-zP_WfmRFoNb05ghSxAtZthSul0qNdSxMeQ2XHos895-bxekrwSXXRjVykMDxBSr9_WIvagi9OirkJ9hhFu5JxX1jzkCnXUhyVnJSpTSKG1Unl5EEj4Akluj9ul9uScZ1SMMEI1ejxl0kwTAu5NBn6UcXFOVj7kosSUHdk4pvVTaVQuxGfPJD8ipAEIS2PKib1JE%3Dw1280",
     title: "Amazon Robotics",
     role: "Hardware & Process Engineering Intern",
@@ -27,7 +27,7 @@ const experiences = {
       "Standardized 170+ design and tooling specifications in ProPlanner."
     ]
   },
-  "combat-robotics-at-berkeley": {
+  "combat-robotics-at-berkeley": { image: "",
     image: "https://sites.google.com/sitesv-images-rt/AMxu72sKO8MIuLZRTc2E_2I-DqjoOnRIN4AgDGHFbB7B-NAXw7LoWn6R1Z5UgPLhTMZ-o2cqne9iXtfzwm6QrZKaWs83_JZoYdOV_6z_XcncoxCjm7gDwAY9CNZTj_rgZobAGfve8ncaqAei_2VHNkiZDMi00PZ-Ef-CV8q5-lRDikMk3587dWWETgP_jx0NOhw5bIwcTbtcHKMayPxYuBCUL1Sgn2-kDBGyJaPESftSACA%3Dw1280",
     title: "Combat Robotics at Berkeley",
     role: "President · Technical Lead · Shop & Operations",
@@ -40,7 +40,7 @@ const experiences = {
       "Managed shop operations and training while coordinating vendors, sponsorships, and machine access."
     ]
   },
-  "ultimate-fight-bots": {
+  "ultimate-fight-bots": { image: "",
     image: "https://sites.google.com/sitesv-images-rt/AMxu72sKrS6x-hWqxIjFJHkXU2mmqM7cCzTphE39JsTjp9L7R1GW0--tCR2QnYSUfj-nVlRl9i6bauc9il1ghyY0CezMgOB8SKSAGNFb6YYFmg6cUXCFpYdu5X0QMnIDvllizJcnFPaUxcn9n4fPKIfIx3-DE-RonvI1W8EVq4twwXVOgZR9GY23Fbdlc2N098aakNxmZju_-mG3qTofdlsDAl5qFnLSj3OWU41vYBWECNo%3Dw1280",
     title: "Ultimate Fight Bots",
     role: "Humanoid Robotics · Driver · Team Lead",
@@ -53,7 +53,7 @@ const experiences = {
       "Drove robots at live events including UC Berkeley and a Linus Tech Tips featured showcase in the Las Vegas BattleBots arena."
     ]
   },
-  "sorcerer-earth": {
+  "sorcerer-earth": { image: "",
     image: "https://sites.google.com/sitesv-images-rt/AMxu72sg-T38vR_JYQMTp719HR9EwZJx4KfcLhNEnRl4xAAni9-N53zArhZTtMcAnpYGhBpOHTDSzluGKME0A78B2jTPdhIT3s1gkK2k161SrEzE3yVmwRoH0d1ruI5E49ZUXuA2eH1cF_p85P7b-AqIXJoxmDuq32WchoyPMeAeTmQlrQ7W5TJRg_B7twZpobeeLe4WCtVZNxgPfa_34wGueS5s_nNnBX88Ajf0-lH8Mj0%3Dw1280",
     title: "Sorcerer.Earth",
     role: "R&D Design & Integration Technician",
@@ -66,7 +66,7 @@ const experiences = {
       "Built, refurbished, operated, and calibrated CNC, laser-cutting, and 3D-printing equipment."
     ]
   },
-  "autopallet-robotics": {
+  "autopallet-robotics": { image: "",
     image: "https://sites.google.com/sitesv-images-rt/AMxu72sg-T38vR_JYQMTp719HR9EwZJx4KfcLhNEnRl4xAAni9-N53zArhZTtMcAnpYGhBpOHTDSzluGKME0A78B2jTPdhIT3s1gkK2k161SrEzE3yVmwRoH0d1ruI5E49ZUXuA2eH1cF_p85P7b-AqIXJoxmDuq32WchoyPMeAeTmQlrQ7W5TJRg_B7twZpobeeLe4WCtVZNxgPfa_34wGueS5s_nNnBX88Ajf0-lH8Mj0%3Dw1280",
     title: "AutoPallet Robotics",
     role: "R&D Design & Robotics Integration Technician",
@@ -79,7 +79,7 @@ const experiences = {
       "Design and validation changes reduced prototype downtime by about 25%."
     ]
   },
-  keiser: {
+  keiser: { image: "",
     title: "Keiser",
     role: "Mechanical Design · Manufacturing · Product Development",
     tag: "MECHANICAL · MANUFACTURING · PRODUCT",
