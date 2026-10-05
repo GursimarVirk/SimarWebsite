@@ -8,6 +8,9 @@ const geistMono = Geist_Mono({ variable:"--font-geist-mono", subsets:["latin"] }
 export const metadata: Metadata = {
   title: "Gursimar Virk · Robotics & Mechanical Engineering",
   description: "Gursimar Virk — mechanical engineer and robotics builder working across hardware integration, manufacturing, humanoids, manipulation, and real-world robot systems.",
+  keywords: ["Gursimar Virk","robotics engineer","mechanical engineer","robotics hardware","UC Berkeley","humanoid robotics","mechanical design"],
+  robots: { index: true, follow: true },
+  alternates: { canonical: "/" },
   metadataBase: new URL("https://simarvirk.com"),
   openGraph: {
     title: "Gursimar Virk · Robotics & Mechanical Engineering",
