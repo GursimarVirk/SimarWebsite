@@ -74,11 +74,11 @@ const experiences = [
 ];
 
 const projects = [
-  {slug:"30-lb-combat-robot", title:"30 lb Combat Robot", group:"COMBAT ROBOTICS", description:"A full robot program: weapon design, machining, heat treatment, wiring, troubleshooting, people, parts, and competition driving.", image:heroImages[1][0], size:"large"},
-  {slug:"15-lb-combat-robots", title:"15 lb Combat Robots", group:"COMBAT ROBOTICS", description:"Two competition-ready builds using Fusion 360 / Onshape, FEA, CAM, weight reduction, AR500 fabrication, and mentorship.", image:heroImages[4][0], size:"small"},
-  {slug:"humanoid-robotics", title:"Humanoid Robotics", group:"ULTIMATE FIGHT BOTS", description:"Unitree + Booster integration, calibration, motion behaviors, debugging, and live robot fights.", image:heroImages[0][0], size:"small"},
+  {slug:"30-lb-combat-robot", title:"30 lb Combat Robot", group:"COMBAT ROBOTICS", description:"A full robot program: weapon design, machining, heat treatment, wiring, troubleshooting, people, parts, and competition driving.", image:heroImages[2][0], size:"large"},
+  {slug:"15-lb-combat-robots", title:"15 lb Combat Robots", group:"COMBAT ROBOTICS", description:"Two competition-ready builds using Fusion 360 / Onshape, FEA, CAM, weight reduction, AR500 fabrication, and mentorship.", image:heroImages[5][0], size:"small"},
+  {slug:"humanoid-robotics", title:"Humanoid Robotics", group:"ULTIMATE FIGHT BOTS", description:"Unitree + Booster integration, calibration, motion behaviors, debugging, and live robot fights.", image:heroImages[1][0], size:"small"},
   {slug:"grocerygizmo", title:"Autonomous 6-DOF Grasping", group:"UC BERKELEY · GROCERYGIZMO", description:"Omron TM5-700, RealSense, AR tags, ROS 2, MoveIt2, Robotiq, custom CAD, and manipulation recovery.", image:"https://sites.google.com/sitesv-images-rt/AMxu72uRXqYXsejAavet79fXc4WVQMbAGUSX9Mwr4M-nyO410D7TFfy5cvOuvpX0ZHUhy0xw1UmK5T0m_s6TGMSXVyE4QaGH5AtfcEnX0G36TJFkzgSFuh7osYTHj8PePfwwmYdSzntiQ0ei9cT2tXfjYJVcXqzcgn-_xPvxVeTZRK2opLOsus6TdOKTQC7FoXvcSzGqE3vgL0KGnyHsIOxO3vubX0jz9Ld9Pq7R6Ms%3Dw1280", size:"large"},
-  {slug:"robotic-hand", title:"15-DOF Teleoperated Hand", group:"UC BERKELEY", description:"Sensor component + robotic portion of a teleoperated humanoid hand, backed by the original final report and shop presentation.", image:heroImages[2][0], size:"small"},
+  {slug:"robotic-hand", title:"15-DOF Teleoperated Hand", group:"UC BERKELEY", description:"Sensor component + robotic portion of a teleoperated humanoid hand, backed by the original final report and shop presentation.", image:heroImages[3][0], size:"small"},
   {slug:"combat-box", title:"Combat Box", group:"COMBAT ROBOTICS", description:"A 1/2-inch polycarbonate testing environment built for the teams I mentored.", image:"https://sites.google.com/sitesv-images-rt/AMxu72uKtzzuaH1SY5Alxz9Ybp9xDGQ3KmsPkG-Yp0QQZqfkV-bmBS589VwgBSsPfopi8JdvHACPK_ooD1MIWXseIbkg4geCqge331FwYO2jOP3RQpA_4sUmZMmz38RqcxrNwTWDH7s-7Jx1qXg0EjyPa7nScevsyn375ccfzuhfWqJ3memxYgPprkp5rmrZd8xdMDvLa4rNxJfVgnQDK1MymiSruWP-Grko9wLzbPkhfrc%3Dw1280", size:"small"},
   {slug:"motorcycle-communication-system", title:"Motorcycle Communication System", group:"PRODUCT DEVELOPMENT", description:"A connected helmet concept combining GPS, Bluetooth, sensors, audio, AI, product research, and team coordination.", image:"https://sites.google.com/sitesv-images-rt/AMxu72uE7IRyV7jLfu8c47rMSsk9lcrwQyic8n7x8w9ud7YkC4EOHjgjV75nRHfDjoYFetG5oPVmsNo9Nvtc9vCJAj54RUak9SAcf0tJQViiK0CQFxQLbRGNNwzRSgr79C3dNqhqQ9KbAHnsHc1XPtAk5RKt1ujZ1sxwRxkRM0bFcktSU0Cca4iM5CJfwJELsPdLsBjeeMpqEdT7nFCZOHvhCfS6VJw8cVDdd32TtYuI%3Dw1280", size:"small"},
   {slug:"cars-and-machines", title:"Cars & Machines", group:"PERSONAL SHOP", description:"6+ years of machining, lathe work, welding, maintenance, a C4 Corvette, and a Jeep restoration.", image:"https://sites.google.com/sitesv-images-rt/AMxu72vFKS5F-A0nJU3qBYodUrH4zk9o1Qtd1FiCtAB16zPVtcf7XCSnOxkZNSf_CMZzWRi4r-ICcVSp4-a1-7xkIFTPtb5RSU3wLO8H2Dgz38huIcw9Jlm9GFZ3cfG8MJWATUNx0ew9c8QXB1x-Myu5D2sMk7QSjXVNTzqR7K7WIJpTEJX89tWg5xC7H1lkduqJDToXoOp0zlw5ArszwLYj5h0prywIxGbkarwK0zEAHKs%3Dw1280", size:"small"},
@@ -151,7 +151,7 @@ export default function Home(){
       </div>
       <div className="hero-visual">
         <div className="hero-main-photo"><img src={heroImages[0][0]} alt="Gursimar Virk portfolio image"/><span>01 / HUMANOIDS</span></div>
-        <div className="hero-photo-stack"><img src={heroImages[2][0]} alt="Humanoid robotics"/><img src={heroImages[5][0]} alt="15 lb combat robot"/></div>
+        <div className="hero-photo-stack"><img src={heroImages[1][0]} alt="Humanoid robotics"/><img src={heroImages[5][0]} alt="15 lb combat robot"/></div>
         <div className="hero-stamp">CAD<br/>→<br/>SHOP<br/>→<br/>ROBOT</div>
       </div>
     </section>
