@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
+import { legacyImage } from "../../legacy-image";
 
 const projects = {
   "30-lb-combat-robot": {
@@ -192,7 +193,7 @@ const projects = {
     links: [["Cars & Machines","/projects/cars-and-machines"]]
   },
   "cars-and-machines": {
-    image: "",
+    image: "https://sites.google.com/sitesv-images-rt/AMxu72vFKS5F-A0nJU3qBYodUrH4zk9o1Qtd1FiCtAB16zPVtcf7XCSnOxkZNSf_CMZzWRi4r-ICcVSp4-a1-7xkIFTPtb5RSU3wLO8H2Dgz38huIcw9Jlm9GFZ3cfG8MJWATUNx0ew9c8QXB1x-Myu5D2sMk7QSjXVNTzqR7K7WIJpTEJX89tWg5xC7H1lkduqJDToXoOp0zlw5ArszwLYj5h0prywIxGbkarwK0zEAHKs%3Dw1280",
     title: "Cars & Machines",
     kicker: "PERSONAL SHOP · MACHINING",
     role: "Machinist · Restorer · Lifelong Tinkerer",
@@ -233,7 +234,7 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
       </nav>
       <div className="page-width">
         <a className="detail-back" href="/#projects">← ALL PROJECTS</a>
-        <header className="detail-hero" style={{ backgroundImage: `linear-gradient(90deg,rgba(7,6,12,.98) 0%,rgba(7,6,12,.72) 52%,rgba(7,6,12,.30) 100%),url("${project.image ?? ""}")` }}>
+        <header className="detail-hero" style={{ backgroundImage: `linear-gradient(90deg,rgba(7,6,12,.98) 0%,rgba(7,6,12,.72) 52%,rgba(7,6,12,.30) 100%),url("${project.image ? legacyImage(project.image) : ""}")` }}>
           <div>
             <span className="section-label">{project.kicker}</span>
             <h1>{project.title}</h1>
