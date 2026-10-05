@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
+import { legacyImage } from "../../legacy-image";
 
 const experiences = {
   meta: {
