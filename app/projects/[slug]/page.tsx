@@ -31,7 +31,7 @@ const projects = {
     links: [["Combat Robotics at Berkeley","https://combatrobotics.studentorg.berkeley.edu/"],["Robot Combat Events","https://www.robotcombatevents.com/events/7353"]]
   },
   "combat-box": {
-    image: "",
+    image: "https://sites.google.com/sitesv-images-rt/AMxu72uKtzzuaH1SY5Alxz9Ybp9xDGQ3KmsPkG-Yp0QQZqfkV-bmBS589VwgBSsPfopi8JdvHACPK_ooD1MIWXseIbkg4geCqge331FwYO2jOP3RQpA_4sUmZMmz38RqcxrNwTWDH7s-7Jx1qXg0EjyPa7nScevsyn375ccfzuhfWqJ3memxYgPprkp5rmrZd8xdMDvLa4rNxJfVgnQDK1MymiSruWP-Grko9wLzbPkhfrc%3Dw1280",
     title: "Combat Box",
     kicker: "COMBAT ROBOTICS AT BERKELEY · FABRICATION",
     role: "Designer · Fabricator · Project Lead",
@@ -58,7 +58,7 @@ const projects = {
     links: [["HANDI Final Report","https://drive.google.com/open?id=1AvCRkP0JC-o5meU10HXgGXU879HWbJR_sAYAJnsuo3Y"],["Machine Shop Presentation","https://docs.google.com/presentation/d/1EurbqNbWvZzMdbJHNEz-lKYVH1hz9U8cfXV7Ef7xOoQ/present"]]
   },
   "grocerygizmo": {
-    image: "",
+    image: "https://sites.google.com/sitesv-images-rt/AMxu72uRXqYXsejAavet79fXc4WVQMbAGUSX9Mwr4M-nyO410D7TFfy5cvOuvpX0ZHUhy0xw1UmK5T0m_s6TGMSXVyE4QaGH5AtfcEnX0G36TJFkzgSFuh7osYTHj8PePfwwmYdSzntiQ0ei9cT2tXfjYJVcXqzcgn-_xPvxVeTZRK2opLOsus6TdOKTQC7FoXvcSzGqE3vgL0KGnyHsIOxO3vubX0jz9Ld9Pq7R6Ms%3Dw1280",
     title: "Autonomous 6-DOF Vision-Based Grasping",
     kicker: "UC BERKELEY · GROCERYGIZMO",
     role: "Manipulation & CAD Engineer",
@@ -69,7 +69,7 @@ const projects = {
       ["My role","I was the Manipulation & CAD Engineer. My work included the custom RealSense mount and manipulation testing, including grasp-offset calibration, safe approach sequences into the refrigerator, motion-stop safety conditions, soft-limit handling, and manual recovery procedures."],
       ["What it taught me","The hard part was not getting an arm to move. It was making the motion predictable around a real refrigerator, camera offsets, grasp alignment, collision constraints, and failure recovery."],
     ],
-    links: [["GroceryGizmo project site","https://grocerygizmo.pchrisoc.com/"],["GroceryGizmo project site","https://grocerygizmo.pchrisoc.com/"]]
+    links: [["GroceryGizmo project site","https://grocerygizmo.pchrisoc.com/"],["Project source / code","https://github.com/pchrisoc/GroceryGizmo"]]
   },
   "humanoid-robotics": {
     image: "https://sites.google.com/sitesv-images-rt/AMxu72sKrS6x-hWqxIjFJHkXU2mmqM7cCzTphE39JsTjp9L7R1GW0--tCR2QnYSUfj-nVlRl9i6bauc9il1ghyY0CezMgOB8SKSAGNFb6YYFmg6cUXCFpYdu5X0QMnIDvllizJcnFPaUxcn9n4fPKIfIx3-DE-RonvI1W8EVq4twwXVOgZR9GY23Fbdlc2N098aakNxmZju_-mG3qTofdlsDAl5qFnLSj3OWU41vYBWECNo%3Dw1280",
@@ -86,7 +86,7 @@ const projects = {
     links: [["UFB competition archive","https://roboxing.tv/competitions/ufb"],["Linus Tech Tips — I Joined Robot Fight Club","https://www.youtube.com/watch?v=VJqMPFNP4to"],["BattleBots UFB audience page","https://battlebots.com/audience-waiver-ufb/"]]
   },
   "motorcycle-communication-system": {
-    image: "",
+    image: "https://sites.google.com/sitesv-images-rt/AMxu72uE7IRyV7jLfu8c47rMSsk9lcrwQyic8n7x8w9ud7YkC4EOHjgjV75nRHfDjoYFetG5oPVmsNo9Nvtc9vCJAj54RUak9SAcf0tJQViiK0CQFxQLbRGNNwzRSgr79C3dNqhqQ9KbAHnsHc1XPtAk5RKt1ujZ1sxwRxkRM0bFcktSU0Cca4iM5CJfwJELsPdLsBjeeMpqEdT7nFCZOHvhCfS6VJw8cVDdd32TtYuI%3Dw1280",
     title: "Motorcycle Communication System",
     kicker: "PRODUCT DEVELOPMENT · MOTORCYCLE",
     role: "Technical Lead · Product Development",
@@ -100,7 +100,7 @@ const projects = {
     links: [["Final Team Presentation","https://docs.google.com/presentation/d/1PtgBqGz5OtcBSldxkl2myrix2rrQJnmgBT-T3LMhKNM/present"],["Project Files","https://drive.google.com/open?id=10YD4BgO1cErMJDVZd0fNw2fc2POT41JBLmXO1r42Nz8"]]
   },
   "nasa-hunch-magnetic-boots": {
-    image: "",
+    image: "https://sites.google.com/sitesv-images-rt/AMxu72vFKS5F-A0nJU3qBYodUrH4zk9o1Qtd1FiCtAB16zPVtcf7XCSnOxkZNSf_CMZzWRi4r-ICcVSp4-a1-7xkIFTPtb5RSU3wLO8H2Dgz38huIcw9Jlm9GFZ3cfG8MJWATUNx0ew9c8QXB1x-Myu5D2sMk7QSjXVNTzqR7K7WIJpTEJX89tWg5xC7H1lkduqJDToXoOp0zlw5ArszwLYj5h0prywIxGbkarwK0zEAHKs%3Dw1280",
     title: "NASA HUNCH — Magnetic Boots",
     kicker: "NASA HUNCH · STUDENT ENGINEERING",
     role: "Team Lead",
@@ -113,7 +113,7 @@ const projects = {
     links: [["NASA HUNCH project archive","https://www.nasahunch.com/"]]
   },
   "iot-millipede-monitor": {
-    image: "",
+    image: "https://sites.google.com/sitesv-images-rt/AMxu72uE7IRyV7jLfu8c47rMSsk9lcrwQyic8n7x8w9ud7YkC4EOHjgjV75nRHfDjoYFetG5oPVmsNo9Nvtc9vCJAj54RUak9SAcf0tJQViiK0CQFxQLbRGNNwzRSgr79C3dNqhqQ9KbAHnsHc1XPtAk5RKt1ujZ1sxwRxkRM0bFcktSU0Cca4iM5CJfwJELsPdLsBjeeMpqEdT7nFCZOHvhCfS6VJw8cVDdd32TtYuI%3Dw1280",
     title: "IoT Millipede Monitor",
     kicker: "UC BERKELEY · IOT",
     role: "Embedded / IoT Project",
@@ -125,7 +125,7 @@ const projects = {
     links: []
   },
   "towel-holder-innovation": {
-    image: "",
+    image: "https://sites.google.com/sitesv-images-rt/AMxu72sg-T38vR_JYQMTp719HR9EwZJx4KfcLhNEnRl4xAAni9-N53zArhZTtMcAnpYGhBpOHTDSzluGKME0A78B2jTPdhIT3s1gkK2k161SrEzE3yVmwRoH0d1ruI5E49ZUXuA2eH1cF_p85P7b-AqIXJoxmDuq32WchoyPMeAeTmQlrQ7W5TJRg_B7twZpobeeLe4WCtVZNxgPfa_34wGueS5s_nNnBX88Ajf0-lH8Mj0%3Dw1280",
     title: "Towel Holder Innovation",
     kicker: "FRESHMAN DESIGN · MANUFACTURING",
     role: "Team Lead · CAD",
@@ -138,7 +138,7 @@ const projects = {
     links: []
   },
   "statistics-data-project": {
-    image: "",
+    image: "https://sites.google.com/sitesv-images-rt/AMxu72v7B4bK5oKIHrtfGMBbrWgtaAijXDQ_PBxYuweZnmUAx0P4qoHPTM1pXW-RtDYR-6XcNi3nSM52GEBNVfMZJo_11f4I6dL2qtySnsEIqt6HGoEtAI2KbgRzJA4ip6E_KbnEq3caSba3EjAF-5GAR-Xxr7l7RjxMlT4VlKiiGJwXL2IhyhboM9m9nPq7K0TowRwI2QzAuaG9cBgudLYHW-ZP_VSDqdk9Z5GtB2AcBc%3Dw1280",
     title: "Statistics / Data Project",
     kicker: "PROGRAMMING · DATA",
     role: "Data Analysis",
@@ -151,7 +151,7 @@ const projects = {
     links: []
   },
   "robotic-arms": {
-    image: "",
+    image: "https://sites.google.com/sitesv-images-rt/AMxu72v7B4bK5oKIHrtfGMBbrWgtaAijXDQ_PBxYuweZnmUAx0P4qoHPTM1pXW-RtDYR-6XcNi3nSM52GEBNVfMZJo_11f4I6dL2qtySnsEIqt6HGoEtAI2KbgRzJA4ip6E_KbnEq3caSba3EjAF-5GAR-Xxr7l7RjxMlT4VlKiiGJwXL2IhyhboM9m9nPq7K0TowRwI2QzAuaG9cBgudLYHW-ZP_VSDqdk9Z5GtB2AcBc%3Dw1280",
     title: "Robotic Arms",
     kicker: "ROBOTICS · MANIPULATION",
     role: "Coursework / Research / Industry Exposure",
