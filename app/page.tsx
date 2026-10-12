@@ -6,10 +6,10 @@ import { legacyImage } from "./legacy-image";
 const resumeUrl = "https://sites.google.com/view/gvirk/resume";
 
 const heroImages = [
-  ["/images/Robotic Arms/2ed803397858d570e590a832d3365844.webp","PORTRAIT / HOME"],
+  ["/images/Home/dcb69b8d3505bf2fbe6ff659aff682b4.webp","PORTRAIT / HOME"],
   ["/images/Humanoids/ccacc1b06bfe5fd19878ae0b81668eef.webp","HUMANOIDS"],
   ["/images/30lb Robot/024d3371033a659dea795ef2ed7f08cf.webp","30 LB ROBOT"],
-  ["/images/Robotic Arms/9a1205816b57cf9e2ea83a3a711fbc88.webp","ROBOTIC HAND"],
+  ["/images/Home/d40fc533c4af7350b0ce95a3627f0658.webp","ROBOTIC HAND"],
   ["https://sites.google.com/sitesv-images-rt/AMxu72vv9B-OoCaTbJpEIqg8E_K_G1qou6hB-s-1-zP_WfmRFoNb05ghSxAtZthSul0qNdSxMeQ2XHos895-bxekrwSXXRjVykMDxBSr9_WIvagi9OirkJ9hhFu5JxX1jzkCnXUhyVnJSpTSKG1Unl5EEj4Akluj9ul9uScZ1SMMEI1ejxl0kwTAu5NBn6UcXFOVj7kosSUHdk4pvVTaVQuxGfPJD8ipAEIS2PKib1JE%3Dw1280","AMAZON ROBOTICS"],
   ["/images/15lb Robot/1a739db5b66e7a72ddd145ae4ced166e.webp","15 LB ROBOT"],
   ["https://sites.google.com/sitesv-images-rt/AMxu72sg-T38vR_JYQMTp719HR9EwZJx4KfcLhNEnRl4xAAni9-N53zArhZTtMcAnpYGhBpOHTDSzluGKME0A78B2jTPdhIT3s1gkK2k161SrEzE3yVmwRoH0d1ruI5E49ZUXuA2eH1cF_p85P7b-AqIXJoxmDuq32WchoyPMeAeTmQlrQ7W5TJRg_B7twZpobeeLe4WCtVZNxgPfa_34wGueS5s_nNnBX88Ajf0-lH8Mj0%3Dw1280","AUTOPALLET"],
