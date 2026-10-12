@@ -48,8 +48,8 @@ const projects = {
     ],
     links: [["Combat Robotics at Berkeley","https://combatrobotics.studentorg.berkeley.edu/"],["Berkeley Bot Bash","https://www.robotcombatevents.com/events/7353"]]
   },
-  "robotic-hand": {
-    image: "/images/Robotic Arms/9a1205816b57cf9e2ea83a3a711fbc88.webp",
+  ""robotic-hand": {
+    image: "/images/Robotic Arms/2ed803397858d570e590a832d3365844.webp",
     title: "15-DOF Teleoperated Humanoid Robotic Hand",
     kicker: "UC BERKELEY · ROBOTIC HAND",
     role: "Sensor Component · Robotic Portion",
@@ -61,7 +61,7 @@ const projects = {
     ],
     links: [["HANDI Final Report","https://drive.google.com/open?id=1AvCRkP0JC-o5meU10HXgGXU879HWbJR_sAYAJnsuo3Y"],["Machine Shop Presentation","https://docs.google.com/presentation/d/1EurbqNbWvZzMdbJHNEz-lKYVH1hz9U8cfXV7Ef7xOoQ/present"]]
   },
-  "grocerygizmo": {
+  ""grocerygizmo": {
     image: "/images/Robotic Arms/9a1205816b57cf9e2ea83a3a711fbc88.webp",
     title: "Autonomous 6-DOF Vision-Based Grasping",
     kicker: "UC BERKELEY · GROCERYGIZMO",
@@ -89,8 +89,8 @@ const projects = {
     ],
     links: [["UFB competition archive","https://roboxing.tv/competitions/ufb"],["Linus Tech Tips — I Joined Robot Fight Club","https://www.youtube.com/watch?v=VJqMPFNP4to"],["BattleBots UFB audience page","https://battlebots.com/audience-waiver-ufb/"]]
   },
-  "motorcycle-communication-system": {
-    image: "/images/Home/d727f021d5f96238b980a330b25da90b.webp",
+  ""motorcycle-communication-system": {
+    image: "/images/Home/027b9604ec0a299f5ae4b6edd26c88b4.webp",
     title: "Motorcycle Communication System",
     kicker: "PRODUCT DEVELOPMENT · MOTORCYCLE",
     role: "Technical Lead · Product Development",
@@ -103,8 +103,8 @@ const projects = {
     ],
     links: [["Final Team Presentation","https://docs.google.com/presentation/d/1PtgBqGz5OtcBSldxkl2myrix2rrQJnmgBT-T3LMhKNM/present"],["Project Files","https://drive.google.com/open?id=10YD4BgO1cErMJDVZd0fNw2fc2POT41JBLmXO1r42Nz8"]]
   },
-  "nasa-hunch-magnetic-boots": {
-    image: "/images/Cars and Machines/2ea1f7ee762bbaaa434b56d33143590f.webp",
+  ""nasa-hunch-magnetic-boots": {
+    image: "/images/Home/027b9604ec0a299f5ae4b6edd26c88b4.webp",
     title: "NASA HUNCH — Magnetic Boots",
     kicker: "NASA HUNCH · STUDENT ENGINEERING",
     role: "Team Lead",
@@ -116,8 +116,8 @@ const projects = {
     ],
     links: [["NASA HUNCH project archive","https://www.nasahunch.com/"],["Original MES presentation","https://drive.google.com/open?id=1kWWs35ymY47IgBklKLPiP0Gaa6mUgs5U"]]
   },
-  "iot-millipede-monitor": {
-    image: "/images/Home/d727f021d5f96238b980a330b25da90b.webp",
+  ""iot-millipede-monitor": {
+    image: "/images/Home/67c15c7a7ba0b7e2a3252cb7c0b6c6e6.webp",
     title: "IoT Millipede Monitor",
     kicker: "UC BERKELEY · IOT",
     role: "Embedded / IoT Project",
@@ -128,8 +128,8 @@ const projects = {
     ],
     links: [["Final E29 Group 1014 Report","https://drive.google.com/open?id=10EKXcRYNI4yIqnktIm28kWT_yl87F7WZ"]]
   },
-  "towel-holder-innovation": {
-    image: "https://sites.google.com/sitesv-images-rt/AMxu72sg-T38vR_JYQMTp719HR9EwZJx4KfcLhNEnRl4xAAni9-N53zArhZTtMcAnpYGhBpOHTDSzluGKME0A78B2jTPdhIT3s1gkK2k161SrEzE3yVmwRoH0d1ruI5E49ZUXuA2eH1cF_p85P7b-AqIXJoxmDuq32WchoyPMeAeTmQlrQ7W5TJRg_B7twZpobeeLe4WCtVZNxgPfa_34wGueS5s_nNnBX88Ajf0-lH8Mj0%3Dw1280",
+  ""towel-holder-innovation": {
+    image: "/images/Robotic Arms/95b3ce2f73b8bec877e0fcc27428e9aa.webp",
     title: "Towel Holder Innovation",
     kicker: "FRESHMAN DESIGN · MANUFACTURING",
     role: "Team Lead · CAD",
@@ -141,8 +141,8 @@ const projects = {
     ],
     links: [["Final Project Report","https://drive.google.com/open?id=1StqncetTzhLofEB4IHNGd_RE-WSRPR8V_fhoEn94NMc"]]
   },
-  "statistics-data-project": {
-    image: "/images/Robotic Arms/2ed803397858d570e590a832d3365844.webp",
+  ""statistics-data-project": {
+    image: "/images/Robotic Arms/07a3486b8df22099776ca84ff37c188e.webp",
     title: "Statistics / Data Project",
     kicker: "PROGRAMMING · DATA",
     role: "Data Analysis",
@@ -154,8 +154,8 @@ const projects = {
     ],
     links: [["Final Project Report","https://drive.google.com/open?id=1StqncetTzhLofEB4IHNGd_RE-WSRPR8V_fhoEn94NMc"]]
   },
-  "robotic-arms": {
-    image: "/images/Robotic Arms/2ed803397858d570e590a832d3365844.webp",
+  ""robotic-arms": {
+    image: "/images/Robotic Arms/9a1205816b57cf9e2ea83a3a711fbc88.webp",
     title: "Robotic Arms",
     kicker: "ROBOTICS · MANIPULATION",
     role: "Coursework / Research / Industry Exposure",
@@ -167,8 +167,8 @@ const projects = {
     ],
     links: [["GroceryGizmo","https://grocerygizmo.pchrisoc.com/"],["Original Robotic Arms project files","https://drive.google.com/open?id=1GsRopkHQfxFNaJGNeoxqZqlqboKadXVn"],["Original Robotic Arms video / file","https://drive.google.com/open?id=1a5LYMUZ90Gz9tzDCJB7CowEVaLreWUcM"]]
   },
-  "class-projects": {
-    image: "/images/Robotic Arms/2ed803397858d570e590a832d3365844.webp",
+  ""class-projects": {
+    image: "/images/Home/b5edc2802fd22f5e3d828898fd11e6f4.webp",
     title: "Class Projects",
     kicker: "UC BERKELEY · COURSEWORK",
     role: "Mechanical Engineering · Robotics · Design",
