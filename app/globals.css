@@ -319,3 +319,7 @@ main{overflow:hidden;position:relative}
 .contact-grid span{color:var(--faint);font:800 8px/1.4 Arial,sans-serif;letter-spacing:.13em}
 .contact-grid strong{font-size:24px;letter-spacing:-.03em}
 @media(max-width:700px){.subpage-hero{padding-top:90px}.about-page-grid,.contact-grid,.about-facts-page{grid-template-columns:1fr}.about-facts-page span+span{border-left:0;border-top:1px solid var(--line);padding-left:0}.archive-row{grid-template-columns:1fr}.archive-row b{display:none}}
+
+/* Keep the teleoperated hand legible in the hero collage and project card. */
+.photo-c img{object-position:center 38%;object-fit:contain;padding:8px;background:#100c1e}
+.project-tile[href="/projects/robotic-hand"] img{object-fit:contain;object-position:center;background:#100c1e;padding:12px}
