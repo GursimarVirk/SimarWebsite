@@ -1,6 +1,6 @@
 "use client";
 
-import type { ReactNode } from "react";
+import { useState, type FormEvent, type ReactNode } from "react";
 import { legacyImage } from "./legacy-image";
 
 const resumeUrl = "https://sites.google.com/view/gvirk/resume";
@@ -75,21 +75,21 @@ const experiences = [
 ];
 
 const projects = [
-  {slug:"30-lb-combat-robot", title:"30 lb Combat Robot", group:"COMBAT ROBOTICS", description:"A full robot program: weapon design, machining, heat treatment, wiring, troubleshooting, people, parts, and competition driving.", image:"/images/30lb Robot/024d3371033a659dea795ef2ed7f08cf.webp", size:"large"},
-  {slug:"15-lb-combat-robots", title:"15 lb Combat Robots", group:"COMBAT ROBOTICS", description:"Competition-ready builds using Fusion 360 / Onshape, FEA, CAM, weight reduction, AR500 fabrication, and mentorship.", image:"/images/15lb Robot/1a739db5b66e7a72ddd145ae4ced166e.webp", size:"small"},
-  {slug:"humanoid-robotics", title:"Humanoid Robotics", group:"ULTIMATE FIGHT BOTS", description:"Unitree + Booster integration, calibration, motion behaviors, debugging, recovery, and live robot fights.", image:"/images/Humanoids/ccacc1b06bfe5fd19878ae0b81668eef.webp", size:"small"},
-  {slug:"grocerygizmo", title:"Autonomous 6-DOF Grasping", group:"UC BERKELEY · GROCERYGIZMO", description:"Omron TM5-700, RealSense, AR tags, ROS 2, MoveIt2, Robotiq, custom CAD, and manipulation recovery.", image:"/images/Robotic Arms/9a1205816b57cf9e2ea83a3a711fbc88.webp", size:"large"},
-  {slug:"robotic-hand", title:"15-DOF Teleoperated Hand", group:"UC BERKELEY", description:"Sensor component + robotic portion of a teleoperated humanoid hand, backed by the original final report and shop presentation.", image:"/images/Robotic Arms/2ed803397858d570e590a832d3365844.webp", size:"small"},
-  {slug:"robotic-arms", title:"Robotic Arms", group:"ROBOTICS · MANIPULATION", description:"Multi-DOF manipulators spanning planning, control, perception, hardware integration, and industrial-arm exposure.", image:"/images/Robotic Arms/9a1205816b57cf9e2ea83a3a711fbc88.webp", size:"small"},
-  {slug:"motorcycle-communication-system", title:"Motorcycle Communication System", group:"PRODUCT DEVELOPMENT", description:"A connected helmet concept combining GPS, Bluetooth, sensors, audio, AI, product research, and team coordination.", image:"/images/Home/027b9604ec0a299f5ae4b6edd26c88b4.webp", size:"small"},
-  {slug:"combat-box", title:"Combat Box", group:"COMBAT ROBOTICS", description:"A 1/2-inch polycarbonate testing environment built for the teams I mentored.", image:"/images/1b8531ca4ea42eb702b0ae7fbf321db2.webp", size:"small"},
-  {slug:"cars-and-machines", title:"Cars & Machines", group:"PERSONAL SHOP", description:"6+ years of machining, lathe work, welding, maintenance, a C4 Corvette, and a Jeep restoration.", image:"/images/Cars and Machines/2ea1f7ee762bbaaa434b56d33143590f.webp", size:"small"},
-  {slug:"iot-millipede-monitor", title:"IoT Millipede Monitor", group:"UC BERKELEY · IOT", description:"An embedded monitoring project combining sensors, actuators, data, and a real-world application.", image:"/images/Home/67c15c7a7ba0b7e2a3252cb7c0b6c6e6.webp", size:"small"},
-  {slug:"towel-holder-innovation", title:"Towel Holder Innovation", group:"FRESHMAN DESIGN", description:"A mass-manufacturable part designed around CAD, scalability, efficiency, and practical manufacturing constraints.", image:"/images/Robotic Arms/95b3ce2f73b8bec877e0fcc27428e9aa.webp", size:"small"},
-  {slug:"statistics-data-project", title:"Statistics / Data Project", group:"PROGRAMMING · DATA", description:"Jupyter Hub, Python, statistical methods, one-hot encoding, and data analysis.", image:"/images/Robotic Arms/07a3486b8df22099776ca84ff37c188e.webp", size:"small"},
-  {slug:"nasa-hunch-magnetic-boots", title:"NASA HUNCH — Magnetic Boots", group:"NASA HUNCH", description:"An early engineering project that reached National Semi-Finalist status.", image:"/images/Home/027b9604ec0a299f5ae4b6edd26c88b4.webp", size:"small"},
-  {slug:"keiser-wire-raceway", title:"Keiser Wire Raceway", group:"MANUFACTURING · PRODUCT DESIGN", description:"A modular raceway combining pneumatic lines and electrical wiring, designed around safety, manufacturability, installation, and cost.", image:"/images/Kesier Wire Raceway/a7c13c2d2bd19eb90e68383b5a985ac4.webp", size:"small"},
-  {slug:"class-projects", title:"Class Projects", group:"UC BERKELEY · COURSEWORK", description:"The broader coursework archive behind the dedicated projects and engineering habits.", image:"/images/Home/b5edc2802fd22f5e3d828898fd11e6f4.webp", size:"small"},
+  {slug:"30-lb-combat-robot", title:"30 lb Combat Robot", group:"COMBAT ROBOTICS", description:"A full robot program: weapon design, machining, heat treatment, wiring, troubleshooting, people, parts, and competition driving.", image:"/images/30lb Robot/024d3371033a659dea795ef2ed7f08cf.webp", size:"large"},, category:"COMBAT ROBOTICS"
+  {slug:"15-lb-combat-robots", title:"15 lb Combat Robots", group:"COMBAT ROBOTICS", description:"Competition-ready builds using Fusion 360 / Onshape, FEA, CAM, weight reduction, AR500 fabrication, and mentorship.", image:"/images/15lb Robot/1a739db5b66e7a72ddd145ae4ced166e.webp", size:"small"},, category:"COMBAT ROBOTICS"
+  {slug:"humanoid-robotics", title:"Humanoid Robotics", group:"ULTIMATE FIGHT BOTS", description:"Unitree + Booster integration, calibration, motion behaviors, debugging, recovery, and live robot fights.", image:"/images/Humanoids/ccacc1b06bfe5fd19878ae0b81668eef.webp", size:"small"},, category:"ROBOTICS & MANIPULATION"
+  {slug:"grocerygizmo", title:"Autonomous 6-DOF Grasping", group:"UC BERKELEY · GROCERYGIZMO", description:"Omron TM5-700, RealSense, AR tags, ROS 2, MoveIt2, Robotiq, custom CAD, and manipulation recovery.", image:"/images/Robotic Arms/9a1205816b57cf9e2ea83a3a711fbc88.webp", size:"large"},, category:"ROBOTICS & MANIPULATION"
+  {slug:"robotic-hand", title:"15-DOF Teleoperated Hand", group:"UC BERKELEY", description:"Sensor component + robotic portion of a teleoperated humanoid hand, backed by the original final report and shop presentation.", image:"/images/Robotic Arms/2ed803397858d570e590a832d3365844.webp", size:"small"},, category:"ROBOTICS & MANIPULATION"
+  {slug:"robotic-arms", title:"Robotic Arms", group:"ROBOTICS · MANIPULATION", description:"Multi-DOF manipulators spanning planning, control, perception, hardware integration, and industrial-arm exposure.", image:"/images/Robotic Arms/9a1205816b57cf9e2ea83a3a711fbc88.webp", size:"small"},, category:"ROBOTICS & MANIPULATION"
+  {slug:"motorcycle-communication-system", title:"Motorcycle Communication System", group:"PRODUCT DEVELOPMENT", description:"A connected helmet concept combining GPS, Bluetooth, sensors, audio, AI, product research, and team coordination.", image:"/images/Home/027b9604ec0a299f5ae4b6edd26c88b4.webp", size:"small"},, category:"PRODUCT DESIGN & MANUFACTURING"
+  {slug:"combat-box", title:"Combat Box", group:"COMBAT ROBOTICS", description:"A 1/2-inch polycarbonate testing environment built for the teams I mentored.", image:"/images/1b8531ca4ea42eb702b0ae7fbf321db2.webp", size:"small"},, category:"COMBAT ROBOTICS"
+  {slug:"cars-and-machines", title:"Cars & Machines", group:"PERSONAL SHOP", description:"6+ years of machining, lathe work, welding, maintenance, a C4 Corvette, and a Jeep restoration.", image:"/images/Cars and Machines/2ea1f7ee762bbaaa434b56d33143590f.webp", size:"small"},, category:"PERSONAL BUILDS & MACHINES"
+  {slug:"iot-millipede-monitor", title:"IoT Millipede Monitor", group:"UC BERKELEY · IOT", description:"An embedded monitoring project combining sensors, actuators, data, and a real-world application.", image:"/images/Home/67c15c7a7ba0b7e2a3252cb7c0b6c6e6.webp", size:"small"},, category:"CLASS & UNIVERSITY PROJECTS"
+  {slug:"towel-holder-innovation", title:"Towel Holder Innovation", group:"FRESHMAN DESIGN", description:"A mass-manufacturable part designed around CAD, scalability, efficiency, and practical manufacturing constraints.", image:"/images/Robotic Arms/95b3ce2f73b8bec877e0fcc27428e9aa.webp", size:"small"},, category:"CLASS & UNIVERSITY PROJECTS"
+  {slug:"statistics-data-project", title:"Statistics / Data Project", group:"PROGRAMMING · DATA", description:"Jupyter Hub, Python, statistical methods, one-hot encoding, and data analysis.", image:"/images/Robotic Arms/07a3486b8df22099776ca84ff37c188e.webp", size:"small"},, category:"CLASS & UNIVERSITY PROJECTS"
+  {slug:"nasa-hunch-magnetic-boots", title:"NASA HUNCH — Magnetic Boots", group:"NASA HUNCH", description:"An early engineering project that reached National Semi-Finalist status.", image:"/images/Home/027b9604ec0a299f5ae4b6edd26c88b4.webp", size:"small"},, category:"CLASS & UNIVERSITY PROJECTS"
+  {slug:"keiser-wire-raceway", title:"Keiser Wire Raceway", group:"MANUFACTURING · PRODUCT DESIGN", description:"A modular raceway combining pneumatic lines and electrical wiring, designed around safety, manufacturability, installation, and cost.", image:"/images/Kesier Wire Raceway/a7c13c2d2bd19eb90e68383b5a985ac4.webp", size:"small"},, category:"PRODUCT DESIGN & MANUFACTURING"
+  {slug:"class-projects", title:"Class Projects", group:"UC BERKELEY · COURSEWORK", description:"The broader coursework archive behind the dedicated projects and engineering habits.", image:"/images/Home/b5edc2802fd22f5e3d828898fd11e6f4.webp", size:"small"},, category:"CLASS & UNIVERSITY PROJECTS"
 ];
 
 
@@ -118,9 +118,11 @@ const publicFootprint = [
 
 function Label({children}:{children:ReactNode}){return <p className="eyebrow">{children}</p>;}
 
+const projectCategories = ["COMBAT ROBOTICS","ROBOTICS & MANIPULATION","CLASS & UNIVERSITY PROJECTS","PRODUCT DESIGN & MANUFACTURING","PERSONAL BUILDS & MACHINES"];
+
 function ProjectCard({project}:{project:(typeof projects)[number]}){
   return <a className={`project-tile ${project.size}`} href={`/projects/${project.slug}`}>
-    {project.image && <img src={legacyImage(project.image)} alt={project.title} loading="lazy" />}
+    {project.image && <img src={project.image.startsWith("http") ? project.image : legacyImage(project.image)} alt={project.title} loading="lazy" />}
     <div className="project-shade"/>
     <div className="project-tile-content">
       <Label>{project.group}</Label>
@@ -132,6 +134,26 @@ function ProjectCard({project}:{project:(typeof projects)[number]}){
 }
 
 export default function Home(){
+  const [resumeRequestOpen, setResumeRequestOpen] = useState(false);
+  const [resumeRequestError, setResumeRequestError] = useState("");
+
+  function submitResumeRequest(event: FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+    const form = new FormData(event.currentTarget);
+    const name = String(form.get("name") || "").trim();
+    const email = String(form.get("email") || "").trim();
+    const phone = String(form.get("phone") || "").trim();
+    const company = String(form.get("company") || "").trim();
+    if (!email && !phone) {
+      setResumeRequestError("Please add an email address or phone number so I can follow up.");
+      return;
+    }
+    setResumeRequestError("");
+    const subject = encodeURIComponent("Resume request — " + name + " (" + company + ")");
+    const body = encodeURIComponent("Hi Simar,\n\nI’d like to request your resume.\n\nName: " + name + "\nEmail: " + (email || "Not provided") + "\nPhone: " + (phone || "Not provided") + "\nCompany: " + company + "\n\nSent from simarvirk.com.");
+    window.location.href = "mailto:gursimvirk3@gmail.com?subject=" + subject + "&body=" + body;
+  }
+
   return <main>
     <nav className="nav">
       <a className="brand" href="#top">GURSIMAR VIRK</a>
@@ -176,13 +198,14 @@ export default function Home(){
     <section className="dark-panel" id="projects">
       <div className="page-width section">
         <div className="section-head dark"><div><Label>01 · THINGS I’VE ACTUALLY BUILT</Label><h2>Things I’ve actually built.</h2></div><p>Combat robots, humanoids, manipulation, sensing, product development, and the machines I kept working on after class ended.</p></div>
-        <div className="project-grid">{projects.map(p=><ProjectCard project={p} key={p.slug}/>)}</div>
+        <div className="project-categories">{projectCategories.map((category)=><section className="project-category" key={category}><div className="project-category-bar"><span>{category}</span><span>{String(projects.filter(p=>p.category===category).length).padStart(2,"0")} PROJECTS</span></div><div className="project-grid">{projects.filter(p=>p.category===category).map(p=><ProjectCard project={p} key={p.slug}/>)}</div></section>)}</div>
       </div>
     </section>
 
     <section className="page-width section" id="work">
       <div className="section-head"><div><Label>02 · PLACES WHERE THE MACHINE HAD TO WORK</Label><h2>Places where the machine had to actually work.</h2></div><p>The experience section is organized around environments, not isolated bullet points: companies, shops, teams, and the systems that came out of them.</p></div>
       <div className="experience-list">{experiences.map((x,i)=><a className="experience-row" href={x.href} key={x.name}><span className="experience-num">{String(i+1).padStart(2,"0")}</span><div className="experience-main"><div className="experience-top"><span>{x.date}</span><span>{x.role}</span></div><h3>{x.name}</h3><p>{x.text}</p><ul>{x.bullets.map(b=><li key={b}>{b}</li>)}</ul></div><span className="row-arrow">↗</span></a>)}</div>
+      <button className="resume-request-card" type="button" onClick={()=>setResumeRequestOpen(true)}><span className="resume-request-kicker">WANT THE ONE-PAGE VERSION?</span><strong>Want to see my resume?</strong><span className="resume-request-arrow">REQUEST A COPY ↗</span></button>
     </section>
 
     <section className="page-width section build-system">
@@ -213,5 +236,6 @@ export default function Home(){
     </section>
 
     <footer className="footer page-width" id="contact"><div><Label>CONTACT</Label><h2>Let’s build something.</h2></div><div className="footer-links"><a href="mailto:gursimvirk3@gmail.com">gursimvirk3@gmail.com</a><a href="https://www.linkedin.com/in/gursimarvirk" target="_blank" rel="noreferrer">LinkedIn ↗</a><a href="https://github.com/GursimarVirk" target="_blank" rel="noreferrer">GitHub ↗</a><a href={resumeUrl} target="_blank" rel="noreferrer">Resume ↗</a><a href="/legacy/home">Original Site Archive ↗</a></div><p className="copyright">© 2026 Gursimar Virk · Built in Berkeley / the Bay.</p></footer>
+    {resumeRequestOpen && <div className="resume-modal-backdrop" onMouseDown={(event)=>{if(event.target===event.currentTarget)setResumeRequestOpen(false);}}><section className="resume-modal" role="dialog" aria-modal="true" aria-labelledby="resume-modal-title"><button className="resume-modal-close" type="button" aria-label="Close resume request" onClick={()=>setResumeRequestOpen(false)}>×</button><Label>RESUME REQUEST</Label><h2 id="resume-modal-title">Let’s get you the details.</h2><p>Share a little context and I’ll follow up with my resume.</p><form onSubmit={submitResumeRequest}><label>Name<input name="name" autoComplete="name" required /></label><label>Email <span>(or phone below)</span><input name="email" type="email" autoComplete="email" /></label><label>Phone <span>(email or phone required)</span><input name="phone" type="tel" autoComplete="tel" /></label><label>Company<input name="company" autoComplete="organization" required /></label>{resumeRequestError && <p className="resume-form-error" role="alert">{resumeRequestError}</p>}<button className="button-light resume-submit" type="submit">REQUEST RESUME ↗</button><small>Submitting opens an email draft addressed to me with your details, so you can send the request.</small></form></section></div>}
   </main>;
 }
