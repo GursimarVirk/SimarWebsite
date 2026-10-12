@@ -62,7 +62,7 @@ const experiences = {
     ]
   },
   "sorcerer-earth": {
-    image: "https://sites.google.com/sitesv-images-rt/AMxu72sg-T38vR_JYQMTp719HR9EwZJx4KfcLhNEnRl4xAAni9-N53zArhZTtMcAnpYGhBpOHTDSzluGKME0A78B2jTPdhIT3s1gkK2k161SrEzE3yVmwRoH0d1ruI5E49ZUXuA2eH1cF_p85P7b-AqIXJoxmDuq32WchoyPMeAeTmQlrQ7W5TJRg_B7twZpobeeLe4WCtVZNxgPfa_34wGueS5s_nNnBX88Ajf0-lH8Mj0%3Dw1280",
+    image: "/images/Sorcererearth/43b4d985e231b4b733e280187b11bbf6.webp",
     title: "Sorcerer.Earth",
     role: "R&D Design & Integration Technician",
     tag: "HARDWARE · ELECTRICAL · FABRICATION",
