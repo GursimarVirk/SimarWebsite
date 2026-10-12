@@ -323,3 +323,12 @@ main{overflow:hidden;position:relative}
 /* Keep the teleoperated hand legible in the hero collage and project card. */
 .photo-c img{object-position:center 38%;object-fit:contain;padding:8px;background:#100c1e}
 .project-tile[href="/projects/robotic-hand"] img{object-fit:contain;object-position:center;background:#100c1e;padding:12px}
+
+/* Experience rows now pair each role with a relevant image thumbnail. */
+.experience-row{grid-template-columns:42px 112px minmax(0,1fr) 24px;align-items:start}
+.experience-thumb{display:block;width:112px;height:112px;object-fit:cover;object-position:center;border:1px solid var(--line);border-radius:7px;background:#100d17}
+/* The teleoperated hand is a mechanism to inspect, not a photo to crop. */
+.project-tile[href="/projects/robotic-hand"] img{height:260px;object-fit:contain;object-position:center;background:#100d17;padding:10px}
+.project-tile.large[href="/projects/robotic-hand"] img{height:330px}
+@media(max-width:950px){.experience-row{grid-template-columns:34px 90px minmax(0,1fr) 18px}.experience-thumb{width:90px;height:90px}}
+@media(max-width:650px){.experience-row{grid-template-columns:28px 76px minmax(0,1fr) 16px}.experience-thumb{width:76px;height:76px}.experience-main h3{font-size:26px}}
