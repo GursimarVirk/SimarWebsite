@@ -88,6 +88,7 @@ const projects = [
   {slug:"towel-holder-innovation", title:"Towel Holder Innovation", group:"FRESHMAN DESIGN", description:"A mass-manufacturable part designed around CAD, scalability, efficiency, and practical manufacturing constraints.", image:"/images/Robotic Arms/95b3ce2f73b8bec877e0fcc27428e9aa.webp", size:"small"},
   {slug:"statistics-data-project", title:"Statistics / Data Project", group:"PROGRAMMING · DATA", description:"Jupyter Hub, Python, statistical methods, one-hot encoding, and data analysis.", image:"/images/Robotic Arms/07a3486b8df22099776ca84ff37c188e.webp", size:"small"},
   {slug:"nasa-hunch-magnetic-boots", title:"NASA HUNCH — Magnetic Boots", group:"NASA HUNCH", description:"An early engineering project that reached National Semi-Finalist status.", image:"/images/Home/027b9604ec0a299f5ae4b6edd26c88b4.webp", size:"small"},
+  {slug:"keiser-wire-raceway", title:"Keiser Wire Raceway", group:"MANUFACTURING · PRODUCT DESIGN", description:"A modular raceway combining pneumatic lines and electrical wiring, designed around safety, manufacturability, installation, and cost.", image:"/images/Kesier Wire Raceway/a7c13c2d2bd19eb90e68383b5a985ac4.webp", size:"small"},
   {slug:"class-projects", title:"Class Projects", group:"UC BERKELEY · COURSEWORK", description:"The broader coursework archive behind the dedicated projects and engineering habits.", image:"/images/Home/b5edc2802fd22f5e3d828898fd11e6f4.webp", size:"small"},
 ];
 
