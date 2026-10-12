@@ -31,6 +31,7 @@ if (eocd < 0) {
 const entries = zip.readUInt16LE(eocd + 10);
 let cursor = zip.readUInt32LE(eocd + 16);
 let copied = 0;
+const candidates = [];
 for (let n = 0; n < entries && cursor + 46 <= zip.length; n++) {
   if (zip.readUInt32LE(cursor) !== 0x02014b50) break;
   const method = zip.readUInt16LE(cursor + 10);
@@ -43,6 +44,7 @@ for (let n = 0; n < entries && cursor + 46 <= zip.length; n++) {
   const entryName = zip.subarray(cursor + 46, cursor + 46 + nameLength).toString("utf8");
   const baseName = path.posix.basename(entryName);
   const destination = destinations.get(baseName);
+  if (/\.(webp|jpe?g|png)$/i.test(entryName) && /(global|pound|15|hand|dof|robot)/i.test(entryName)) candidates.push(entryName);
 
   if (destination && localOffset + 30 <= zip.length) {
     const localNameLength = zip.readUInt16LE(localOffset + 26);
@@ -67,4 +69,5 @@ for (let n = 0; n < entries && cursor + 46 <= zip.length; n++) {
   }
   cursor += 46 + nameLength + extraLength + commentLength;
 }
-console.log(`[prepare-image-assets] Installed ${copied}/${destinations.size} portfolio images.`);
+console.log("[prepare-image-assets] ZIP entries: " + entries + "; candidate image names: " + JSON.stringify(candidates.slice(0, 100)));
+console.log("[prepare-image-assets] Installed " + copied + "/" + destinations.size + " portfolio images.");
