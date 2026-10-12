@@ -220,6 +220,7 @@ const legacySlugByProject: Record<string,string> = {
   "statistics-data-project":"stats-project",
   "hobbies-other":"hobbies-other",
   "cars-and-machines":"cars-and-machines",
+  "keiser-wire-raceway":"keiser-wire-raceway",
   "robotic-hand":"robotic-hand",
   "robotic-arms":"robotic-arms",
   "iot-millipede-monitor":"iot-millipede-monitor",
