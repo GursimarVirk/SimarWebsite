@@ -167,6 +167,21 @@ const projects = {
     ],
     links: [["GroceryGizmo","https://grocerygizmo.pchrisoc.com/"],["Original Robotic Arms project files","https://drive.google.com/open?id=1GsRopkHQfxFNaJGNeoxqZqlqboKadXVn"],["Original Robotic Arms video / file","https://drive.google.com/open?id=1a5LYMUZ90Gz9tzDCJB7CowEVaLreWUcM"]]
   },
+  "keiser-wire-raceway": {
+    image: "/images/Kesier Wire Raceway/a7c13c2d2bd19eb90e68383b5a985ac4.webp",
+    title: "Keiser Wire Raceway",
+    kicker: "MANUFACTURING · PRODUCT DESIGN",
+    role: "Mechanical Design · Manufacturing · Product Development",
+    intro: "A modular raceway designed to route pneumatic lines and electrical wiring through a single, manufacturable, installable system.",
+    stats: [["MODULAR","architecture"],["PNEUMATICS","+ electrical"],["DFM","manufacturability"],["FIELD","installation"]],
+    sections: [
+      ["Problem","Keiser needed a solution that could house pneumatic lines and electrical wiring together. Existing products did not meet the application’s requirements, so I worked from the constraints rather than forcing a poor fit."],
+      ["Design process","I worked with the electrical team and safety coordinator, researched alternatives, evaluated manufacturers, and designed a cost-effective, modular raceway that could accommodate the required ports and interfaces."],
+      ["Broader manufacturing work","The original page also documents jigs, drawing updates, sticker placers, powder-coating rack redesigns, a warehouse ramp, and repurposing a wire-cutting machine to make it modular."],
+      ["Installation","The CEO assigned this as a capstone-style project and discussed the design and manufacturability with me in regular reviews. I was later offered the opportunity to travel to Texas to oversee the first installation at a major college campus gym."]
+    ],
+    links: [["Original Keiser project archive","/legacy/keiser-wire-raceway"]]
+  },
   "class-projects": {
     image: "/images/Home/b5edc2802fd22f5e3d828898fd11e6f4.webp",
     title: "Class Projects",
