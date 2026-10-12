@@ -256,7 +256,7 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
           </section>
           <aside className="detail-side">
             <span className="section-label">KEEP EXPLORING</span>
-            <a href="/#selected-work">Selected robotics ↗</a>
+            <a href="/#projects">Selected robotics ↗</a>
             <a href="/media">Media archive ↗</a>
             <a href="/media/stats">Robot competition stats ↗</a>
             <a href="/#contact">Contact ↗</a>
