@@ -212,10 +212,10 @@ const archive: MediaItem[] = [
     type: "BERKELEY",
     source: "E29 · MANUFACTURING & DESIGN COMMUNICATION",
     title: "E29 project / manufacturing archive",
-    description: "The Berkeley E29 work belongs here as the manufacturing-and-design side of the story: drawings, tolerancing, fabrication, prototyping, and the open-ended final project. The original personal project site is not currently indexed, so this card points to the Berkeley course reference until that project URL is restored.",
+    description: "Course context for E29, the manufacturing-and-design communication course at Berkeley: drawings, tolerancing, fabrication, prototyping, and the open-ended final project.",
     date: "BERKELEY",
     href: "https://asme.studentorg.berkeley.edu/student-resources/course-guide/",
-    tag: "PROJECT SITE TO RESTORE",
+    tag: "COURSE REFERENCE",
   },
   {
     type: "SCIENCE FAIR",
