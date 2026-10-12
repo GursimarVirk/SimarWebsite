@@ -9,10 +9,10 @@ const heroImages = [
   ["/images/Home/dcb69b8d3505bf2fbe6ff659aff682b4.webp","PORTRAIT / HOME"],
   ["/images/Humanoids/ccacc1b06bfe5fd19878ae0b81668eef.webp","HUMANOIDS"],
   ["/images/30lb Robot/024d3371033a659dea795ef2ed7f08cf.webp","30 LB ROBOT"],
-  ["/images/Home/d40fc533c4af7350b0ce95a3627f0658.webp","ROBOTIC HAND"],
+  ["/images/Robotic Arms/2ed803397858d570e590a832d3365844.webp","ROBOTIC HAND"],
   ["https://sites.google.com/sitesv-images-rt/AMxu72vv9B-OoCaTbJpEIqg8E_K_G1qou6hB-s-1-zP_WfmRFoNb05ghSxAtZthSul0qNdSxMeQ2XHos895-bxekrwSXXRjVykMDxBSr9_WIvagi9OirkJ9hhFu5JxX1jzkCnXUhyVnJSpTSKG1Unl5EEj4Akluj9ul9uScZ1SMMEI1ejxl0kwTAu5NBn6UcXFOVj7kosSUHdk4pvVTaVQuxGfPJD8ipAEIS2PKib1JE%3Dw1280","AMAZON ROBOTICS"],
+  ["/images/Robotic Arms/2ed803397858d570e590a832d3365844.webp","AUTOPALLET"],
   ["/images/15lb Robot/1a739db5b66e7a72ddd145ae4ced166e.webp","15 LB ROBOT"],
-  ["https://sites.google.com/sitesv-images-rt/AMxu72sg-T38vR_JYQMTp719HR9EwZJx4KfcLhNEnRl4xAAni9-N53zArhZTtMcAnpYGhBpOHTDSzluGKME0A78B2jTPdhIT3s1gkK2k161SrEzE3yVmwRoH0d1ruI5E49ZUXuA2eH1cF_p85P7b-AqIXJoxmDuq32WchoyPMeAeTmQlrQ7W5TJRg_B7twZpobeeLe4WCtVZNxgPfa_34wGueS5s_nNnBX88Ajf0-lH8Mj0%3Dw1280","AUTOPALLET"],
 ];
 
 const experiences = [
@@ -110,10 +110,10 @@ const berkeley = [
 const publicFootprint = [
   ["jobTopia","Robo Fight Club — Episode #297","PODCAST","https://podscan.fm/podcasts/jobtopia-with-tony-moore/episodes/robo-fight-club-ucb-berkeleys-glitch-and-malware-with-gursimar-virk-club-co-president-episode-297"],
   ["Linus Tech Tips","I Joined Robot Fight Club","VIDEO","https://www.youtube.com/watch?v=VJqMPFNP4to"],
-  ["The New York Times","Robot fight / San Francisco","PRESS","https://www.nytimes.com/2025/09/19/technology/san-francisco-robot-fight.html"],
+  ["TechWomen / Wits University","Global STEM leaders gather for TechWomen 2026","PRESS","https://www.wits.ac.za/news/latest-news/research-news/2026/2026-03/global-stem-leaders-gather-at-wits-for-techwomen-2026.html"],
   ["San Francisco Standard","Robot boxing in San Francisco","PRESS","https://sfstandard.com/2025/08/10/robot-boxing-match-sf/"],
   ["AFP / International Press","Humanoid robots go for knockout","PRESS","https://kuwaittimes.com/article/38267/technology/humanoid-robots-go-for-knockout-in-high-tech-vegas-fight-night/"],
-  ["UC Berkeley Mechanical Engineering","Combat Robotics on BattleBots","UNIVERSITY","https://me.berkeley.edu/news/me-student-group-berkeley-combat-robotics-competes-on-battlebots/"],
+  ["Blue & Gold Yearbook","2025–2026 edition · UC Berkeley’s official yearbook","YEARBOOK","https://bgyearbook.myshopify.com/products/pre-order-2025-2026-yearbook"],
 ];
 
 function Label({children}:{children:ReactNode}){return <p className="eyebrow">{children}</p>;}
