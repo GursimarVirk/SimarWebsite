@@ -136,7 +136,7 @@ export default function Home(){
     <nav className="nav">
       <a className="brand" href="#top">GURSIMAR VIRK</a>
       <div className="nav-links">
-        <a href="#projects">Projects</a><a href="#work">Work</a><a href="/media">Media</a><a href="#berkeley">Berkeley</a><a href="#about">About</a>
+        <a href="#projects">Projects</a><a href="#work">Work</a><a href="#about">About</a><a href="#berkeley">Past</a><a href="/media">Media</a>
         <details className="resume-menu"><summary>Resume ↗</summary><div className="resume-popover"><Label>ONE PAGE</Label><h3>Resume</h3><p>A fast version of the engineering story, with the details recruiters actually need first.</p><a className="button-light" href={resumeUrl} target="_blank" rel="noreferrer">OPEN RESUME ↗</a><a className="button-dark" href="https://www.linkedin.com/in/gursimarvirk" target="_blank" rel="noreferrer">LINKEDIN ↗</a></div></details>
         <a href="#contact">Contact</a>
       </div>
