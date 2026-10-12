@@ -6,7 +6,8 @@
     "dev": "next dev --no-turbo",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "postinstall": "node scripts/prepare-image-assets.mjs"
   },
   "dependencies": {
     "next": "16.0.8",
