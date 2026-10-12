@@ -120,7 +120,7 @@ function Label({children}:{children:ReactNode}){return <p className="eyebrow">{c
 const projectCategories = ["COMBAT ROBOTICS","ROBOTICS & MANIPULATION","CLASS & UNIVERSITY PROJECTS","PRODUCT DESIGN & MANUFACTURING","PERSONAL BUILDS & MACHINES"];
 
 function ProjectCard({project}:{project:(typeof projects)[number]}){
-  return <a className={`project-tile ${project.size}`} href={`/projects/${project.slug}`}>
+  return <a className={`project-tile ${project.size} ${project.slug === "motorcycle-communication-system" ? "motorcycle-project" : ""}`} href={`/projects/${project.slug}`}>
     {project.image && <img src={project.image.startsWith("http") ? project.image : legacyImage(project.image)} alt={project.title} loading="lazy" />}
     <div className="project-shade"/>
     <div className="project-tile-content">
