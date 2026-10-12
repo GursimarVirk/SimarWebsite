@@ -289,6 +289,11 @@ main{overflow:hidden;position:relative}
 
 
 .resume-nav-button{border:0;background:none;color:var(--ink);font:inherit;cursor:pointer;padding:0}
+.resume-nav-button,.nav-resume,.resume-footer-button{border:0;background:none;color:var(--muted);font:inherit;cursor:pointer;padding:0;text-decoration:none;transition:color .2s ease}
+.resume-nav-button:hover,.nav-resume:hover,.resume-footer-button:hover{color:var(--ink)}
+.resume-footer-button{font-size:13px;text-align:left}
+.resume-request-card{font:inherit}
+
 .subpage{min-height:100vh;background:var(--bg);color:var(--ink)}
 .subpage-hero{padding-top:120px;padding-bottom:72px}
 .subpage-hero h1{font-size:clamp(60px,10vw,130px);line-height:.86;letter-spacing:-.075em;margin:18px 0 28px}
