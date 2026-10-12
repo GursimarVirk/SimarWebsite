@@ -35,7 +35,7 @@ const projects = {
     links: [["Combat Robotics at Berkeley","https://combatrobotics.studentorg.berkeley.edu/"],["Robot Combat Events","https://www.robotcombatevents.com/events/7353"]]
   },
   "combat-box": {
-    image: "/images/Combat Box/76e706e5b8a5d2856e048b6e3f51bf92.webp",
+    image: "/images/Home/1b8531ca4ea42eb702b0ae7fbf321db2.webp",
     title: "Combat Box",
     kicker: "COMBAT ROBOTICS AT BERKELEY · FABRICATION",
     role: "Designer · Fabricator · Project Lead",
