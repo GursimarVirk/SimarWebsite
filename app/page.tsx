@@ -9,9 +9,9 @@ const heroImages = [
   ["/images/Home/dcb69b8d3505bf2fbe6ff659aff682b4.webp","PORTRAIT / HOME"],
   ["/images/Humanoids/ccacc1b06bfe5fd19878ae0b81668eef.webp","HUMANOIDS"],
   ["/images/30lb Robot/024d3371033a659dea795ef2ed7f08cf.webp","30 LB ROBOT"],
-  ["/images/Robotic Arms/2ed803397858d570e590a832d3365844.webp","ROBOTIC HAND"],
+  ["/images/Robotic Arms/9a1205816b57cf9e2ea83a3a711fbc88.webp","ROBOTIC HAND"],
   ["/images/Robotic Arms/95b3ce2f73b8bec877e0fcc27428e9aa.webp","LOCOMOTION"],
-  ["https://img.youtube.com/vi/NPVxI3uvMTE/hqdefault.jpg","ANY KIND OF ROBOT"],
+  ["/images/Robotic Arms/2ed803397858d570e590a832d3365844.webp","ANY KIND OF ROBOT"],
   ["/images/15lb Robot/1a739db5b66e7a72ddd145ae4ced166e.webp","15 LB ROBOT"],
 ];
 
@@ -57,7 +57,7 @@ const experiences = [
     href:"/experience/sorcerer-earth"
   },
   {
-    name:"AutoPallet Robotics", image:"https://img.youtube.com/vi/NPVxI3uvMTE/hqdefault.jpg",
+    name:"AutoPallet Robotics", image:"https://img.youtube.com/vi/NPVxI3uvMTE/1.jpg",
     role:"R&D Design & Robotics Integration Technician",
     date:"2025",
     text:"Rapid robot prototyping where mechanical design, electronics, soldering, and debugging all had to happen at once.",
