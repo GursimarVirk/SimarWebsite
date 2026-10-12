@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import { LegacyEmbed } from "../../components/legacy-embed";
 import { legacyPages } from "../legacy-data";
 import styles from "../legacy.module.css";
+import { legacyImage } from "../../legacy-image";
 
 const gallery: Record<string,string[]> = {
   "15lb Robot":["1a739db5b66e7a72ddd145ae4ced166e.webp","5b500beba2060fac1329213b6d81ea2d.webp","64e8aeddf152c7c0f6ef86523968d7d7.webp","d2c02d2966cd48500d5198a9733b7bc4.webp"],
@@ -50,9 +51,9 @@ export default async function LegacyPage({params}:{params:Promise<{slug:string}>
             {page.blocks.map(function(block,i){ return isHeading(block) ? <h2 className={styles.heading} key={i}>{block}</h2> : <p key={i}>{block}</p>; })}
           </div>
           {page.links && page.links.length>0 && <div className={styles.links}>{page.links.map(function(link){return <a key={link.href} href={link.href} target="_blank" rel="noreferrer">{link.label || "Open source"} ↗</a>;})}</div>}
-          {page.coverImage && <figure className={styles.cover}><img src={page.coverImage} alt={page.title + " cover"} loading="lazy"/></figure>}
+          {page.coverImage && <figure className={styles.cover}><img src={legacyImage(page.coverImage)} alt={page.title + " cover"} loading="lazy"/></figure>}
           {page.embeds && page.embeds.length>0 && <div className={styles.embeds}><div><p className="eyebrow">ORIGINAL EMBEDS</p><h2>Documents, presentations & media</h2><p className={styles.intro}>These are the actual Google Drive / Docs / Slides viewers from the exported site, rebuilt as responsive in-page embeds.</p></div>{page.embeds.map(function(embed){return <LegacyEmbed embed={embed} key={embed.src}/>;})}</div>}
-          {images.length>0 && <div className={styles.gallery}><div style={{gridColumn:"1 / -1"}}><p className="eyebrow">ORIGINAL IMAGE ARCHIVE</p><h2>Recovered project photography</h2></div>{images.map(function(file){return <figure key={file}><img src={"/images/" + page.imageFolder + "/" + file} alt={page.title + " archive image"} loading="lazy"/></figure>;})}</div>}
+          {images.length>0 && <div className={styles.gallery}><div style={{gridColumn:"1 / -1"}}><p className="eyebrow">ORIGINAL IMAGE ARCHIVE</p><h2>Recovered project photography</h2></div>{images.map(function(file){return <figure key={file}><img src={legacyImage("/images/" + page.imageFolder + "/" + file)} alt={page.title + " archive image"} loading="lazy"/></figure>;})}</div>}
           <div className={styles.note}><strong>Migration note.</strong> This page preserves the writing and embedded material from the original Google Sites export. The surrounding portfolio is the polished redesign; this archive exists so none of the original work disappears.</div>
         </section>
         <aside className={styles.side}>
