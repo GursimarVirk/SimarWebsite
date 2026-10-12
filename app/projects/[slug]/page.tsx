@@ -241,7 +241,7 @@ const projects = {
 };
 
 const legacyGallery: Record<string,string[]> = {
-  "15lb Robot":["/images/15lb Robot/global-pounding-main.webp","1a739db5b66e7a72ddd145ae4ced166e.webp","5b500beba2060fac1329213b6d81ea2d.webp","64e8aeddf152c7c0f6ef86523968d7d7.webp","d2c02d2966cd48500d5198a9733b7bc4.webp"],
+  "15lb Robot":["1a739db5b66e7a72ddd145ae4ced166e.webp","5b500beba2060fac1329213b6d81ea2d.webp","64e8aeddf152c7c0f6ef86523968d7d7.webp","d2c02d2966cd48500d5198a9733b7bc4.webp"],
   "30lb Robot":["024d3371033a659dea795ef2ed7f08cf.webp","30e9ddb3e8263200eb82535af1cc109d.webp","43fe4185e9fe830a438c397ea7cd9f5d.webp","5677c453ac313db764187b8cd6062e0f.webp","6bba6027a1b9be3118985b911144e534.webp","e6b597c12aa25fe4e8b508a74b490720.webp","ef1064ebb6ada2d31cc5062d9f54954e.webp"],
   "Cars and Machines":["2ea1f7ee762bbaaa434b56d33143590f.webp","45e6ac408e1e9f42402510fde2280f16.webp","94e578495834318443d01ed35a10c4cd.webp","9ab0877f074aba8ce3731db3a6936262.webp","a0ad65cccb395275961bcbf88b8e791d.webp","b7e5a70686675297535fa60b2dea90bf.webp","b93b751f4450db4e21ed19e493095301.webp"],
   "Home":["027b9604ec0a299f5ae4b6edd26c88b4.webp","0916f5e28e0a1edb3590341eb6dd5c2c.webp","1659fbdfb81da2192bf57b0d637e7928.webp","2ea1f7ee762bbaaa434b56d33143590f.webp","60a566a5a4395445cc3d781dbab4e536.webp","67c15c7a7ba0b7e2a3252cb7c0b6c6e6.webp","b5edc2802fd22f5e3d828898fd11e6f4.webp","d40fc533c4af7350b0ce95a3627f0658.webp","dcb69b8d3505bf2fbe6ff659aff682b4.webp"],
@@ -314,7 +314,14 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
             {project.sections.map(([heading,body]) => <div className="detail-section" key={heading}><h2>{heading}</h2><p>{body}</p></div>)}
             {(() => {
               const original = legacyPages[legacySlugByProject[slug] || slug];
-              const images = original ? [...(original.coverImage ? [original.coverImage] : []), ...(original.imageFolder ? (legacyGallery[original.imageFolder] || []) : [])] : [];
+              const uploadedImages = slug === "15-lb-combat-robots"
+                ? ["/images/15lb Robot/global-pounding-main.webp", "/images/15lb Robot/global-pounding-parts.webp", "/images/15lb Robot/global-pounding-build.webp", "/images/15lb Robot/global-pounding-fight.webp"]
+                : slug === "robotic-hand"
+                  ? ["/images/Robotic Hand/15dof-hand-testing.webp", "/images/Robotic Hand/15dof-hand-build-annotated.webp"]
+                  : [];
+              const images = original
+                ? [...(original.coverImage ? [original.coverImage] : []), ...uploadedImages, ...(original.imageFolder ? (legacyGallery[original.imageFolder] || []) : [])]
+                : uploadedImages;
               return images.length > 0 ? <section className="detail-gallery">
                 <div className="detail-gallery-heading"><span className="section-label">ORIGINAL PORTFOLIO PHOTOGRAPHY</span><h2>Build gallery</h2><p>Recovered images from the original project page, preserved here alongside the write-up.</p></div>
                 <div className="detail-gallery-grid">{images.map((file) => <a href={legacyImage(file.startsWith("/") ? file : "/images/" + original!.imageFolder + "/" + file)} target="_blank" rel="noreferrer" key={file}><img src={legacyImage(file.startsWith("/") ? file : "/images/" + original!.imageFolder + "/" + file)} alt={original!.title + " — original project photo"} loading="lazy"/></a>)}</div>
