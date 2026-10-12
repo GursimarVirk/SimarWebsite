@@ -112,7 +112,7 @@ const publicFootprint = [
   ["TechWomen / Wits University","Global STEM leaders gather for TechWomen 2026","PRESS","https://www.wits.ac.za/news/latest-news/research-news/2026/2026-03/global-stem-leaders-gather-at-wits-for-techwomen-2026.html"],
   ["San Francisco Standard","Robot boxing in San Francisco","PRESS","https://sfstandard.com/2025/08/10/robot-boxing-match-sf/"],
   ["AFP / International Press","Humanoid robots go for knockout","PRESS","https://kuwaittimes.com/article/38267/technology/humanoid-robots-go-for-knockout-in-high-tech-vegas-fight-night/"],
-  ["Blue & Gold Yearbook","Read about our team’s growth","YEARBOOK","https://bgyearbook.myshopify.com/products/pre-order-2025-2026-yearbook"],
+  ["Blue & Gold Yearbook","Read about my team’s growth","YEARBOOK","https://bgyearbook.myshopify.com/products/pre-order-2025-2026-yearbook"],
 ];
 
 function Label({children}:{children:ReactNode}){return <p className="eyebrow">{children}</p>;}
