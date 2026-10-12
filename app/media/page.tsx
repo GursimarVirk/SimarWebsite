@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import styles from "./media.module.css";
 import { legacyImage } from "../legacy-image";
+import { ResumeModalTrigger } from "../components/resume-modal";
 
 export const metadata: Metadata = {
   title: "Media · Gursimar Virk",
@@ -289,7 +290,7 @@ export default function MediaPage() {
           <a href="/#berkeley">Berkeley</a>
           <a className="nav-active" href="/media">Media</a>
           <a href="/#about">About</a>
-          <a href="https://sites.google.com/view/gvirk/resume" target="_blank" rel="noreferrer" className="nav-resume">Resume ↗</a>
+          <ResumeModalTrigger className="nav-resume">Resume ↗</ResumeModalTrigger>
           <a href="/#contact">Contact</a>
         </div>
       </nav>
