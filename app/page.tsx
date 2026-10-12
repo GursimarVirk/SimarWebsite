@@ -165,18 +165,18 @@ export default function Home(){
       </div>
     </nav>
 
-    <section className="hero page-width" id="top">
-      <div className="hero-copy">
-        <Label>MECHANICAL ENGINEER · ROBOTICS · UC BERKELEY</Label>
-        <h1>Gursimar<br/><span>Virk.</span></h1>
-        <p className="hero-lede">I build robots, break them, fix them, and then figure out how to make the next one easier to build.</p>
-        <div className="hero-actions"><a className="button-light" href="#work">SEE THE WORK ↓</a><a className="button-dark" href="/media">PUBLIC FOOTPRINT ↗</a></div>
-        <div className="hero-meta"><span>NOW · ROBOTICS HARDWARE INTEGRATION</span><span>REDWOOD CITY / BAY AREA</span></div>
+    <section className="hero-collage page-width" id="top">
+      <div className="hero-name">
+        <p className="eyebrow">MECHANICAL ENGINEER · ROBOTICS</p>
+        <h1>GURSIMAR<br/><span>VIRK</span></h1>
+        <p>I build robots, break them, fix them, and then figure out how to make the next one easier to build.</p>
+        <div className="hero-portrait"><img src={legacyImage(heroImages[0][0])} alt="Gursimar Virk"/></div>
       </div>
-      <div className="hero-visual">
-        <div className="hero-main-photo"><img src={legacyImage(heroImages[0][0])} alt="Gursimar Virk portfolio image"/><span>01 / HUMANOIDS</span></div>
-        <div className="hero-photo-stack"><img src={legacyImage(heroImages[1][0])} alt="Humanoid robotics"/><img src={legacyImage(heroImages[5][0])} alt="15 lb combat robot"/></div>
-        <div className="hero-stamp">CAD<br/>→<br/>SHOP<br/>→<br/>ROBOT</div>
+      <div className="photo-field" aria-label="A selection of robotics work">
+        {heroImages.slice(1).map((image,i)=><figure className={["hero-photo","photo-b","photo-c","photo-d","photo-e","photo-f"][i]} key={image[1]}><img src={legacyImage(image[0])} alt={image[1]}/><figcaption>{image[1]}</figcaption></figure>)}
+        <div className="photo-orbit orbit-one"/>
+        <div className="photo-orbit orbit-two"/>
+        <div className="hero-note"><span>CAD → SHOP → ROBOT</span><span>01 / 06</span></div>
       </div>
     </section>
 
