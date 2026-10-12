@@ -133,7 +133,7 @@ export default async function ExperiencePage({ params }: { params: Promise<{ slu
     <main className="detail-page">
       <div className="page-width">
         <a className="detail-back" href="/#work">← BACK TO EXPERIENCE</a>
-        <header className="detail-hero" style={{"--detail-cover": `url("${"image" in item ? legacyImage(item.image) : slug === "keiser" ? "/images/Kesier Wire Raceway/a7c13c2d2bd19eb90e68383b5a985ac4.webp" : slug === "autopallet-robotics" ? "/images/Home/67c15c7a7ba0b7e2a3252cb7c0b6c6e6.webp" : "/images/1b8531ca4ea42eb702b0ae7fbf321db2.webp"}")`} } as React.CSSProperties}>
+        <header className="detail-hero" style={{"--detail-cover": `url("${"image" in item ? legacyImage(item.image) : slug === "keiser" ? "/images/Kesier Wire Raceway/a7c13c2d2bd19eb90e68383b5a985ac4.webp" : slug === "autopallet-robotics" ? "/images/Home/67c15c7a7ba0b7e2a3252cb7c0b6c6e6.webp" : "/images/1b8531ca4ea42eb702b0ae7fbf321db2.webp"}")`} as React.CSSProperties}>
           <div>
             <span className="section-label">{item.tag}</span>
             <h1>{item.title}</h1>
