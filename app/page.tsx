@@ -159,7 +159,7 @@ export default function Home(){
     <nav className="nav">
       <a className="brand" href="#top">GURSIMAR VIRK</a>
       <div className="nav-links">
-        <a href="#work">Work</a><a href="#projects">Projects</a><a href="/media">Media</a><a href="#berkeley">Berkeley</a><a href="#about">About</a>
+        <a href="#projects">Projects</a><a href="#work">Work</a><a href="/media">Media</a><a href="#berkeley">Berkeley</a><a href="#about">About</a>
         <details className="resume-menu"><summary>Resume ↗</summary><div className="resume-popover"><Label>ONE PAGE</Label><h3>Resume</h3><p>A fast version of the engineering story, with the details recruiters actually need first.</p><a className="button-light" href={resumeUrl} target="_blank" rel="noreferrer">OPEN RESUME ↗</a><a className="button-dark" href="https://www.linkedin.com/in/gursimarvirk" target="_blank" rel="noreferrer">LINKEDIN ↗</a></div></details>
         <a href="#contact">Contact</a>
       </div>
@@ -198,13 +198,13 @@ export default function Home(){
 
     <section className="dark-panel" id="projects">
       <div className="page-width section">
-        <div className="section-head dark"><div><Label>02 · SELECTED WORK</Label><h2>Things I’ve actually built.</h2></div><p>Combat robots, humanoids, manipulation, sensing, product development, and the machines I kept working on after class ended.</p></div>
+        <div className="section-head dark"><div><Label>01 · THINGS I’VE ACTUALLY BUILT</Label><h2>Things I’ve actually built.</h2></div><p>Combat robots, humanoids, manipulation, sensing, product development, and the machines I kept working on after class ended.</p></div>
         <div className="project-grid">{projects.map(p=><ProjectCard project={p} key={p.slug}/>)}</div>
       </div>
     </section>
 
     <section className="page-width section" id="work">
-      <div className="section-head"><div><Label>01 · WHERE I WORKED</Label><h2>Places where the machine had to actually work.</h2></div><p>The experience section is organized around environments, not isolated bullet points: companies, shops, teams, and the systems that came out of them.</p></div>
+      <div className="section-head"><div><Label>02 · PLACES WHERE THE MACHINE HAD TO WORK</Label><h2>Places where the machine had to actually work.</h2></div><p>The experience section is organized around environments, not isolated bullet points: companies, shops, teams, and the systems that came out of them.</p></div>
       <div className="experience-list">{experiences.map((x,i)=><a className="experience-row" href={x.href} key={x.name}><span className="experience-num">{String(i+1).padStart(2,"0")}</span><div className="experience-main"><div className="experience-top"><span>{x.date}</span><span>{x.role}</span></div><h3>{x.name}</h3><p>{x.text}</p><ul>{x.bullets.map(b=><li key={b}>{b}</li>)}</ul></div><span className="row-arrow">↗</span></a>)}</div>
     </section>
 
@@ -218,23 +218,23 @@ export default function Home(){
       </div>
     </section>
 
+    <section className="page-width section" id="about">
+      <div className="about-grid"><div><Label>04 · OUTSIDE THE SHOP</Label><h2>Still building things when nobody asked.</h2></div><div className="about-copy"><p><strong>Cars. Motorcycles. Machining. Photography. Music.</strong> I like machines that are old enough to require a little detective work.</p><p>Six-plus years around machining, a Kawasaki Ninja 300, a C4 Corvette, a Jeep restoration, and a restored lathe are a pretty good explanation for why I prefer making things to just talking about them.</p><div className="about-facts"><span>6+<small>YEARS MACHINING</small></span><span>NINJA 300<small>MOTORCYCLE</small></span><span>BERKELEY<small>B.S. ME</small></span></div></div></div>
+    </section>
+
     <section className="page-width section berkeley-section" id="berkeley">
-      <div className="section-head"><div><Label>04 · BERKELEY</Label><h2>More than a degree.</h2></div><p>Organizations, teaching, transportation, rowing, outreach, and the weird side quests that made Berkeley feel like an engineering playground.</p></div>
+      <div className="section-head"><div><Label>05 · MY PAST</Label><h2>Where I came from.</h2></div><p>Berkeley was more than a degree: robotics, teaching, transportation, rowing, outreach, and the side quests that shaped how I work. It is part of the story, not the identity I am trying to hold onto forever.</p></div>
       <div className="berkeley-grid">{berkeley.map(([title,kind,text],i)=><article key={title}><span>{String(i+1).padStart(2,"0")} · {kind}</span><h3>{title}</h3><p>{text}</p></article>)}</div>
     </section>
 
-    <section className="page-width section" id="about">
-      <div className="about-grid"><div><Label>06 · OUTSIDE THE SHOP</Label><h2>Still building things when nobody asked.</h2></div><div className="about-copy"><p><strong>Cars. Motorcycles. Machining. Photography. Music.</strong> I like machines that are old enough to require a little detective work.</p><p>Six-plus years around machining, a Kawasaki Ninja 300, a C4 Corvette, a Jeep restoration, and a restored lathe are a pretty good explanation for why I prefer making things to just talking about them.</p><div className="about-facts"><span>6+<small>YEARS MACHINING</small></span><span>NINJA 300<small>MOTORCYCLE</small></span><span>BERKELEY<small>B.S. ME</small></span></div></div></div>
-    </section>
-
     <section className="media-callout">
-      <div className="page-width media-callout-inner"><div><Label>05 · PUBLIC FOOTPRINT</Label><h2>The robots also escaped the shop.</h2><p>Interviews, creator videos, live fights, photographs, press, Berkeley records, and the competition trail.</p></div><a className="button-light" href="/media">OPEN MEDIA ARCHIVE ↗</a></div>
+      <div className="page-width media-callout-inner"><div><Label>06 · PUBLIC FOOTPRINT</Label><h2>The robots also escaped the shop.</h2><p>Interviews, creator videos, live fights, photographs, press, Berkeley records, and the competition trail.</p></div><a className="button-light" href="/media">OPEN MEDIA ARCHIVE ↗</a></div>
     </section>
 
     <section className="prompt-band">
       <div className="page-width prompt-inner"><Label>HIRING MANAGER MODE</Label><h2>Have a job description?</h2><p>Use the portfolio as a map. The resume is the compressed version; these pages show how the work actually happened.</p><div className="prompt">“Here is Gursimar Virk’s portfolio and our job description. Which parts of her experience are most relevant, and which projects should I look at?”</div></div>
     </section>
 
-    <footer className="footer page-width" id="contact"><div><Label>CONTACT</Label><h2>Let’s build something.</h2></div><div className="footer-links"><a href="mailto:gursimvirk3@gmail.com">gursimvirk3@gmail.com</a><a href="https://www.linkedin.com/in/gursimarvirk" target="_blank" rel="noreferrer">LinkedIn ↗</a><a href="https://github.com/GursimarVirk" target="_blank" rel="noreferrer">GitHub ↗</a><a href={resumeUrl} target="_blank" rel="noreferrer">Resume ↗</a></div><p className="copyright">© 2026 Gursimar Virk · Built in Berkeley / the Bay.</p></footer>
+    <footer className="footer page-width" id="contact"><div><Label>CONTACT</Label><h2>Let’s build something.</h2></div><div className="footer-links"><a href="mailto:gursimvirk3@gmail.com">gursimvirk3@gmail.com</a><a href="https://www.linkedin.com/in/gursimarvirk" target="_blank" rel="noreferrer">LinkedIn ↗</a><a href="https://github.com/GursimarVirk" target="_blank" rel="noreferrer">GitHub ↗</a><a href={resumeUrl} target="_blank" rel="noreferrer">Resume ↗</a><a href="/legacy/home">Original Site Archive ↗</a></div><p className="copyright">© 2026 Gursimar Virk · Built in Berkeley / the Bay.</p></footer>
   </main>;
 }
