@@ -91,31 +91,7 @@ const projects = [
   {slug:"class-projects", title:"Class Projects", group:"UC BERKELEY · COURSEWORK", description:"The broader coursework archive behind the dedicated projects and engineering habits.", image:"/images/Home/1b8531ca4ea42eb702b0ae7fbf321db2.webp", size:"small"},
 ];
 
-const archive = [
-  ["Original Home","LEGACY · HOME","/legacy/home"],
-  ["Projects","LEGACY · PROJECT INDEX","/legacy/projects"],
-  ["Internship Experience","LEGACY · EXPERIENCE INDEX","/legacy/internship-experience"],
-  ["Amazon Robotics","LEGACY · EXPERIENCE","/legacy/amazon-robotics"],
-  ["Auto Pallet Robotics","LEGACY · EXPERIENCE","/legacy/auto-pallet"],
-  ["Keiser Wire Raceway","LEGACY · MANUFACTURING","/legacy/keiser-wire-raceway"],
-  ["Sorcerer.Earth","LEGACY · EXPERIENCE","/legacy/sorcerer-earth"],
-  ["30 LB Combat Robot","LEGACY · COMBAT ROBOTICS","/legacy/30lb-robot"],
-  ["15 LB Combat Robot","LEGACY · COMBAT ROBOTICS","/legacy/15lb-robot"],
-  ["Combat Robotics","LEGACY · COMBAT ROBOTICS","/legacy/combat-robotics"],
-  ["1 LB Combat Box","LEGACY · COMBAT ROBOTICS","/legacy/combat-box"],
-  ["Humanoids","LEGACY · HUMANOID ROBOTICS","/legacy/humanoids"],
-  ["Robotic Hand","LEGACY · UC BERKELEY","/legacy/robotic-hand"],
-  ["Robotic Arms","LEGACY · ROBOTICS","/legacy/robotic-arms"],
-  ["Motorcycle Helmet Comms","LEGACY · PRODUCT DEVELOPMENT","/legacy/motorcycle-comms"],
-  ["IoT Millipede Monitor","LEGACY · IOT","/legacy/iot-millipede-monitor"],
-  ["Towel Holder Innovation","LEGACY · FRESHMAN DESIGN","/legacy/towel-holder"],
-  ["Statistics / Data Project","LEGACY · PROGRAMMING","/legacy/stats-project"],
-  ["Class Projects","LEGACY · COURSEWORK","/legacy/class-projects"],
-  ["Cars & Machines","LEGACY · PERSONAL SHOP","/legacy/cars-and-machines"],
-  ["Hobbies / Other","LEGACY · PERSONAL","/legacy/hobbies-other"],
-  ["NASA HUNCH","LEGACY · EARLY ENGINEERING","/legacy/nasa-hunch"],
-  ["Resume","LEGACY · DOCUMENT","/legacy/resume"],
-];
+
 
 const berkeley = [
   ["Combat Robotics at Berkeley","PRESIDENT · TECHNICAL LEAD","120+ members · robot R&D · shop operations · mentorship · competition logistics"],
