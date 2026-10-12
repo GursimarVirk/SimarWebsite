@@ -51,7 +51,7 @@ const projects = {
     links: [["Combat Robotics at Berkeley","https://combatrobotics.studentorg.berkeley.edu/"],["Berkeley Bot Bash","https://www.robotcombatevents.com/events/7353"]]
   },
   "robotic-hand": {
-    image: "/images/robotic-hand-15dof.jpg",
+    image: "/images/dof-teleop.jpg",
     title: "15-DOF Teleoperated Humanoid Robotic Hand",
     kicker: "UC BERKELEY · ROBOTIC HAND",
     role: "Sensor Component · Robotic Portion",
