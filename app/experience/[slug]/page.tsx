@@ -129,11 +129,23 @@ export default async function ExperiencePage({ params }: { params: Promise<{ slu
   const item = experiences[slug as keyof typeof experiences];
   if (!item) notFound();
 
+  const heroCover =
+    "image" in item
+      ? legacyImage(item.image)
+      : slug === "keiser"
+        ? "/images/Kesier Wire Raceway/a7c13c2d2bd19eb90e68383b5a985ac4.webp"
+        : slug === "autopallet-robotics"
+          ? "https://img.youtube.com/vi/NPVxI3uvMTE/1.jpg"
+          : "/images/1b8531ca4ea42eb702b0ae7fbf321db2.webp";
+  const heroStyle = {
+    "--detail-cover": `url("${heroCover}")`,
+  } as React.CSSProperties;
+
   return (
     <main className="detail-page">
       <div className="page-width">
         <a className="detail-back" href="/#work">← BACK TO EXPERIENCE</a>
-        <header className="detail-hero" style={{"--detail-cover": `url("${"image" in item ? legacyImage(item.image) : slug === "keiser" ? "/images/Kesier Wire Raceway/a7c13c2d2bd19eb90e68383b5a985ac4.webp" : slug === "autopallet-robotics" ? "https://img.youtube.com/vi/NPVxI3uvMTE/1.jpg" : "/images/1b8531ca4ea42eb702b0ae7fbf321db2.webp"}")`} as React.CSSProperties}>
+        <header className="detail-hero" style={heroStyle}>
           <div>
             <span className="section-label">{item.tag}</span>
             <h1>{item.title}</h1>
