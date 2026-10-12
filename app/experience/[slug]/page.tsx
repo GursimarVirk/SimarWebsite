@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
+import type React from "react";
 import { notFound } from "next/navigation";
 import { legacyImage } from "../../legacy-image";
+import { LegacyEmbed } from "../../components/legacy-embed";
+import { legacyPages } from "../../legacy/legacy-data";
 
 const experiences = {
   meta: {
@@ -102,6 +105,15 @@ const experiences = {
   }
 } as const;
 
+const legacySlugByExperience: Record<string,string> = {
+  "amazon-robotics":"amazon-robotics",
+  "autopallet-robotics":"auto-pallet",
+  "keiser":"keiser-wire-raceway",
+  "sorcerer-earth":"sorcerer-earth",
+  "ultimate-fight-bots":"humanoids",
+  "combat-robotics-at-berkeley":"combat-robotics",
+};
+
 export function generateStaticParams() {
   return Object.keys(experiences).map((slug) => ({ slug }));
 }
@@ -121,17 +133,21 @@ export default async function ExperiencePage({ params }: { params: Promise<{ slu
     <main className="detail-page">
       <div className="page-width">
         <a className="detail-back" href="/#work">← BACK TO EXPERIENCE</a>
-        <header className="detail-hero" style={{backgroundImage: `linear-gradient(90deg, rgba(9,8,15,.96) 0%, rgba(9,8,15,.78) 48%, rgba(9,8,15,.35) 100%)${"image" in item ? `, url(${legacyImage(item.image)})` : ""}`}}>
-          <span className="section-label">{item.tag}</span>
-          <h1>{item.title}</h1>
-          <p className="detail-role">{item.role}</p>
-          <p className="lead">{item.intro}</p>
+        <header className="detail-hero" style={{"--detail-cover": `url("${"image" in item ? legacyImage(item.image) : slug === "keiser" ? "/images/Kesier Wire Raceway/a7c13c2d2bd19eb90e68383b5a985ac4.webp" : slug === "autopallet-robotics" ? "/images/Home/67c15c7a7ba0b7e2a3252cb7c0b6c6e6.webp" : "/images/Home/1b8531ca4ea42eb702b0ae7fbf321db2.webp"}")`} } as React.CSSProperties}>
+          <div>
+            <span className="section-label">{item.tag}</span>
+            <h1>{item.title}</h1>
+            <p className="detail-role">{item.role}</p>
+            <p className="lead">{item.intro}</p>
+          </div>
         </header>
         <div className="detail-grid">
           <section className="detail-main">
             <h2>What I worked on</h2>
             <ul>{item.bullets.map((bullet) => <li key={bullet}>{bullet}</li>)}</ul>
             {"links" in item && item.links && item.links.length > 0 && <div className="detail-links"><span className="section-label">ORIGINAL / EXTERNAL MATERIAL</span>{item.links.map(([label,href]) => <a key={href} href={href} target="_blank" rel="noreferrer">{label} ↗</a>)}</div>}
+            {legacyPages[legacySlugByExperience[slug] || slug] ? <div className="detail-links"><span className="section-label">ORIGINAL SITE</span><a href={"/legacy/" + (legacySlugByExperience[slug] || slug)}>READ ORIGINAL WRITING + ARCHIVE ↗</a></div> : null}
+            {legacyPages[legacySlugByExperience[slug] || slug]?.embeds?.length ? <div className="detail-embeds"><span className="section-label">ORIGINAL EMBEDS</span>{legacyPages[legacySlugByExperience[slug] || slug].embeds!.map((embed) => <LegacyEmbed key={embed.src} embed={embed}/>)}</div> : null}
           </section>
           <aside className="detail-side">
             <h3>Related</h3>
