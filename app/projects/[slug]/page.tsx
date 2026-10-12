@@ -210,6 +210,19 @@ const projects = {
     ],
     links: [["Cars & Machines","/projects/cars-and-machines"]]
   },
+  "locomotion": {
+    title: "Locomotion",
+    kicker: "ROBOTICS · HARDWARE INTEGRATION",
+    role: "Mechanical Systems · Integration",
+    intro: "A project entry for the locomotion-focused hardware work. The portfolio image is being reused as requested; this page keeps the description conservative until the exact project write-up and media are attached.",
+    image: "/images/Home/027b9604ec0a299f5ae4b6edd26c88b4.webp",
+    stats: [["HARDWARE","mechanisms"],["INTEGRATION","system-level"],["ITERATION","build and test"],["ROBOTICS","application"]],
+    sections: [
+      ["Focus","This entry highlights the mechanical and integration side of getting robotic hardware to move reliably."],
+      ["Next step","The original locomotion project images or slides can replace the placeholder cover when the specific source is identified."]
+    ],
+    links: []
+  },
   "cars-and-machines": {
     image: "/images/Cars and Machines/2ea1f7ee762bbaaa434b56d33143590f.webp",
     title: "Cars & Machines",
@@ -234,6 +247,7 @@ const legacySlugByProject: Record<string,string> = {
   "towel-holder-innovation":"towel-holder",
   "statistics-data-project":"stats-project",
   "hobbies-other":"hobbies-other",
+  "locomotion":"locomotion",
   "cars-and-machines":"cars-and-machines",
   "keiser-wire-raceway":"keiser-wire-raceway",
   "robotic-hand":"robotic-hand",
