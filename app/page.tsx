@@ -75,14 +75,20 @@ const experiences = [
 ];
 
 const projects = [
-  {slug:"30-lb-combat-robot", title:"30 lb Combat Robot", group:"COMBAT ROBOTICS", description:"A full robot program: weapon design, machining, heat treatment, wiring, troubleshooting, people, parts, and competition driving.", image:heroImages[2][0], size:"large"},
-  {slug:"15-lb-combat-robots", title:"15 lb Combat Robots", group:"COMBAT ROBOTICS", description:"Two competition-ready builds using Fusion 360 / Onshape, FEA, CAM, weight reduction, AR500 fabrication, and mentorship.", image:heroImages[5][0], size:"small"},
-  {slug:"humanoid-robotics", title:"Humanoid Robotics", group:"ULTIMATE FIGHT BOTS", description:"Unitree + Booster integration, calibration, motion behaviors, debugging, and live robot fights.", image:heroImages[1][0], size:"small"},
+  {slug:"30-lb-combat-robot", title:"30 lb Combat Robot", group:"COMBAT ROBOTICS", description:"A full robot program: weapon design, machining, heat treatment, wiring, troubleshooting, people, parts, and competition driving.", image:"https://sites.google.com/sitesv-images-rt/AMxu72sKO8MIuLZRTc2E_2I-DqjoOnRIN4AgDGHFbB7B-NAXw7LoWn6R1Z5UgPLhTMZ-o2cqne9iXtfzwm6QrZKaWs83_JZoYdOV_6z_XcncoxCjm7gDwAY9CNZTj_rgZobAGfve8ncaqAei_2VHNkiZDMi00PZ-Ef-CV8q5-lRDikMk3587dWWETgP_jx0NOhw5bIwcTbtcHKMayPxYuBCUL1Sgn2-kDBGyJaPESftSACA%3Dw1280", size:"large"},
+  {slug:"15-lb-combat-robots", title:"15 lb Combat Robots", group:"COMBAT ROBOTICS", description:"Competition-ready builds using Fusion 360 / Onshape, FEA, CAM, weight reduction, AR500 fabrication, and mentorship.", image:"https://sites.google.com/sitesv-images-rt/AMxu72uREjFXsVIRyq8U7fxB14uHEFG_StZYFTX4cGq4D0h-rO60q37mQ4ti8WLncv3HcIw5Zen4Hu0SNHwgvAwY-xxYYk0w0nXIVCXuqQNuLFsXpxWwd0SV6tFTauveb5G2OOu4K7kGuL46O-POIbHBeIHqE-_wGYnym2vTJSvnFDvw1ExhOkAHTkkKfYGtVbl_nUGWWV0qQ1MFB2ISLC3L4_pitjrek5zBMLfPA2dvef4%3Dw1280", size:"small"},
+  {slug:"humanoid-robotics", title:"Humanoid Robotics", group:"ULTIMATE FIGHT BOTS", description:"Unitree + Booster integration, calibration, motion behaviors, debugging, recovery, and live robot fights.", image:"https://sites.google.com/sitesv-images-rt/AMxu72sKrS6x-hWqxIjFJHkXU2mmqM7cCzTphE39JsTjp9L7R1GW0--tCR2QnYSUfj-nVlRl9i6bauc9il1ghyY0CezMgOB8SKSAGNFb6YYFmg6cUXCFpYdu5X0QMnIDvllizJcnFPaUxcn9n4fPKIfIx3-DE-RonvI1W8EVq4twwXVOgZR9GY23Fbdlc2N098aakNxmZju_-mG3qTofdlsDAl5qFnLSj3OWU41vYBWECNo%3Dw1280", size:"small"},
   {slug:"grocerygizmo", title:"Autonomous 6-DOF Grasping", group:"UC BERKELEY · GROCERYGIZMO", description:"Omron TM5-700, RealSense, AR tags, ROS 2, MoveIt2, Robotiq, custom CAD, and manipulation recovery.", image:"https://sites.google.com/sitesv-images-rt/AMxu72uRXqYXsejAavet79fXc4WVQMbAGUSX9Mwr4M-nyO410D7TFfy5cvOuvpX0ZHUhy0xw1UmK5T0m_s6TGMSXVyE4QaGH5AtfcEnX0G36TJFkzgSFuh7osYTHj8PePfwwmYdSzntiQ0ei9cT2tXfjYJVcXqzcgn-_xPvxVeTZRK2opLOsus6TdOKTQC7FoXvcSzGqE3vgL0KGnyHsIOxO3vubX0jz9Ld9Pq7R6Ms%3Dw1280", size:"large"},
-  {slug:"robotic-hand", title:"15-DOF Teleoperated Hand", group:"UC BERKELEY", description:"Sensor component + robotic portion of a teleoperated humanoid hand, backed by the original final report and shop presentation.", image:heroImages[3][0], size:"small"},
-  {slug:"combat-box", title:"Combat Box", group:"COMBAT ROBOTICS", description:"A 1/2-inch polycarbonate testing environment built for the teams I mentored.", image:"https://sites.google.com/sitesv-images-rt/AMxu72uKtzzuaH1SY5Alxz9Ybp9xDGQ3KmsPkG-Yp0QQZqfkV-bmBS589VwgBSsPfopi8JdvHACPK_ooD1MIWXseIbkg4geCqge331FwYO2jOP3RQpA_4sUmZMmz38RqcxrNwTWDH7s-7Jx1qXg0EjyPa7nScevsyn375ccfzuhfWqJ3memxYgPprkp5rmrZd8xdMDvLa4rNxJfVgnQDK1MymiSruWP-Grko9wLzbPkhfrc%3Dw1280", size:"small"},
+  {slug:"robotic-hand", title:"15-DOF Teleoperated Hand", group:"UC BERKELEY", description:"Sensor component + robotic portion of a teleoperated humanoid hand, backed by the original final report and shop presentation.", image:"https://sites.google.com/sitesv-images-rt/AMxu72uRXqYXsejAavet79fXc4WVQMbAGUSX9Mwr4M-nyO410D7TFfy5cvOuvpX0ZHUhy0xw1UmK5T0m_s6TGMSXVyE4QaGH5AtfcEnX0G36TJFkzgSFuh7osYTHj8PePfwwmYdSzntiQ0ei9cT2tXfjYJVcXqzcgn-_xPvxVeTZRK2opLOsus6TdOKTQC7FoXvcSzGqE3vgL0KGnyHsIOxO3vubX0jz9Ld9Pq7R6Ms%3Dw1280", size:"small"},
+  {slug:"robotic-arms", title:"Robotic Arms", group:"ROBOTICS · MANIPULATION", description:"Multi-DOF manipulators spanning planning, control, perception, hardware integration, and industrial-arm exposure.", image:"https://sites.google.com/sitesv-images-rt/AMxu72v7B4bK5oKIHrtfGMBbrWgtaAijXDQ_PBxYuweZnmUAx0P4qoHPTM1pXW-RtDYR-6XcNi3nSM52GEBNVfMZJo_11f4I6dL2qtySnsEIqt6HGoEtAI2KbgRzJA4ip6E_KbnEq3caSba3EjAF-5GAR-Xxr7l7RjxMlT4VlKiiGJwXL2IhyhboM9m9nPq7K0TowRwI2QzAuaG9cBgudLYHW-ZP_VSDqdk9Z5GtB2AcBc%3Dw1280", size:"small"},
   {slug:"motorcycle-communication-system", title:"Motorcycle Communication System", group:"PRODUCT DEVELOPMENT", description:"A connected helmet concept combining GPS, Bluetooth, sensors, audio, AI, product research, and team coordination.", image:"https://sites.google.com/sitesv-images-rt/AMxu72uE7IRyV7jLfu8c47rMSsk9lcrwQyic8n7x8w9ud7YkC4EOHjgjV75nRHfDjoYFetG5oPVmsNo9Nvtc9vCJAj54RUak9SAcf0tJQViiK0CQFxQLbRGNNwzRSgr79C3dNqhqQ9KbAHnsHc1XPtAk5RKt1ujZ1sxwRxkRM0bFcktSU0Cca4iM5CJfwJELsPdLsBjeeMpqEdT7nFCZOHvhCfS6VJw8cVDdd32TtYuI%3Dw1280", size:"small"},
+  {slug:"combat-box", title:"Combat Box", group:"COMBAT ROBOTICS", description:"A 1/2-inch polycarbonate testing environment built for the teams I mentored.", image:"https://sites.google.com/sitesv-images-rt/AMxu72uKtzzuaH1SY5Alxz9Ybp9xDGQ3KmsPkG-Yp0QQZqfkV-bmBS589VwgBSsPfopi8JdvHACPK_ooD1MIWXseIbkg4geCqge331FwYO2jOP3RQpA_4sUmZMmz38RqcxrNwTWDH7s-7Jx1qXg0EjyPa7nScevsyn375ccfzuhfWqJ3memxYgPprkp5rmrZd8xdMDvLa4rNxJfVgnQDK1MymiSruWP-Grko9wLzbPkhfrc%3Dw1280", size:"small"},
   {slug:"cars-and-machines", title:"Cars & Machines", group:"PERSONAL SHOP", description:"6+ years of machining, lathe work, welding, maintenance, a C4 Corvette, and a Jeep restoration.", image:"https://sites.google.com/sitesv-images-rt/AMxu72vFKS5F-A0nJU3qBYodUrH4zk9o1Qtd1FiCtAB16zPVtcf7XCSnOxkZNSf_CMZzWRi4r-ICcVSp4-a1-7xkIFTPtb5RSU3wLO8H2Dgz38huIcw9Jlm9GFZ3cfG8MJWATUNx0ew9c8QXB1x-Myu5D2sMk7QSjXVNTzqR7K7WIJpTEJX89tWg5xC7H1lkduqJDToXoOp0zlw5ArszwLYj5h0prywIxGbkarwK0zEAHKs%3Dw1280", size:"small"},
+  {slug:"iot-millipede-monitor", title:"IoT Millipede Monitor", group:"UC BERKELEY · IOT", description:"An embedded monitoring project combining sensors, actuators, data, and a real-world application.", image:"/images/Home/1b8531ca4ea42eb702b0ae7fbf321db2.webp", size:"small"},
+  {slug:"towel-holder-innovation", title:"Towel Holder Innovation", group:"FRESHMAN DESIGN", description:"A mass-manufacturable part designed around CAD, scalability, efficiency, and practical manufacturing constraints.", image:"/images/Home/1b8531ca4ea42eb702b0ae7fbf321db2.webp", size:"small"},
+  {slug:"statistics-data-project", title:"Statistics / Data Project", group:"PROGRAMMING · DATA", description:"Jupyter Hub, Python, statistical methods, one-hot encoding, and data analysis.", image:"/images/Home/1b8531ca4ea42eb702b0ae7fbf321db2.webp", size:"small"},
+  {slug:"nasa-hunch-magnetic-boots", title:"NASA HUNCH — Magnetic Boots", group:"NASA HUNCH", description:"An early engineering project that reached National Semi-Finalist status.", image:"/images/Home/1b8531ca4ea42eb702b0ae7fbf321db2.webp", size:"small"},
+  {slug:"class-projects", title:"Class Projects", group:"UC BERKELEY · COURSEWORK", description:"The broader coursework archive behind the dedicated projects and engineering habits.", image:"/images/Home/1b8531ca4ea42eb702b0ae7fbf321db2.webp", size:"small"},
 ];
 
 const archive = [
@@ -180,26 +186,26 @@ export default function Home(){
     </section>
 
     <section className="numbers page-width">
-      <div><strong>120+</strong><span>MEMBERS IN CRB</span></div><div><strong>26+</strong><span>TEAMS / GROUPS MENTORED</span></div><div><strong>20+</strong><span>PROJECTS SUPERVISED</span></div><div><strong>2</strong><span>15 LB ROBOTS BUILT</span></div><div><strong>1 → 21</strong><span>UNITS / WEEK · AMAZON</span></div><div><strong>1 → 7</strong><span>UNITS / WEEK · SORCERER</span></div>
+      <div><strong>120+</strong><span>PEOPLE MANAGED & MENTORED</span></div><div><strong>30+</strong><span>ROBOTIC SYSTEMS OWNED</span></div><div><strong>ALL TYPES</strong><span>HUMANOIDS · ARMS · MOBILE · COMBAT</span></div><div><strong>26+</strong><span>TEAMS / GROUPS MENTORED</span></div><div><strong>1 → 21</strong><span>UNITS / WEEK · AMAZON</span></div><div><strong>1 → 7</strong><span>UNITS / WEEK · SORCERER</span></div>
     </section>
 
     <section className="page-width intro-block">
       <div><Label>THE SHORT VERSION</Label><h2>Broad enough to see the whole system. Hands-on enough to fix the part that broke.</h2></div>
-      <div className="intro-text"><p>My strongest work sits at the boundaries between disciplines. I am comfortable designing mechanical hardware, making parts in a shop, wiring and debugging a robot, working with firmware and software, bringing up a new system, and figuring out how a team can build and operate it repeatedly.</p><p>I like robotics because the problems refuse to stay inside one engineering discipline.</p></div>
+      <div className="intro-text"><div className="intro-photo"><img src="/images/Home/60a566a5a4395445cc3d781dbab4e536.webp" alt="Robotics project from the original portfolio"/></div><div><p>My strongest work sits at the boundaries between disciplines. I am comfortable designing mechanical hardware, making parts in a shop, wiring and debugging a robot, working with firmware and software, bringing up a new system, and figuring out how a team can build and operate it repeatedly.</p><p>I like robotics because the problems refuse to stay inside one engineering discipline.</p></div></div>
     </section>
 
-    <section className="skill-band"><div>MECHANICAL DESIGN</div><div>ROBOTICS INTEGRATION</div><div>ROS 2</div><div>MANUFACTURING</div><div>HARDWARE BRING-UP</div><div>TECHNICAL LEADERSHIP</div></section>
-
-    <section className="page-width section" id="work">
-      <div className="section-head"><div><Label>01 · WHERE I WORKED</Label><h2>Places where the machine had to actually work.</h2></div><p>The experience section is organized around environments, not isolated bullet points: companies, shops, teams, and the systems that came out of them.</p></div>
-      <div className="experience-list">{experiences.map((x,i)=><a className="experience-row" href={x.href} key={x.name}><span className="experience-num">{String(i+1).padStart(2,"0")}</span><div className="experience-main"><div className="experience-top"><span>{x.date}</span><span>{x.role}</span></div><h3>{x.name}</h3><p>{x.text}</p><ul>{x.bullets.map(b=><li key={b}>{b}</li>)}</ul></div><span className="row-arrow">↗</span></a>)}</div>
-    </section>
+    <section className="skill-band"><div className="skill-track">{["MECHANICAL DESIGN","ROBOTICS INTEGRATION","ROS 2","MANUFACTURING","HARDWARE BRING-UP","TECHNICAL LEADERSHIP","FIRMWARE + SOFTWARE","FLEET OPERATIONS","MECHATRONICS","SYSTEM VALIDATION"].map((x,i)=><span key={i}>{x}</span>)}{["MECHANICAL DESIGN","ROBOTICS INTEGRATION","ROS 2","MANUFACTURING","HARDWARE BRING-UP","TECHNICAL LEADERSHIP","FIRMWARE + SOFTWARE","FLEET OPERATIONS","MECHATRONICS","SYSTEM VALIDATION"].map((x,i)=><span key={"b"+i}>{x}</span>)}</div></section>
 
     <section className="dark-panel" id="projects">
       <div className="page-width section">
         <div className="section-head dark"><div><Label>02 · SELECTED WORK</Label><h2>Things I’ve actually built.</h2></div><p>Combat robots, humanoids, manipulation, sensing, product development, and the machines I kept working on after class ended.</p></div>
         <div className="project-grid">{projects.map(p=><ProjectCard project={p} key={p.slug}/>)}</div>
       </div>
+    </section>
+
+    <section className="page-width section" id="work">
+      <div className="section-head"><div><Label>01 · WHERE I WORKED</Label><h2>Places where the machine had to actually work.</h2></div><p>The experience section is organized around environments, not isolated bullet points: companies, shops, teams, and the systems that came out of them.</p></div>
+      <div className="experience-list">{experiences.map((x,i)=><a className="experience-row" href={x.href} key={x.name}><span className="experience-num">{String(i+1).padStart(2,"0")}</span><div className="experience-main"><div className="experience-top"><span>{x.date}</span><span>{x.role}</span></div><h3>{x.name}</h3><p>{x.text}</p><ul>{x.bullets.map(b=><li key={b}>{b}</li>)}</ul></div><span className="row-arrow">↗</span></a>)}</div>
     </section>
 
     <section className="page-width section build-system">
@@ -217,17 +223,12 @@ export default function Home(){
       <div className="berkeley-grid">{berkeley.map(([title,kind,text],i)=><article key={title}><span>{String(i+1).padStart(2,"0")} · {kind}</span><h3>{title}</h3><p>{text}</p></article>)}</div>
     </section>
 
-    <section className="media-callout">
-      <div className="page-width media-callout-inner"><div><Label>05 · PUBLIC FOOTPRINT</Label><h2>The robots also escaped the shop.</h2><p>Interviews, creator videos, live fights, photographs, press, Berkeley records, and the competition trail.</p></div><a className="button-light" href="/media">OPEN MEDIA ARCHIVE ↗</a></div>
-    </section>
-
     <section className="page-width section" id="about">
       <div className="about-grid"><div><Label>06 · OUTSIDE THE SHOP</Label><h2>Still building things when nobody asked.</h2></div><div className="about-copy"><p><strong>Cars. Motorcycles. Machining. Photography. Music.</strong> I like machines that are old enough to require a little detective work.</p><p>Six-plus years around machining, a Kawasaki Ninja 300, a C4 Corvette, a Jeep restoration, and a restored lathe are a pretty good explanation for why I prefer making things to just talking about them.</p><div className="about-facts"><span>6+<small>YEARS MACHINING</small></span><span>NINJA 300<small>MOTORCYCLE</small></span><span>BERKELEY<small>B.S. ME</small></span></div></div></div>
     </section>
 
-    <section className="page-width legacy-section">
-      <div className="section-head"><div><Label>07 · LEGACY ARCHIVE</Label><h2>The old site, without the Google Sites limitations.</h2></div><p>The old Google Site has now been preserved as a searchable archive alongside the redesigned technical pages, including its writing, documents, presentations, media embeds, links, and recovered photography.</p></div>
-      <div className="legacy-grid">{archive.map(([title,kind,href])=><a href={href} key={href}><span>{kind}</span><strong>{title}</strong><em>OPEN ↗</em></a>)}</div>
+    <section className="media-callout">
+      <div className="page-width media-callout-inner"><div><Label>05 · PUBLIC FOOTPRINT</Label><h2>The robots also escaped the shop.</h2><p>Interviews, creator videos, live fights, photographs, press, Berkeley records, and the competition trail.</p></div><a className="button-light" href="/media">OPEN MEDIA ARCHIVE ↗</a></div>
     </section>
 
     <section className="prompt-band">
