@@ -252,6 +252,7 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
           <section className="detail-main">
             {project.sections.map(([heading,body]) => <div className="detail-section" key={heading}><h2>{heading}</h2><p>{body}</p></div>)}
             {project.links.length > 0 && <div className="detail-links"><span className="section-label">DOCUMENTATION / LINKS</span>{project.links.map(([label,href]) => <a key={href} href={href} target="_blank" rel="noreferrer">{label} ↗</a>)}</div>}
+            {legacyPages[slug] ? <div className="detail-links legacy-source-link"><span className="section-label">ORIGINAL SITE</span><a href={"/legacy/" + slug}>READ THE ORIGINAL WRITING + ARCHIVE ↗</a></div> : null}
             {legacyPages[slug]?.embeds?.length ? <div className="detail-embeds"><span className="section-label">ORIGINAL EMBEDS</span>{legacyPages[slug].embeds.map((embed) => <LegacyEmbed key={embed.src} embed={embed}/>)}</div> : null}
           </section>
           <aside className="detail-side">
