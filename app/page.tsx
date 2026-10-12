@@ -11,14 +11,14 @@ const heroImages = [
   ["/images/30lb Robot/024d3371033a659dea795ef2ed7f08cf.webp","30 LB ROBOT"],
   ["/images/Robotic Arms/2ed803397858d570e590a832d3365844.webp","ROBOTIC HAND"],
   ["/images/Robotic Arms/95b3ce2f73b8bec877e0fcc27428e9aa.webp","LOCOMOTION"],
-  ["/images/Robotic Arms/9a1205816b57cf9e2ea83a3a711fbc88.webp","ANY KIND OF ROBOT"],
+  ["https://img.youtube.com/vi/NPVxI3uvMTE/hqdefault.jpg","ANY KIND OF ROBOT"],
   ["/images/15lb Robot/1a739db5b66e7a72ddd145ae4ced166e.webp","15 LB ROBOT"],
 ];
 
 const experiences = [
   {
-    name:"Meta", image:"/images/Humanoids/ccacc1b06bfe5fd19878ae0b81668eef.webp",
-    role:"Robotics Hardware Integration Engineer",
+    name:"Meta · Superintelligence Labs", image:"https://upload.wikimedia.org/wikipedia/commons/a/ab/Meta-Logo.png",
+    role:"Robotics Hardware Integration Engineer · Superintelligence Labs",
     date:"CURRENT",
     text:"End-to-end integration and deployment of a growing robotics fleet for continuous research data collection — hardware, software configuration, networking, validation, technicians, and recovery.",
     bullets:["30+ robotic systems and 50+ UMI systems in the fleet.","Train and coordinate robotics technicians across integration, troubleshooting, hardware modification, and fleet operations.","Own hardware bring-up and integration for new robot types and company platforms, building repeatable processes designed to scale.","Drive mobile UMI deployment and offsite data-collection readiness."],
@@ -57,7 +57,7 @@ const experiences = [
     href:"/experience/sorcerer-earth"
   },
   {
-    name:"AutoPallet Robotics", image:"/images/Robotic Arms/2ed803397858d570e590a832d3365844.webp",
+    name:"AutoPallet Robotics", image:"https://img.youtube.com/vi/NPVxI3uvMTE/hqdefault.jpg",
     role:"R&D Design & Robotics Integration Technician",
     date:"2025",
     text:"Rapid robot prototyping where mechanical design, electronics, soldering, and debugging all had to happen at once.",
@@ -79,7 +79,7 @@ const projects = [
   {slug:"15-lb-combat-robots", title:"15 lb Combat Robots", group:"COMBAT ROBOTICS", description:"Competition-ready builds using Fusion 360 / Onshape, FEA, CAM, weight reduction, AR500 fabrication, and mentorship.", image:"/images/15lb Robot/1a739db5b66e7a72ddd145ae4ced166e.webp", size:"small", category:"COMBAT ROBOTICS"},
   {slug:"humanoid-robotics", title:"Humanoid Robotics", group:"ULTIMATE FIGHT BOTS", description:"Unitree + Booster integration, calibration, motion behaviors, debugging, recovery, and live robot fights.", image:"/images/Humanoids/ccacc1b06bfe5fd19878ae0b81668eef.webp", size:"small", category:"ROBOTICS & MANIPULATION"},
   {slug:"grocerygizmo", title:"Autonomous 6-DOF Grasping", group:"UC BERKELEY · GROCERYGIZMO", description:"Omron TM5-700, RealSense, AR tags, ROS 2, MoveIt2, Robotiq, custom CAD, and manipulation recovery.", image:"https://raw.githubusercontent.com/pchrisoc/GroceryGizmo/main/public/arm.jpg", size:"large", category:"ROBOTICS & MANIPULATION"},
-  {slug:"robotic-hand", title:"15-DOF Teleoperated Hand", group:"UC BERKELEY", description:"Sensor component + robotic portion of a teleoperated humanoid hand, backed by the original final report and shop presentation.", image:"/images/Robotic Arms/2ed803397858d570e590a832d3365844.webp", size:"small", category:"ROBOTICS & MANIPULATION"},
+  {slug:"robotic-hand", title:"15-DOF Teleoperated Hand", group:"UC BERKELEY", description:"Sensor component + robotic portion of a teleoperated humanoid hand, backed by the original final report and shop presentation.", image:"/images/Robotic Arms/9a1205816b57cf9e2ea83a3a711fbc88.webp", size:"small", category:"ROBOTICS & MANIPULATION"},
   {slug:"robotic-arms", title:"Robotic Arms", group:"ROBOTICS · MANIPULATION", description:"Multi-DOF manipulators spanning planning, control, perception, hardware integration, and industrial-arm exposure.", image:"/images/Robotic Arms/9a1205816b57cf9e2ea83a3a711fbc88.webp", size:"small", category:"ROBOTICS & MANIPULATION"},
   {slug:"motorcycle-communication-system", title:"Motorcycle Communication System", group:"PRODUCT DEVELOPMENT", description:"A connected helmet concept combining GPS, Bluetooth, sensors, audio, AI, product research, and team coordination.", image:"https://drive.google.com/thumbnail?id=1PtgBqGz5OtcBSldxkl2myrix2rrQJnmgBT-T3LMhKNM&sz=w1200", size:"small", category:"PRODUCT DESIGN & MANUFACTURING"},
   {slug:"combat-box", title:"Combat Box", group:"COMBAT ROBOTICS", description:"A 1/2-inch polycarbonate testing environment built for the teams I mentored.", image:"/images/1b8531ca4ea42eb702b0ae7fbf321db2.webp", size:"small", category:"COMBAT ROBOTICS"},
@@ -87,7 +87,7 @@ const projects = [
   {slug:"iot-millipede-monitor", title:"IoT Millipede Monitor", group:"UC BERKELEY · IOT", description:"An embedded monitoring project combining sensors, actuators, data, and a real-world application.", image:"https://drive.google.com/thumbnail?id=1KKS5B7P8Ma8GuHa8m_fw6DBd8r0tXOez&sz=w1200", size:"small", category:"CLASS & UNIVERSITY PROJECTS"},
   {slug:"towel-holder-innovation", title:"Towel Holder Innovation", group:"FRESHMAN DESIGN", description:"A mass-manufacturable part designed around CAD, scalability, efficiency, and practical manufacturing constraints.", image:"https://drive.google.com/thumbnail?id=10EKXcRYNI4yIqnktIm28kWT_yl87F7WZ&sz=w1200", size:"small", category:"CLASS & UNIVERSITY PROJECTS"},
   {slug:"statistics-data-project", title:"Statistics / Data Project", group:"PROGRAMMING · DATA", description:"Jupyter Hub, Python, statistical methods, one-hot encoding, and data analysis.", image:"/images/Robotic Arms/07a3486b8df22099776ca84ff37c188e.webp", size:"small", category:"CLASS & UNIVERSITY PROJECTS"},
-  {slug:"locomotion", title:"Locomotion", group:"ROBOTICS · HARDWARE", description:"A look at the hardware, mechanisms, and integration work behind getting a robot moving reliably.", image:"/images/Home/027b9604ec0a299f5ae4b6edd26c88b4.webp", size:"small", category:"ROBOTICS & MANIPULATION"},
+  {slug:"locomotion", title:"Locomotion", group:"ROBOTICS · HARDWARE", description:"A look at the hardware, mechanisms, and integration work behind getting a robot moving reliably.", image:"/images/Robotic Arms/2ed803397858d570e590a832d3365844.webp", size:"small", category:"ROBOTICS & MANIPULATION"},
   {slug:"keiser-wire-raceway", title:"Keiser Wire Raceway", group:"MANUFACTURING · PRODUCT DESIGN", description:"A modular raceway combining pneumatic lines and electrical wiring, designed around safety, manufacturability, installation, and cost.", image:"/images/Kesier Wire Raceway/a7c13c2d2bd19eb90e68383b5a985ac4.webp", size:"small", category:"PRODUCT DESIGN & MANUFACTURING"},
 ];
 
@@ -112,7 +112,7 @@ const publicFootprint = [
   ["TechWomen / Wits University","Global STEM leaders gather for TechWomen 2026","PRESS","https://www.wits.ac.za/news/latest-news/research-news/2026/2026-03/global-stem-leaders-gather-at-wits-for-techwomen-2026.html"],
   ["San Francisco Standard","Robot boxing in San Francisco","PRESS","https://sfstandard.com/2025/08/10/robot-boxing-match-sf/"],
   ["AFP / International Press","Humanoid robots go for knockout","PRESS","https://kuwaittimes.com/article/38267/technology/humanoid-robots-go-for-knockout-in-high-tech-vegas-fight-night/"],
-  ["Blue & Gold Yearbook","2025–2026 edition · UC Berkeley’s official yearbook","YEARBOOK","https://bgyearbook.myshopify.com/products/pre-order-2025-2026-yearbook"],
+  ["Blue & Gold Yearbook","Read about our team’s growth","YEARBOOK","https://bgyearbook.myshopify.com/products/pre-order-2025-2026-yearbook"],
 ];
 
 function Label({children}:{children:ReactNode}){return <p className="eyebrow">{children}</p>;}
@@ -228,10 +228,6 @@ export default function Home(){
 
     <section className="media-callout">
       <div className="page-width media-callout-inner"><div><Label>06 · PUBLIC FOOTPRINT</Label><h2>The robots also escaped the shop.</h2><p>Interviews, creator videos, live fights, photographs, press, Berkeley records, and the competition trail.</p></div><a className="button-light" href="/media">OPEN MEDIA ARCHIVE ↗</a></div>
-    </section>
-
-    <section className="prompt-band">
-      <div className="page-width prompt-inner"><Label>HIRING MANAGER MODE</Label><h2>Have a job description?</h2><p>Use the portfolio as a map. The resume is the compressed version; these pages show how the work actually happened.</p><div className="prompt">“Here is Gursimar Virk’s portfolio and our job description. Which parts of her experience are most relevant, and which projects should I look at?”</div></div>
     </section>
 
     <footer className="footer page-width" id="contact"><div><Label>CONTACT</Label><h2>Let’s build something.</h2></div><div className="footer-links"><a href="mailto:gursimvirk3@gmail.com">gursimvirk3@gmail.com</a><a href="https://www.linkedin.com/in/gursimarvirk" target="_blank" rel="noreferrer">LinkedIn ↗</a><a href="https://github.com/GursimarVirk" target="_blank" rel="noreferrer">GitHub ↗</a><a href={resumeUrl} target="_blank" rel="noreferrer">Resume ↗</a><a href="/legacy/home">Original Site Archive ↗</a></div><p className="copyright">© 2026 Gursimar Virk · Built in Berkeley / the Bay.</p></footer>
