@@ -17,7 +17,7 @@ const heroImages = [
 
 const experiences = [
   {
-    name:"Meta",
+    name:"Meta", image:"/images/Humanoids/ccacc1b06bfe5fd19878ae0b81668eef.webp",
     role:"Robotics Hardware Integration Engineer",
     date:"CURRENT",
     text:"End-to-end integration and deployment of a growing robotics fleet for continuous research data collection — hardware, software configuration, networking, validation, technicians, and recovery.",
@@ -25,7 +25,7 @@ const experiences = [
     href:"/experience/meta"
   },
   {
-    name:"Combat Robotics at Berkeley",
+    name:"Combat Robotics at Berkeley", image:"/images/30lb Robot/024d3371033a659dea795ef2ed7f08cf.webp",
     role:"President · Technical Lead · Shop & Operations",
     date:"2023–2026",
     text:"A 120+ member organization where I moved between robot design, manufacturing, shop operations, competition logistics, mentorship, and technical program management.",
@@ -33,7 +33,7 @@ const experiences = [
     href:"/experience/combat-robotics-at-berkeley"
   },
   {
-    name:"Amazon Robotics",
+    name:"Amazon Robotics", image:"/images/Home/027b9604ec0a299f5ae4b6edd26c88b4.webp",
     role:"Hardware & Process Engineering Intern",
     date:"SUMMER 2025",
     text:"Prototype-to-production engineering during an alpha-to-beta transition: fixtures, production flow, tooling, parts, takt time, and documentation.",
@@ -41,7 +41,7 @@ const experiences = [
     href:"/experience/amazon-robotics"
   },
   {
-    name:"Ultimate Fight Bots",
+    name:"Ultimate Fight Bots", image:"/images/Humanoids/45a7332f8783b13b3d7e2b3f9a834515.webp",
     role:"Humanoid Robotics · Driver · Team Lead",
     date:"2025–PRESENT",
     text:"Unitree and Booster humanoid integration where bring-up, motion, debugging, recovery, and live-event execution happen at the same time.",
@@ -49,7 +49,7 @@ const experiences = [
     href:"/experience/ultimate-fight-bots"
   },
   {
-    name:"Sorcerer.Earth",
+    name:"Sorcerer.Earth", image:"/images/Sorcererearth/43b4d985e231b4b733e280187b11bbf6.webp",
     role:"R&D Design & Integration Technician",
     date:"2025",
     text:"High-altitude airborne sensor systems, PCB assembly, fabrication infrastructure, and production scaling.",
@@ -57,7 +57,7 @@ const experiences = [
     href:"/experience/sorcerer-earth"
   },
   {
-    name:"AutoPallet Robotics",
+    name:"AutoPallet Robotics", image:"/images/Robotic Arms/2ed803397858d570e590a832d3365844.webp",
     role:"R&D Design & Robotics Integration Technician",
     date:"2025",
     text:"Rapid robot prototyping where mechanical design, electronics, soldering, and debugging all had to happen at once.",
@@ -65,7 +65,7 @@ const experiences = [
     href:"/experience/autopallet-robotics"
   },
   {
-    name:"Keiser",
+    name:"Keiser", image:"/images/Kesier Wire Raceway/a7c13c2d2bd19eb90e68383b5a985ac4.webp",
     role:"Mechanical Design · Manufacturing · Product Development",
     date:"2023",
     text:"Manufacturing engineering shaped by real installation, electrical, pneumatic, safety, cost, and production constraints.",
@@ -79,17 +79,16 @@ const projects = [
   {slug:"15-lb-combat-robots", title:"15 lb Combat Robots", group:"COMBAT ROBOTICS", description:"Competition-ready builds using Fusion 360 / Onshape, FEA, CAM, weight reduction, AR500 fabrication, and mentorship.", image:"/images/15lb Robot/1a739db5b66e7a72ddd145ae4ced166e.webp", size:"small", category:"COMBAT ROBOTICS"},
   {slug:"humanoid-robotics", title:"Humanoid Robotics", group:"ULTIMATE FIGHT BOTS", description:"Unitree + Booster integration, calibration, motion behaviors, debugging, recovery, and live robot fights.", image:"/images/Humanoids/ccacc1b06bfe5fd19878ae0b81668eef.webp", size:"small", category:"ROBOTICS & MANIPULATION"},
   {slug:"grocerygizmo", title:"Autonomous 6-DOF Grasping", group:"UC BERKELEY · GROCERYGIZMO", description:"Omron TM5-700, RealSense, AR tags, ROS 2, MoveIt2, Robotiq, custom CAD, and manipulation recovery.", image:"https://raw.githubusercontent.com/pchrisoc/GroceryGizmo/main/public/arm.jpg", size:"large", category:"ROBOTICS & MANIPULATION"},
-  {slug:"robotic-hand", title:"15-DOF Teleoperated Hand", group:"UC BERKELEY", description:"Sensor component + robotic portion of a teleoperated humanoid hand, backed by the original final report and shop presentation.", image:"/images/Robotic Arms/2ed803397858d570e590a832d3365844.webp", size:"small", category:"ROBOTICS & MANIPULATION"},
+  {slug:"robotic-hand", title:"15-DOF Teleoperated Hand", group:"UC BERKELEY", description:"Sensor component + robotic portion of a teleoperated humanoid hand, backed by the original final report and shop presentation.", image:"/images/Robotic Arms/95b3ce2f73b8bec877e0fcc27428e9aa.webp", size:"small", category:"ROBOTICS & MANIPULATION"},
   {slug:"robotic-arms", title:"Robotic Arms", group:"ROBOTICS · MANIPULATION", description:"Multi-DOF manipulators spanning planning, control, perception, hardware integration, and industrial-arm exposure.", image:"/images/Robotic Arms/9a1205816b57cf9e2ea83a3a711fbc88.webp", size:"small", category:"ROBOTICS & MANIPULATION"},
-  {slug:"motorcycle-communication-system", title:"Motorcycle Communication System", group:"PRODUCT DEVELOPMENT", description:"A connected helmet concept combining GPS, Bluetooth, sensors, audio, AI, product research, and team coordination.", image:"/images/Home/027b9604ec0a299f5ae4b6edd26c88b4.webp", size:"small", category:"PRODUCT DESIGN & MANUFACTURING"},
+  {slug:"motorcycle-communication-system", title:"Motorcycle Communication System", group:"PRODUCT DEVELOPMENT", description:"A connected helmet concept combining GPS, Bluetooth, sensors, audio, AI, product research, and team coordination.", image:"/images/Home/67c15c7a7ba0b7e2a3252cb7c0b6c6e6.webp", size:"small", category:"ROBOTICS & MANIPULATION"},
   {slug:"combat-box", title:"Combat Box", group:"COMBAT ROBOTICS", description:"A 1/2-inch polycarbonate testing environment built for the teams I mentored.", image:"/images/1b8531ca4ea42eb702b0ae7fbf321db2.webp", size:"small", category:"COMBAT ROBOTICS"},
   {slug:"cars-and-machines", title:"Cars & Machines", group:"PERSONAL SHOP", description:"6+ years of machining, lathe work, welding, maintenance, a C4 Corvette, and a Jeep restoration.", image:"/images/Cars and Machines/2ea1f7ee762bbaaa434b56d33143590f.webp", size:"small", category:"PERSONAL BUILDS & MACHINES"},
-  {slug:"iot-millipede-monitor", title:"IoT Millipede Monitor", group:"UC BERKELEY · IOT", description:"An embedded monitoring project combining sensors, actuators, data, and a real-world application.", image:"", size:"small", category:"CLASS & UNIVERSITY PROJECTS"},
-  {slug:"towel-holder-innovation", title:"Towel Holder Innovation", group:"FRESHMAN DESIGN", description:"A mass-manufacturable part designed around CAD, scalability, efficiency, and practical manufacturing constraints.", image:"", size:"small", category:"CLASS & UNIVERSITY PROJECTS"},
-  {slug:"statistics-data-project", title:"Statistics / Data Project", group:"PROGRAMMING · DATA", description:"Jupyter Hub, Python, statistical methods, one-hot encoding, and data analysis.", image:"", size:"small", category:"CLASS & UNIVERSITY PROJECTS"},
-  {slug:"nasa-hunch-magnetic-boots", title:"NASA HUNCH — Magnetic Boots", group:"NASA HUNCH", description:"An early engineering project that reached National Semi-Finalist status.", image:"", size:"small", category:"CLASS & UNIVERSITY PROJECTS"},
+  {slug:"iot-millipede-monitor", title:"IoT Millipede Monitor", group:"UC BERKELEY · IOT", description:"An embedded monitoring project combining sensors, actuators, data, and a real-world application.", image:"https://drive.google.com/thumbnail?id=1KKS5B7P8Ma8GuHa8m_fw6DBd8r0tXOez&sz=w1200", size:"small", category:"CLASS & UNIVERSITY PROJECTS"},
+  {slug:"towel-holder-innovation", title:"Towel Holder Innovation", group:"FRESHMAN DESIGN", description:"A mass-manufacturable part designed around CAD, scalability, efficiency, and practical manufacturing constraints.", image:"https://drive.google.com/thumbnail?id=10EKXcRYNI4yIqnktIm28kWT_yl87F7WZ&sz=w1200", size:"small", category:"CLASS & UNIVERSITY PROJECTS"},
+  {slug:"statistics-data-project", title:"Statistics / Data Project", group:"PROGRAMMING · DATA", description:"Jupyter Hub, Python, statistical methods, one-hot encoding, and data analysis.", image:"/images/Robotic Arms/07a3486b8df22099776ca84ff37c188e.webp", size:"small", category:"CLASS & UNIVERSITY PROJECTS"},
+  {slug:"locomotion", title:"Locomotion", group:"ROBOTICS · HARDWARE", description:"A look at the hardware, mechanisms, and integration work behind getting a robot moving reliably.", image:"/images/Home/027b9604ec0a299f5ae4b6edd26c88b4.webp", size:"small", category:"ROBOTICS & MANIPULATION"},
   {slug:"keiser-wire-raceway", title:"Keiser Wire Raceway", group:"MANUFACTURING · PRODUCT DESIGN", description:"A modular raceway combining pneumatic lines and electrical wiring, designed around safety, manufacturability, installation, and cost.", image:"/images/Kesier Wire Raceway/a7c13c2d2bd19eb90e68383b5a985ac4.webp", size:"small", category:"PRODUCT DESIGN & MANUFACTURING"},
-  {slug:"class-projects", title:"Class Projects", group:"UC BERKELEY · COURSEWORK", description:"The broader coursework archive behind the dedicated projects and engineering habits.", image:"", size:"small", category:"CLASS & UNIVERSITY PROJECTS"},
 ];
 
 
@@ -190,7 +189,7 @@ export default function Home(){
 
     <section className="page-width intro-block">
       <div><Label>THE SHORT VERSION</Label><h2>Broad enough to see the whole system. Hands-on enough to fix the part that broke.</h2></div>
-      <div className="intro-text"><div className="intro-photo"><img src={legacyImage("/images/Home/60a566a5a4395445cc3d781dbab4e536.webp")} alt="Robotics project from the original portfolio"/></div><div><p>My strongest work sits at the boundaries between disciplines. I am comfortable designing mechanical hardware, making parts in a shop, wiring and debugging a robot, working with firmware and software, bringing up a new system, and figuring out how a team can build and operate it repeatedly.</p><p>I like robotics because the problems refuse to stay inside one engineering discipline.</p></div></div>
+      <div className="intro-text"><div className="intro-photo"><img src={legacyImage("/images/Home/60a566a5a4395445cc3d781dbab4e536.webp")} alt="Robotics project from the original portfolio" style={{transform:"scale(1.24)",transformOrigin:"center"}}/></div><div><p>My strongest work sits at the boundaries between disciplines. I am comfortable designing mechanical hardware, making parts in a shop, wiring and debugging a robot, working with firmware and software, bringing up a new system, and figuring out how a team can build and operate it repeatedly.</p><p>I like robotics because the problems refuse to stay inside one engineering discipline.</p></div></div>
     </section>
 
     <section className="skill-band"><div className="skill-track">{["MECHANICAL DESIGN","ROBOTICS INTEGRATION","ROS 2","MANUFACTURING","HARDWARE BRING-UP","TECHNICAL LEADERSHIP","FIRMWARE + SOFTWARE","FLEET OPERATIONS","MECHATRONICS","SYSTEM VALIDATION"].map((x,i)=><span key={i}>{x}</span>)}{["MECHANICAL DESIGN","ROBOTICS INTEGRATION","ROS 2","MANUFACTURING","HARDWARE BRING-UP","TECHNICAL LEADERSHIP","FIRMWARE + SOFTWARE","FLEET OPERATIONS","MECHATRONICS","SYSTEM VALIDATION"].map((x,i)=><span key={"b"+i}>{x}</span>)}</div></section>
@@ -204,7 +203,7 @@ export default function Home(){
 
     <section className="page-width section" id="work">
       <div className="section-head"><div><Label>02 · PLACES WHERE THE MACHINE HAD TO WORK</Label><h2>Places where the machine had to actually work.</h2></div><p>The experience section is organized around environments, not isolated bullet points: companies, shops, teams, and the systems that came out of them.</p></div>
-      <div className="experience-list">{experiences.map((x,i)=><a className="experience-row" href={x.href} key={x.name}><span className="experience-num">{String(i+1).padStart(2,"0")}</span><div className="experience-main"><div className="experience-top"><span>{x.date}</span><span>{x.role}</span></div><h3>{x.name}</h3><p>{x.text}</p><ul>{x.bullets.map(b=><li key={b}>{b}</li>)}</ul></div><span className="row-arrow">↗</span></a>)}</div>
+      <div className="experience-list">{experiences.map((x,i)=><a className="experience-row" href={x.href} key={x.name}><span className="experience-num">{String(i+1).padStart(2,"0")}</span><img className="experience-thumb" src={legacyImage(x.image)} alt="" loading="lazy"/><div className="experience-main"><div className="experience-top"><span>{x.date}</span><span>{x.role}</span></div><h3>{x.name}</h3><p>{x.text}</p><ul>{x.bullets.map(b=><li key={b}>{b}</li>)}</ul></div><span className="row-arrow">↗</span></a>)}</div>
       <button className="resume-request-card" type="button" onClick={()=>setResumeRequestOpen(true)}><span className="resume-request-kicker">WANT THE ONE-PAGE VERSION?</span><strong>Want to see my resume?</strong><span className="resume-request-arrow">REQUEST A COPY ↗</span></button>
     </section>
 
@@ -219,7 +218,7 @@ export default function Home(){
     </section>
 
     <section className="page-width section" id="about">
-      <div className="about-grid"><div><Label>04 · OUTSIDE THE SHOP</Label><h2>Still building things when nobody asked.</h2></div><div className="about-copy"><p><strong>Cars. Motorcycles. Machining. Photography. Music.</strong> I like machines that are old enough to require a little detective work.</p><p>Six-plus years around machining, a Kawasaki Ninja 300, a C4 Corvette, a Jeep restoration, and a restored lathe are a pretty good explanation for why I prefer making things to just talking about them.</p><div className="about-facts"><span>4<small>COMBAT WEIGHT CLASSES</small></span><span>1<small>RESTORED LATHE</small></span><span>∞<small>THINGS I STILL WANT TO BUILD</small></span></div></div></div>
+      <div className="about-grid"><div><Label>04 · OUTSIDE THE SHOP</Label><h2>Still building things when nobody asked.</h2></div><div className="about-copy"><p><strong>Cars. Motorcycles. Machining. Photography. Music.</strong> I like machines that are old enough to require a little detective work.</p><p>Six-plus years around machining, a Kawasaki Ninja 300, a C4 Corvette, a Jeep restoration, and a restored lathe are a pretty good explanation for why I prefer making things to just talking about them.</p><div className="about-facts"><span>100%<small>ENERGY TO BUILD</small></span><span>95%<small>PATIENCE (ON A GOOD DAY)</small></span><span>9/10<small>PROJECTS ARE NOT SILLY</small></span></div></div></div>
     </section>
 
     <section className="page-width section berkeley-section" id="berkeley">
