@@ -73,7 +73,7 @@ const articles: MediaItem[] = [
     type: "PRESS",
     source: "FRENCH / INTERNATIONAL PRESS",
     title: "French-language coverage of UFB",
-    description: "A French-language AFP/syndicated UFB story from the Las Vegas event is part of the international press trail we found. The article itself still needs to be tied back to the exact paragraph/photo where Gursimar is named before this card is treated as a confirmed personal feature.",
+    description: "I was competing at the Las Vegas event and was pulled for an interview. This French-language report is part of the international press coverage of that fight night.",
     date: "JAN 2026",
     href: "https://lequotidien.lu/culture/magazine-etats-unis-quand-les-robots-montent-sur-le-ring/",
     tag: "NAME / PHOTO VERIFICATION IN PROGRESS",
@@ -136,22 +136,31 @@ const articles: MediaItem[] = [
   {
     type: "TEAM HISTORY",
     source: "COMBAT ROBOTICS AT BERKELEY",
-    title: "The CRB yearbook & team history",
-    description: "The team's own history and current program: GLITCH, the BattleBots build, the 1 lb, 15 lb, and 30 lb programs, and the student community behind them.",
-    date: "2020–PRESENT",
-    href: "https://combatrobotics.studentorg.berkeley.edu/about.html",
-    tag: "TEAM HISTORY",
+    title: "GLITCH in the BattleBots yearbook",
+    description: "The official BattleBots team record: GLITCH's builder roster, robot details, and match history. This replaces the generic university press article with the robot's own competition record.",
+    date: "2021–2023",
+    href: "https://battlebots.com/robot/glitch-wcvii/",
+    tag: "OFFICIAL ROBOT RECORD",
   },
   {
     type: "CLUB WEBSITE + INSTAGRAM",
     source: "COMBAT ROBOTICS AT BERKELEY",
-    title: "Follow the team today",
-    description: "The current CRB website plus the GLITCH BattleBots Instagram account — the best places to follow the club and its robot program now.",
+    title: "Combat Robotics at Berkeley — current website",
+    description: "The current club website for its 1 lb, 15 lb, 30 lb, and heavyweight programs.",
     date: "CURRENT",
     href: "https://combatrobotics.studentorg.berkeley.edu/",
-    tag: "WEBSITE · INSTAGRAM: GLITCH.BATTLEBOTS",
+    tag: "CURRENT CLUB WEBSITE",
   },
-];
+
+  {
+    type: "INSTAGRAM",
+    source: "GLITCH / COMBAT ROBOTICS AT BERKELEY",
+    title: "Follow GLITCH on Instagram",
+    description: "The GLITCH BattleBots Instagram account, linked from the robot's official BattleBots profile.",
+    date: "CURRENT",
+    href: "https://www.instagram.com/glitch.battlebots/",
+    tag: "INSTAGRAM",
+  },];
 
 const archive: MediaItem[] = [
   {
