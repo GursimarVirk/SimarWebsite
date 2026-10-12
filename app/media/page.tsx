@@ -169,14 +169,14 @@ const archive: MediaItem[] = [
     title: "Robotics Demo Expert",
     description: "TechWomen 2025 orientation materials publicly identify Gursimar among the networking guests and robotics demo experts at the CITRIS / Banatao Institute / UC Berkeley event. The organizer also said more photos and videos were coming.",
     date: "2025",
-    href: "https://www.linkedin.com/in/gursimarvirk",
-    tag: "PHOTO / VIDEO LEAD",
+    href: "https://www.linkedin.com/in/jillfinlayson/",
+    tag: "JILL FINLAYSON · LINKEDIN",
   },
   {
     type: "COMPETITION RECORD",
     source: "ROBOT COMBAT EVENTS",
     title: "Berkeley Bot Bash",
-    description: "Public competition records for Berkeley's student-run combat robotics event, including divisions, schedules, and competing robots. The separate stats page turns this event archive into a cleaner record of Gursimar's competition footprint.",
+    description: "I started the first Berkeley Bot Bash and began the tradition. With the help of my team, we were able to launch the event; it has since been passed on and continues as a team tradition.",
     date: "MAY 2, 2026",
     href: "https://www.robotcombatevents.com/events/7353",
     tag: "COMPETITION ARCHIVE",
@@ -200,13 +200,13 @@ const archive: MediaItem[] = [
     tag: "FIGHT RESULTS",
   },
   {
-    type: "BATTLEBOTS",
-    source: "UC BERKELEY CROWDFUND",
-    title: "Support CRB on BattleBots",
-    description: "Berkeley's archived campaign documents the BattleBots program, GLITCH, the team's regional robots, and the student-built competition pipeline.",
-    date: "ARCHIVE",
-    href: "https://crowdfund.berkeley.edu/project/38869",
-    tag: "BERKELEY RECORD",
+    type: "DECAL",
+    source: "UC BERKELEY COLLEGE OF ENGINEERING",
+    title: "Engineering 98 — Insider's Guide to Berkeley Engineering",
+    description: "The student-run Engineering DeCal I taught, introducing students to Berkeley Engineering through advice and experience from upper-division students.",
+    date: "INSTRUCTOR · 2023",
+    href: "https://e98.berkeley.edu/",
+    tag: "DECAL WEBSITE",
   },
   {
     type: "BERKELEY",
@@ -303,12 +303,7 @@ export default function MediaPage() {
             press, photographs, Berkeley records, and the competition history underneath it all.
           </p>
         </div>
-        <div className={styles.heroStats}>
-          <div><strong>01</strong><span>DIRECT INTERVIEW</span></div>
-          <div><strong>02+</strong><span>MAJOR VIDEO LEADS</span></div>
-          <div><strong>10+</strong><span>PRESS / ARCHIVE SOURCES</span></div>
-          <a href="/media/stats"><strong>→</strong><span>ROBOTICS STATS</span></a>
-        </div>
+        
       </section>
 
       <section className="page-width">
@@ -337,19 +332,7 @@ export default function MediaPage() {
         </div>
       </section>
 
-      <section className={`${styles.note} page-width`}>
-        <p className="eyebrow">VERIFICATION NOTE</p>
-        <div>
-          <h2>I'm keeping the archive honest.</h2>
-          <p>These cards distinguish direct interviews, uploaded fight footage, and press from broader team-history sources. For the Kuwait Times, French-language, and San Francisco Standard coverage, I was competing that night and was pulled for an interview. The original Twitch VOD trail remains available alongside UFB's uploaded YouTube videos.</p>
-        </div>
-      </section>
 
-      <footer className="footer page-width">
-        <div><p className="eyebrow">BACK TO THE WORK</p><h2>Build something.</h2></div>
-        <div className="footer-links"><a href="/">Home ↗</a><a href="/media/stats">Robot Stats ↗</a><a href="/#contact">Contact ↗</a></div>
-        <p className="copyright">© 2026 Gursimar Virk · Built for robots, not just résumés.</p>
-      </footer>
     </main>
   );
 }
