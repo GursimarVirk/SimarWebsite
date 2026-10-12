@@ -1,15 +1,14 @@
 "use client";
 
-import { useState, type FormEvent, type ReactNode } from "react";
+import type { ReactNode } from "react";
+import { ResumeModalTrigger } from "./components/resume-modal";
 import { legacyImage } from "./legacy-image";
-
-const resumeUrl = "https://sites.google.com/view/gvirk/resume";
 
 const heroImages = [
   ["/images/Home/dcb69b8d3505bf2fbe6ff659aff682b4.webp","PORTRAIT / HOME"],
   ["/images/Humanoids/ccacc1b06bfe5fd19878ae0b81668eef.webp","HUMANOIDS"],
   ["/images/30lb Robot/024d3371033a659dea795ef2ed7f08cf.webp","30 LB ROBOT"],
-  ["/images/robotic-hand-15dof.jpg","ROBOTIC HAND"],
+  ["/images/dof-teleop.jpg","ROBOTIC HAND"],
   ["/images/Robotic Arms/95b3ce2f73b8bec877e0fcc27428e9aa.webp","LOCOMOTION"],
   ["/images/Robotic Arms/9a1205816b57cf9e2ea83a3a711fbc88.webp","ANY KIND OF ROBOT"],
   ["/images/15lb Robot/1a739db5b66e7a72ddd145ae4ced166e.webp","15 LB ROBOT"],
@@ -133,32 +132,12 @@ function ProjectCard({project}:{project:(typeof projects)[number]}){
 }
 
 export default function Home(){
-  const [resumeRequestOpen, setResumeRequestOpen] = useState(false);
-  const [resumeRequestError, setResumeRequestError] = useState("");
-
-  function submitResumeRequest(event: FormEvent<HTMLFormElement>) {
-    event.preventDefault();
-    const form = new FormData(event.currentTarget);
-    const name = String(form.get("name") || "").trim();
-    const email = String(form.get("email") || "").trim();
-    const phone = String(form.get("phone") || "").trim();
-    const company = String(form.get("company") || "").trim();
-    if (!email && !phone) {
-      setResumeRequestError("Please add an email address or phone number so I can follow up.");
-      return;
-    }
-    setResumeRequestError("");
-    const subject = encodeURIComponent("Resume request — " + name + " (" + company + ")");
-    const body = encodeURIComponent("Hi Simar,\n\nI’d like to request your resume.\n\nName: " + name + "\nEmail: " + (email || "Not provided") + "\nPhone: " + (phone || "Not provided") + "\nCompany: " + company + "\n\nSent from simarvirk.com.");
-    window.location.href = "mailto:gursimvirk3@gmail.com?subject=" + subject + "&body=" + body;
-  }
-
   return <main>
     <nav className="nav">
       <a className="brand" href="#top">GURSIMAR VIRK</a>
       <div className="nav-links">
         <a href="/projects">Projects</a><a href="/work">Work</a><a href="/about">About</a><a href="/past">Past</a><a href="/media">Media</a>
-        <button className="resume-nav-button" type="button" onClick={()=>setResumeRequestOpen(true)}>Resume ↗</button>
+        <ResumeModalTrigger className="resume-nav-button">Resume ↗</ResumeModalTrigger>
         <a href="/contact">Contact</a>
       </div>
     </nav>
@@ -204,7 +183,7 @@ export default function Home(){
     <section className="page-width section" id="work">
       <div className="section-head"><div><Label>02 · PLACES WHERE THE MACHINE HAD TO WORK</Label><h2>Places where the machine had to actually work.</h2></div><p>The experience section is organized around environments, not isolated bullet points: companies, shops, teams, and the systems that came out of them.</p></div>
       <div className="experience-list">{experiences.map((x,i)=><a className="experience-row" href={x.href} key={x.name}><span className="experience-num">{String(i+1).padStart(2,"0")}</span><img className="experience-thumb" src={legacyImage(x.image)} alt="" loading="lazy"/><div className="experience-main"><div className="experience-top"><span>{x.date}</span><span>{x.role}</span></div><h3>{x.name}</h3><p>{x.text}</p><ul>{x.bullets.map(b=><li key={b}>{b}</li>)}</ul></div><span className="row-arrow">↗</span></a>)}</div>
-      <button className="resume-request-card" type="button" onClick={()=>setResumeRequestOpen(true)}><span className="resume-request-kicker">WANT THE ONE-PAGE VERSION?</span><strong>Want to see my resume?</strong><span className="resume-request-arrow">REQUEST A COPY ↗</span></button>
+      <ResumeModalTrigger className="resume-request-card"><span className="resume-request-kicker">WANT THE ONE-PAGE VERSION?</span><strong>Want to see my resume?</strong><span className="resume-request-arrow">REQUEST A COPY ↗</span></ResumeModalTrigger>
     </section>
 
     <section className="page-width section build-system">
@@ -230,7 +209,7 @@ export default function Home(){
       <div className="page-width media-callout-inner"><div><Label>06 · PUBLIC FOOTPRINT</Label><h2>The robots also escaped the shop.</h2><p>Interviews, creator videos, live fights, photographs, press, Berkeley records, and the competition trail.</p></div><a className="button-light" href="/media">OPEN MEDIA ARCHIVE ↗</a></div>
     </section>
 
-    <footer className="footer page-width" id="contact"><div><Label>CONTACT</Label><h2>Let’s build something.</h2></div><div className="footer-links"><a href="mailto:gursimvirk3@gmail.com">gursimvirk3@gmail.com</a><a href="https://www.linkedin.com/in/gursimarvirk" target="_blank" rel="noreferrer">LinkedIn ↗</a><a href="https://github.com/GursimarVirk" target="_blank" rel="noreferrer">GitHub ↗</a><a href={resumeUrl} target="_blank" rel="noreferrer">Resume ↗</a><a href="/legacy/home">Original Site Archive ↗</a></div><p className="copyright">© 2026 Gursimar Virk · Built in Berkeley / the Bay.</p></footer>
+    <footer className="footer page-width" id="contact"><div><Label>CONTACT</Label><h2>Let’s build something.</h2></div><div className="footer-links"><a href="mailto:gursimvirk3@gmail.com">gursimvirk3@gmail.com</a><a href="https://www.linkedin.com/in/gursimarvirk" target="_blank" rel="noreferrer">LinkedIn ↗</a><ResumeModalTrigger className="resume-footer-button">Resume ↗</ResumeModalTrigger><a href="/legacy/home">Original Site Archive ↗</a></div><p className="copyright">© 2026 Gursimar Virk · Built in Berkeley / the Bay.</p></footer>
     {resumeRequestOpen && <div className="resume-modal-backdrop" onMouseDown={(event)=>{if(event.target===event.currentTarget)setResumeRequestOpen(false);}}><section className="resume-modal" role="dialog" aria-modal="true" aria-labelledby="resume-modal-title"><button className="resume-modal-close" type="button" aria-label="Close resume request" onClick={()=>setResumeRequestOpen(false)}>×</button><Label>RESUME REQUEST</Label><h2 id="resume-modal-title">Open my resume.</h2><p>You can open the current resume directly, or leave a note if you need a tailored copy.</p><a className="button-light resume-submit" href={resumeUrl} target="_blank" rel="noreferrer">OPEN RESUME ↗</a><form onSubmit={submitResumeRequest}><label>Name<input name="name" autoComplete="name" required /></label><label>Email <span>(or phone below)</span><input name="email" type="email" autoComplete="email" /></label><label>Phone <span>(email or phone required)</span><input name="phone" type="tel" autoComplete="tel" /></label><label>Company<input name="company" autoComplete="organization" required /></label>{resumeRequestError && <p className="resume-form-error" role="alert">{resumeRequestError}</p>}<button className="button-light resume-submit" type="submit">REQUEST RESUME ↗</button><small>Submitting opens an email draft addressed to me with your details, so you can send the request.</small></form></section></div>}
   </main>;
 }
