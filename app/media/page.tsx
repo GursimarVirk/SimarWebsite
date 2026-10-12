@@ -295,17 +295,11 @@ export default function MediaPage() {
         </div>
       </nav>
 
-      <section className={`${styles.pageHero} page-width`}>
-        <div>
-          <p className="eyebrow">07 · PUBLIC FOOTPRINT</p>
-          <h1>MEDIA</h1>
-          <p className={styles.lede}>
-            The public trail behind the robots — interviews, creator videos, live fights,
-            press, photographs, Berkeley records, and the competition history underneath it all.
-          </p>
-        </div>
-        
-      </section>
+      <header className="subpage-hero page-width">
+        <span className="section-label">07 · PUBLIC FOOTPRINT</span>
+        <h1>Media.</h1>
+        <p>The public trail behind the robots — interviews, creator videos, live fights, press, photographs, Berkeley records, and the competition history underneath it all.</p>
+      </header>
 
       <section className="page-width">
         <div className={styles.sectionHead}><div><p className="eyebrow">01 · VIDEO</p><h2>WATCH ME / WATCH THE ROBOTS</h2></div><p>Start with the direct interview and creator video, then go to UFB's uploaded YouTube footage before the Twitch archive and original broadcasts.</p></div>
