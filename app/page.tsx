@@ -9,9 +9,9 @@ const heroImages = [
   ["/images/Home/dcb69b8d3505bf2fbe6ff659aff682b4.webp","PORTRAIT / HOME"],
   ["/images/Humanoids/ccacc1b06bfe5fd19878ae0b81668eef.webp","HUMANOIDS"],
   ["/images/30lb Robot/024d3371033a659dea795ef2ed7f08cf.webp","30 LB ROBOT"],
-  ["/images/Robotic Arms/95b3ce2f73b8bec877e0fcc27428e9aa.webp","ROBOTIC HAND"],
-  ["https://sites.google.com/sitesv-images-rt/AMxu72vv9B-OoCaTbJpEIqg8E_K_G1qou6hB-s-1-zP_WfmRFoNb05ghSxAtZthSul0qNdSxMeQ2XHos895-bxekrwSXXRjVykMDxBSr9_WIvagi9OirkJ9hhFu5JxX1jzkCnXUhyVnJSpTSKG1Unl5EEj4Akluj9ul9uScZ1SMMEI1ejxl0kwTAu5NBn6UcXFOVj7kosSUHdk4pvVTaVQuxGfPJD8ipAEIS2PKib1JE%3Dw1280","AMAZON ROBOTICS"],
-  ["/images/Robotic Arms/2ed803397858d570e590a832d3365844.webp","AUTOPALLET"],
+  ["/images/Robotic Arms/2ed803397858d570e590a832d3365844.webp","ROBOTIC HAND"],
+  ["/images/Robotic Arms/95b3ce2f73b8bec877e0fcc27428e9aa.webp","LOCOMOTION"],
+  ["/images/Robotic Arms/9a1205816b57cf9e2ea83a3a711fbc88.webp","ANY KIND OF ROBOT"],
   ["/images/15lb Robot/1a739db5b66e7a72ddd145ae4ced166e.webp","15 LB ROBOT"],
 ];
 
@@ -79,7 +79,7 @@ const projects = [
   {slug:"15-lb-combat-robots", title:"15 lb Combat Robots", group:"COMBAT ROBOTICS", description:"Competition-ready builds using Fusion 360 / Onshape, FEA, CAM, weight reduction, AR500 fabrication, and mentorship.", image:"/images/15lb Robot/1a739db5b66e7a72ddd145ae4ced166e.webp", size:"small", category:"COMBAT ROBOTICS"},
   {slug:"humanoid-robotics", title:"Humanoid Robotics", group:"ULTIMATE FIGHT BOTS", description:"Unitree + Booster integration, calibration, motion behaviors, debugging, recovery, and live robot fights.", image:"/images/Humanoids/ccacc1b06bfe5fd19878ae0b81668eef.webp", size:"small", category:"ROBOTICS & MANIPULATION"},
   {slug:"grocerygizmo", title:"Autonomous 6-DOF Grasping", group:"UC BERKELEY · GROCERYGIZMO", description:"Omron TM5-700, RealSense, AR tags, ROS 2, MoveIt2, Robotiq, custom CAD, and manipulation recovery.", image:"https://raw.githubusercontent.com/pchrisoc/GroceryGizmo/main/public/arm.jpg", size:"large", category:"ROBOTICS & MANIPULATION"},
-  {slug:"robotic-hand", title:"15-DOF Teleoperated Hand", group:"UC BERKELEY", description:"Sensor component + robotic portion of a teleoperated humanoid hand, backed by the original final report and shop presentation.", image:"/images/Robotic Arms/95b3ce2f73b8bec877e0fcc27428e9aa.webp", size:"small", category:"ROBOTICS & MANIPULATION"},
+  {slug:"robotic-hand", title:"15-DOF Teleoperated Hand", group:"UC BERKELEY", description:"Sensor component + robotic portion of a teleoperated humanoid hand, backed by the original final report and shop presentation.", image:"/images/Robotic Arms/2ed803397858d570e590a832d3365844.webp", size:"small", category:"ROBOTICS & MANIPULATION"},
   {slug:"robotic-arms", title:"Robotic Arms", group:"ROBOTICS · MANIPULATION", description:"Multi-DOF manipulators spanning planning, control, perception, hardware integration, and industrial-arm exposure.", image:"/images/Robotic Arms/9a1205816b57cf9e2ea83a3a711fbc88.webp", size:"small", category:"ROBOTICS & MANIPULATION"},
   {slug:"motorcycle-communication-system", title:"Motorcycle Communication System", group:"PRODUCT DEVELOPMENT", description:"A connected helmet concept combining GPS, Bluetooth, sensors, audio, AI, product research, and team coordination.", image:"https://drive.google.com/thumbnail?id=1PtgBqGz5OtcBSldxkl2myrix2rrQJnmgBT-T3LMhKNM&sz=w1200", size:"small", category:"PRODUCT DESIGN & MANUFACTURING"},
   {slug:"combat-box", title:"Combat Box", group:"COMBAT ROBOTICS", description:"A 1/2-inch polycarbonate testing environment built for the teams I mentored.", image:"/images/1b8531ca4ea42eb702b0ae7fbf321db2.webp", size:"small", category:"COMBAT ROBOTICS"},
