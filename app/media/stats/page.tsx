@@ -44,7 +44,7 @@ export default function StatsPage(){
       <a href="#competitions"><strong>3</strong><span>PAST UFB EVENTS · 3, 5 & ANNIVERSARY</span></a>
       <a href="#mentoring"><strong>26+</strong><span>TEAMS / PROJECT GROUPS MENTORED</span></a>
       <a href="#robots"><strong>20+</strong><span>CRB PROJECTS / ROBOTS IN THE PROGRAM</span></a>
-      <a href="#sources"><strong>120+</strong><span>MEMBERS IN THE CRB PROGRAM</span></a>
+      <a href="#sources"><strong>~120</strong><span>STUDENTS DURING MY PRESIDENCY</span></a>
     </section>
 
     <section id="competitions" className={`${styles.section} page-width`}>
@@ -57,7 +57,7 @@ export default function StatsPage(){
       <div className={styles.robotGrid}>{robots.map(r=><article className={styles.robot} key={r.name}><p className="eyebrow">{r.className}</p><h3>{r.name}</h3><p>{r.result}</p><div><a href={r.record} target="_blank" rel="noreferrer">RECORD ↗</a><a href={r.video} target="_blank" rel="noreferrer">FIGHTS / VIDEO ↗</a></div></article>)}</div>
     </section>
 
-    <section className={`${styles.footage} page-width`}><div className={styles.heading}><div><p className="eyebrow">03 · FOOTAGE</p><h2>WATCH THE MACHINES</h2></div><p>The old portfolio's original UFB clip/VOD links are preserved here alongside the official event films and the current competition archive.</p></div><div className={styles.footageList}>{footage.map(([title,source,href],i)=><a href={href} target="_blank" rel="noreferrer" key={href}><span>{String(i+1).padStart(2,"0")}</span><div><strong>{title}</strong><small>{source}</small></div><b>↗</b></a>)}</div></section>
+    <section className={`${styles.footage} page-width`}><div className={styles.heading}><div><p className="eyebrow">03 · FOOTAGE</p><h2>WATCH THE MACHINES</h2></div><p>Uploaded YouTube footage is prioritized, followed by the UFB 3 Twitch VOD and the UFB5 creator video. For Berkeley Bot Bash, Carnage at the Cube 2026, the Sacramento competition, and the anniversary match, links open targeted YouTube searches where I could not verify one exact upload.</p></div><div className={styles.footageList}>{footage.map(([title,source,href],i)=><a href={href} target="_blank" rel="noreferrer" key={href}><span>{String(i+1).padStart(2,"0")}</span><div><strong>{title}</strong><small>{source}</small></div><b>↗</b></a>)}</div></section>
 
     <section id="mentoring" className={`${styles.mentoring} page-width`}><div><p className="eyebrow">04 · MENTORSHIP</p><h2>BUILDING THE NEXT TEAMS</h2><p>At the time I was president, the program had roughly 120 students. CRB's model is hands-on: newer members start with smaller machines, learn the complete build cycle, and move toward more complex robots. I have carried that mentorship into work as well, training technicians in integration, troubleshooting, repairs, and repeatable fleet operations.</p></div><div className={styles.bigStat}><strong>~120</strong><span>STUDENTS IN THE PROGRAM DURING MY PRESIDENCY</span><a href="https://combatrobotics.studentorg.berkeley.edu/" target="_blank" rel="noreferrer">CURRENT CRB WEBSITE ↗</a><a href="https://www.instagram.com/glitch.battlebots/" target="_blank" rel="noreferrer">CRB / GLITCH INSTAGRAM ↗</a></div></section>
 
