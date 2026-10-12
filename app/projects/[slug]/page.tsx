@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
+import type React from "react";
 import { notFound } from "next/navigation";
 import { legacyImage } from "../../legacy-image";
+import { LegacyEmbed } from "../../components/legacy-embed";
+import { legacyPages } from "../../legacy/legacy-data";
 
 const projects = {
   "30-lb-combat-robot": {
@@ -234,7 +237,7 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
       </nav>
       <div className="page-width">
         <a className="detail-back" href="/#projects">← ALL PROJECTS</a>
-        <header className="detail-hero" style={{ backgroundImage: `linear-gradient(90deg,rgba(7,6,12,.98) 0%,rgba(7,6,12,.72) 52%,rgba(7,6,12,.30) 100%),url("${project.image ? legacyImage(project.image) : ""}")` }}>
+        <header className="detail-hero" style={{ "--detail-cover": `url("${project.image ? legacyImage(project.image) : ""}")` } as React.CSSProperties}>
           <div>
             <span className="section-label">{project.kicker}</span>
             <h1>{project.title}</h1>
@@ -249,6 +252,7 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
           <section className="detail-main">
             {project.sections.map(([heading,body]) => <div className="detail-section" key={heading}><h2>{heading}</h2><p>{body}</p></div>)}
             {project.links.length > 0 && <div className="detail-links"><span className="section-label">DOCUMENTATION / LINKS</span>{project.links.map(([label,href]) => <a key={href} href={href} target="_blank" rel="noreferrer">{label} ↗</a>)}</div>}
+            {legacyPages[slug]?.embeds?.length ? <div className="detail-embeds"><span className="section-label">ORIGINAL EMBEDS</span>{legacyPages[slug].embeds.map((embed) => <LegacyEmbed key={embed.src} embed={embed}/>)}</div> : null}
           </section>
           <aside className="detail-side">
             <span className="section-label">KEEP EXPLORING</span>
