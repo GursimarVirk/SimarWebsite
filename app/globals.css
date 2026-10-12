@@ -251,3 +251,6 @@ main{overflow:hidden;position:relative}
   .project-tile,.project-tile.large{grid-column:span 12}.project-tile img,.project-tile.large img{height:250px}
   .detail-hero{grid-template-columns:1fr;gap:28px}.detail-hero::before{width:min(78vw,360px)}
 }
+
+.detail-embeds{display:grid;gap:24px;margin-top:48px}.detail-embeds>.section-label{display:block;margin-bottom:2px}
+@media(max-width:850px){.detail-hero{padding-bottom:45px}.detail-hero>div{padding:0}.intro-block{gap:35px}}
