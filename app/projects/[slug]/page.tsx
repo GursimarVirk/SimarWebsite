@@ -104,7 +104,7 @@ const projects = {
     links: [["Final Team Presentation","https://docs.google.com/presentation/d/1PtgBqGz5OtcBSldxkl2myrix2rrQJnmgBT-T3LMhKNM/present"],["Project Files","https://drive.google.com/open?id=10YD4BgO1cErMJDVZd0fNw2fc2POT41JBLmXO1r42Nz8"]]
   },
   "nasa-hunch-magnetic-boots": {
-    image: "/images/Home/027b9604ec0a299f5ae4b6edd26c88b4.webp",
+    image: "",
     title: "NASA HUNCH — Magnetic Boots",
     kicker: "NASA HUNCH · STUDENT ENGINEERING",
     role: "Team Lead",
@@ -117,7 +117,7 @@ const projects = {
     links: [["NASA HUNCH project archive","https://www.nasahunch.com/"],["Original MES presentation","https://drive.google.com/open?id=1kWWs35ymY47IgBklKLPiP0Gaa6mUgs5U"]]
   },
   "iot-millipede-monitor": {
-    image: "/images/Home/67c15c7a7ba0b7e2a3252cb7c0b6c6e6.webp",
+    image: "",
     title: "IoT Millipede Monitor",
     kicker: "UC BERKELEY · IOT",
     role: "Embedded / IoT Project",
@@ -129,7 +129,7 @@ const projects = {
     links: [["Final E29 Group 1014 Report","https://drive.google.com/open?id=10EKXcRYNI4yIqnktIm28kWT_yl87F7WZ"]]
   },
   "towel-holder-innovation": {
-    image: "/images/Robotic Arms/95b3ce2f73b8bec877e0fcc27428e9aa.webp",
+    image: "",
     title: "Towel Holder Innovation",
     kicker: "FRESHMAN DESIGN · MANUFACTURING",
     role: "Team Lead · CAD",
@@ -142,7 +142,7 @@ const projects = {
     links: [["Final Project Report","https://drive.google.com/open?id=1StqncetTzhLofEB4IHNGd_RE-WSRPR8V_fhoEn94NMc"]]
   },
   "statistics-data-project": {
-    image: "/images/Robotic Arms/07a3486b8df22099776ca84ff37c188e.webp",
+    image: "",
     title: "Statistics / Data Project",
     kicker: "PROGRAMMING · DATA",
     role: "Data Analysis",
@@ -183,7 +183,7 @@ const projects = {
     links: [["Original Keiser project archive","/legacy/keiser-wire-raceway"]]
   },
   "class-projects": {
-    image: "/images/Home/b5edc2802fd22f5e3d828898fd11e6f4.webp",
+    image: "",
     title: "Class Projects",
     kicker: "UC BERKELEY · COURSEWORK",
     role: "Mechanical Engineering · Robotics · Design",
