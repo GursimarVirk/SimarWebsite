@@ -173,7 +173,7 @@ export default function Home(){
         <div className="hero-portrait"><img src={legacyImage(heroImages[0][0])} alt="Gursimar Virk"/></div>
       </div>
       <div className="photo-field" aria-label="A selection of robotics work">
-        {heroImages.slice(1).map((image,i)=><figure className={["hero-photo","photo-a","photo-b","photo-c","photo-d","photo-e"][i]} key={image[1]}><img src={legacyImage(image[0])} alt={image[1]}/><figcaption>{image[1]}</figcaption></figure>)}
+        {heroImages.slice(1).map((image,i)=><figure className={["hero-photo","photo-a","photo-b","photo-c","photo-d","photo-e","photo-f"][i]} key={image[1]}><img src={legacyImage(image[0])} alt={image[1]}/><figcaption>{image[1]}</figcaption></figure>)}
         <div className="photo-orbit orbit-one"/>
         <div className="photo-orbit orbit-two"/>
         <div className="hero-note"><span>CAD → SHOP → ROBOT</span><span>01 / 06</span></div>
