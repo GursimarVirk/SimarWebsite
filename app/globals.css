@@ -340,3 +340,6 @@ main{overflow:hidden;position:relative}
 .intro-photo img{transform:scale(2.1);transform-origin:center}
 /* Use the Meta logo as a clean brand mark in experience cards. */
 .experience-thumb[src*="Meta-Logo"]{object-fit:contain;padding:12px;background:#fff}
+
+/* The Meta wordmark is dark; give the detail-page cover a white field so it remains legible. */
+.detail-hero[style*="Meta-Logo"]::before{background-color:#fff;background-size:contain;background-repeat:no-repeat;background-position:center;padding:28px;box-sizing:border-box}
