@@ -40,6 +40,15 @@ const videos: MediaItem[] = [
     tag: "UFB5 · LAS VEGAS",
   },
   {
+    type: "YOUTUBE CHANNEL",
+    source: "ULTIMATE BOTS",
+    title: "UFB videos on YouTube",
+    description: "The league's uploaded videos and event clips — a better place to start than the live-stream archive because you can find individual fights and actually see the pilots in action.",
+    date: "2025–2026",
+    href: "https://www.youtube.com/results?search_query=Ultimate+Bots+UFB+humanoid+robot+fights",
+    tag: "UPLOADED VIDEO",
+  },
+  {
     type: "FIGHT ARCHIVE",
     source: "ULTIMATE BOTS",
     title: "UFB Fight Footage Archive",
@@ -73,10 +82,10 @@ const articles: MediaItem[] = [
     type: "PRESS",
     source: "BERKELEY × STANFORD",
     title: "Robot fight coverage",
-    description: "The Berkeley–Stanford humanoid fight became part of the local robot-fighting press cycle. The event footage and coverage are being collected here as part of the UFB / Berkeley archive.",
-    date: "2025",
-    href: "https://www.linkedin.com/in/craigleephoto",
-    tag: "EXAMINER PHOTO TRAIL",
+    description: "I was there competing on the Stanford–Berkeley fight night and was pulled for an interview. This links to the event's official UFB channel rather than an unrelated photographer profile while the direct Stanford post is being pinned down.",
+    date: "OCT 3, 2025",
+    href: "https://www.ultimatebots.com/",
+    tag: "STANFORD VS BERKELEY · EVENT RECORD",
   },
   {
     type: "PHOTOGRAPHY",
@@ -100,7 +109,7 @@ const articles: MediaItem[] = [
     type: "PRESS",
     source: "SAN FRANCISCO STANDARD",
     title: "The most San Francisco sport ever?",
-    description: "Local coverage of underground robot boxing and the early UFB scene. The story belongs in the archive because it documents the Bay Area fight circuit around Gursimar's UFB work.",
+    description: "I was competing that night and was pulled for an interview. This article is part of the local press trail around the Bay Area UFB fight circuit.",
     date: "AUG 10, 2025",
     href: "https://sfstandard.com/2025/08/10/robot-boxing-match-sf/",
     tag: "BAY AREA PRESS",
@@ -109,7 +118,7 @@ const articles: MediaItem[] = [
     type: "PRESS",
     source: "AFP / LE QUOTIDIEN",
     title: "États-Unis : quand les robots montent sur le ring",
-    description: "French-language AFP coverage of UFB5 at the Las Vegas BattleBots Arena. It documents the humanoid fight format, pilot-controlled motion, the R&D/data-collection angle, and the Bay Area UFB scene. It is useful external context for the work; it does not name Gursimar directly.",
+    description: "I was competing at this UFB5 fight night and was pulled for an interview. The French-language AFP story covers the event and belongs in the same press trail as the Kuwait Times and San Francisco Standard coverage.",
     date: "JAN 21, 2026",
     href: "https://lequotidien.lu/culture/magazine-etats-unis-quand-les-robots-montent-sur-le-ring/",
     tag: "FRENCH PRESS",
@@ -118,20 +127,29 @@ const articles: MediaItem[] = [
     type: "PRESS",
     source: "AFP / KUWAIT TIMES",
     title: "Humanoid robots go for knockout in high-tech Vegas fight night",
-    description: "AFP reporting from the January 2026 Las Vegas UFB event, syndicated internationally. This is one of the strongest external records of the event surrounding UFB5.",
+    description: "I was there competing that night and was pulled for an interview. This AFP report documents the UFB5 event at the Las Vegas BattleBots Arena and its international press coverage.",
     date: "JAN 2026",
     href: "https://kuwaittimes.com/article/38267/technology/humanoid-robots-go-for-knockout-in-high-tech-vegas-fight-night/",
     image: "https://kuwaittimes.com/wp-content/uploads/2026/01/AFP__20260106__7M8H9Q3__v1__HighRes__UsRobots.jpg",
     tag: "INTERNATIONAL PRESS",
   },
   {
-    type: "UNIVERSITY PRESS",
-    source: "UC BERKELEY ME",
-    title: "Combat Robotics competes on BattleBots",
-    description: "Official Berkeley Mechanical Engineering coverage of CRB, GLITCH, the BattleBots build, and the student engineering culture behind the team. This is historical club coverage rather than a direct profile of Gursimar.",
-    date: "2021–2022",
-    href: "https://me.berkeley.edu/news/me-student-group-berkeley-combat-robotics-competes-on-battlebots/",
-    tag: "BERKELEY ARCHIVE",
+    type: "TEAM HISTORY",
+    source: "COMBAT ROBOTICS AT BERKELEY",
+    title: "The CRB yearbook & team history",
+    description: "The team's own history and current program: GLITCH, the BattleBots build, the 1 lb, 15 lb, and 30 lb programs, and the student community behind them.",
+    date: "2020–PRESENT",
+    href: "https://combatrobotics.studentorg.berkeley.edu/about.html",
+    tag: "TEAM HISTORY",
+  },
+  {
+    type: "CLUB WEBSITE + INSTAGRAM",
+    source: "COMBAT ROBOTICS AT BERKELEY",
+    title: "Follow the team today",
+    description: "The current CRB website plus the GLITCH BattleBots Instagram account — the best places to follow the club and its robot program now.",
+    date: "CURRENT",
+    href: "https://combatrobotics.studentorg.berkeley.edu/",
+    tag: "WEBSITE · INSTAGRAM: GLITCH.BATTLEBOTS",
   },
 ];
 
@@ -285,7 +303,7 @@ export default function MediaPage() {
       </section>
 
       <section className="page-width">
-        <div className={styles.sectionHead}><div><p className="eyebrow">01 · VIDEO</p><h2>WATCH ME / WATCH THE ROBOTS</h2></div><p>Start with the two pieces that put Gursimar's voice and UFB work on camera, then dive into the original fight archive.</p></div>
+        <div className={styles.sectionHead}><div><p className="eyebrow">01 · VIDEO</p><h2>WATCH ME / WATCH THE ROBOTS</h2></div><p>Start with the direct interview and creator video, then go to UFB's uploaded YouTube footage before the Twitch archive and original broadcasts.</p></div>
         <div className={styles.featureGrid}>
           {videos.map((item, i) => <FeatureCard item={item} number={String(i + 1).padStart(2, "0")} key={item.title} />)}
         </div>
@@ -314,7 +332,7 @@ export default function MediaPage() {
         <p className="eyebrow">VERIFICATION NOTE</p>
         <div>
           <h2>I'm keeping the archive honest.</h2>
-          <p>Source quality is intentional: direct interviews and personal project links are separated from broader press and organization records. The French AFP piece is preserved as event context rather than presented as a personal profile. The old portfolio's original UFB Twitch clip/VOD trail and Google Drive / Slides deliverables are also preserved through the relevant project pages.</p>
+          <p>These cards distinguish direct interviews, uploaded fight footage, and press from broader team-history sources. For the Kuwait Times, French-language, and San Francisco Standard coverage, I was competing that night and was pulled for an interview. The original Twitch VOD trail remains available alongside UFB's uploaded YouTube videos.</p>
         </div>
       </section>
 
