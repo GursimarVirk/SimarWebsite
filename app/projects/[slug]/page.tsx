@@ -11,7 +11,7 @@ const projects = {
     kicker: "COMBAT ROBOTICS AT BERKELEY · 30 LB",
     role: "Technical Program Manager · Builder · Driver",
     intro: "A competition robot built under a deliberately unreasonable schedule: design, manufacture, wire, debug, test, and get it into the arena.",
-    image: "https://sites.google.com/sitesv-images-rt/AMxu72sKO8MIuLZRTc2E_2I-DqjoOnRIN4AgDGHFbB7B-NAXw7LoWn6R1Z5UgPLhTMZ-o2cqne9iXtfzwm6QrZKaWs83_JZoYdOV_6z_XcncoxCjm7gDwAY9CNZTj_rgZobAGfve8ncaqAei_2VHNkiZDMi00PZ-Ef-CV8q5-lRDikMk3587dWWETgP_jx0NOhw5bIwcTbtcHKMayPxYuBCUL1Sgn2-kDBGyJaPESftSACA%3Dw1280",
+    image: "/images/30lb Robot/024d3371033a659dea795ef2ed7f08cf.webp",
     stats: [["30 LB","competition class"],["15+","people coordinated"],["~4 MO","concept to battle-ready"],["25%","reported resilience gain"]],
     sections: [
       ["The build","I led the program from concept through competition while juggling an Amazon Robotics internship, Sorcerer.Earth work, and the beginning of the school year. The job was not one subsystem; it was keeping the whole machine moving."],
@@ -21,7 +21,7 @@ const projects = {
     links: [["Combat Robotics at Berkeley","https://combatrobotics.studentorg.berkeley.edu/"],["BattleBots / GLITCH archive","https://battlebots.com/robot/glitch-2021/"],["Robot fight archive","https://www.youtube.com/results?search_query=Combat+Robotics+at+Berkeley+30+lb+robot"],["Original build video — IMG_3117","https://drive.google.com/open?id=1U0sGefeTy-mgxSCmwakIn-yLlCH2FqND"],["Original build video — IMG_1216","https://drive.google.com/open?id=1fH7ez-kV6GPiqSfBAdNE74UVMMxthJfs"]]
   },
   "15-lb-combat-robots": {
-    image: "https://sites.google.com/sitesv-images-rt/AMxu72uREjFXsVIRyq8U7fxB14uHEFG_StZYFTX4cGq4D0h-rO60q37mQ4ti8WLncv3HcIw5Zen4Hu0SNHwgvAwY-xxYYk0w0nXIVCXuqQNuLFsXpxWwd0SV6tFTauveb5G2OOu4K7kGuL46O-POIbHBeIHqE-_wGYnym2vTJSvnFDvw1ExhOkAHTkkKfYGtVbl_nUGWWV0qQ1MFB2ISLC3L4_pitjrek5zBMLfPA2dvef4%3Dw1280",
+    image: "/images/15lb Robot/1a739db5b66e7a72ddd145ae4ced166e.webp",
     title: "15 lb Combat Robots",
     kicker: "COMBAT ROBOTICS AT BERKELEY · 15 LB",
     role: "Technical Lead · CAD · Manufacturing · Mentor",
@@ -35,7 +35,7 @@ const projects = {
     links: [["Combat Robotics at Berkeley","https://combatrobotics.studentorg.berkeley.edu/"],["Robot Combat Events","https://www.robotcombatevents.com/events/7353"]]
   },
   "combat-box": {
-    image: "https://sites.google.com/sitesv-images-rt/AMxu72uKtzzuaH1SY5Alxz9Ybp9xDGQ3KmsPkG-Yp0QQZqfkV-bmBS589VwgBSsPfopi8JdvHACPK_ooD1MIWXseIbkg4geCqge331FwYO2jOP3RQpA_4sUmZMmz38RqcxrNwTWDH7s-7Jx1qXg0EjyPa7nScevsyn375ccfzuhfWqJ3memxYgPprkp5rmrZd8xdMDvLa4rNxJfVgnQDK1MymiSruWP-Grko9wLzbPkhfrc%3Dw1280",
+    image: "/images/Combat Box/76e706e5b8a5d2856e048b6e3f51bf92.webp",
     title: "Combat Box",
     kicker: "COMBAT ROBOTICS AT BERKELEY · FABRICATION",
     role: "Designer · Fabricator · Project Lead",
@@ -49,7 +49,7 @@ const projects = {
     links: [["Combat Robotics at Berkeley","https://combatrobotics.studentorg.berkeley.edu/"],["Berkeley Bot Bash","https://www.robotcombatevents.com/events/7353"]]
   },
   "robotic-hand": {
-    image: "https://sites.google.com/sitesv-images-rt/AMxu72uRXqYXsejAavet79fXc4WVQMbAGUSX9Mwr4M-nyO410D7TFfy5cvOuvpX0ZHUhy0xw1UmK5T0m_s6TGMSXVyE4QaGH5AtfcEnX0G36TJFkzgSFuh7osYTHj8PePfwwmYdSzntiQ0ei9cT2tXfjYJVcXqzcgn-_xPvxVeTZRK2opLOsus6TdOKTQC7FoXvcSzGqE3vgL0KGnyHsIOxO3vubX0jz9Ld9Pq7R6Ms%3Dw1280",
+    image: "/images/Robotic Arms/9a1205816b57cf9e2ea83a3a711fbc88.webp",
     title: "15-DOF Teleoperated Humanoid Robotic Hand",
     kicker: "UC BERKELEY · ROBOTIC HAND",
     role: "Sensor Component · Robotic Portion",
@@ -62,7 +62,7 @@ const projects = {
     links: [["HANDI Final Report","https://drive.google.com/open?id=1AvCRkP0JC-o5meU10HXgGXU879HWbJR_sAYAJnsuo3Y"],["Machine Shop Presentation","https://docs.google.com/presentation/d/1EurbqNbWvZzMdbJHNEz-lKYVH1hz9U8cfXV7Ef7xOoQ/present"]]
   },
   "grocerygizmo": {
-    image: "https://sites.google.com/sitesv-images-rt/AMxu72uRXqYXsejAavet79fXc4WVQMbAGUSX9Mwr4M-nyO410D7TFfy5cvOuvpX0ZHUhy0xw1UmK5T0m_s6TGMSXVyE4QaGH5AtfcEnX0G36TJFkzgSFuh7osYTHj8PePfwwmYdSzntiQ0ei9cT2tXfjYJVcXqzcgn-_xPvxVeTZRK2opLOsus6TdOKTQC7FoXvcSzGqE3vgL0KGnyHsIOxO3vubX0jz9Ld9Pq7R6Ms%3Dw1280",
+    image: "/images/Robotic Arms/9a1205816b57cf9e2ea83a3a711fbc88.webp",
     title: "Autonomous 6-DOF Vision-Based Grasping",
     kicker: "UC BERKELEY · GROCERYGIZMO",
     role: "Manipulation & CAD Engineer",
@@ -76,7 +76,7 @@ const projects = {
     links: [["GroceryGizmo project site","https://grocerygizmo.pchrisoc.com/"],["Project source / code","https://github.com/pchrisoc/GroceryGizmo"]]
   },
   "humanoid-robotics": {
-    image: "https://sites.google.com/sitesv-images-rt/AMxu72sKrS6x-hWqxIjFJHkXU2mmqM7cCzTphE39JsTjp9L7R1GW0--tCR2QnYSUfj-nVlRl9i6bauc9il1ghyY0CezMgOB8SKSAGNFb6YYFmg6cUXCFpYdu5X0QMnIDvllizJcnFPaUxcn9n4fPKIfIx3-DE-RonvI1W8EVq4twwXVOgZR9GY23Fbdlc2N098aakNxmZju_-mG3qTofdlsDAl5qFnLSj3OWU41vYBWECNo%3Dw1280",
+    image: "/images/Humanoids/ccacc1b06bfe5fd19878ae0b81668eef.webp",
     title: "Humanoid Robotics",
     kicker: "ULTIMATE FIGHT BOTS · UNITREE · BOOSTER",
     role: "Driver · Team Lead · Integration",
@@ -90,7 +90,7 @@ const projects = {
     links: [["UFB competition archive","https://roboxing.tv/competitions/ufb"],["Linus Tech Tips — I Joined Robot Fight Club","https://www.youtube.com/watch?v=VJqMPFNP4to"],["BattleBots UFB audience page","https://battlebots.com/audience-waiver-ufb/"]]
   },
   "motorcycle-communication-system": {
-    image: "https://sites.google.com/sitesv-images-rt/AMxu72uE7IRyV7jLfu8c47rMSsk9lcrwQyic8n7x8w9ud7YkC4EOHjgjV75nRHfDjoYFetG5oPVmsNo9Nvtc9vCJAj54RUak9SAcf0tJQViiK0CQFxQLbRGNNwzRSgr79C3dNqhqQ9KbAHnsHc1XPtAk5RKt1ujZ1sxwRxkRM0bFcktSU0Cca4iM5CJfwJELsPdLsBjeeMpqEdT7nFCZOHvhCfS6VJw8cVDdd32TtYuI%3Dw1280",
+    image: "/images/Home/d727f021d5f96238b980a330b25da90b.webp",
     title: "Motorcycle Communication System",
     kicker: "PRODUCT DEVELOPMENT · MOTORCYCLE",
     role: "Technical Lead · Product Development",
@@ -104,7 +104,7 @@ const projects = {
     links: [["Final Team Presentation","https://docs.google.com/presentation/d/1PtgBqGz5OtcBSldxkl2myrix2rrQJnmgBT-T3LMhKNM/present"],["Project Files","https://drive.google.com/open?id=10YD4BgO1cErMJDVZd0fNw2fc2POT41JBLmXO1r42Nz8"]]
   },
   "nasa-hunch-magnetic-boots": {
-    image: "https://sites.google.com/sitesv-images-rt/AMxu72vFKS5F-A0nJU3qBYodUrH4zk9o1Qtd1FiCtAB16zPVtcf7XCSnOxkZNSf_CMZzWRi4r-ICcVSp4-a1-7xkIFTPtb5RSU3wLO8H2Dgz38huIcw9Jlm9GFZ3cfG8MJWATUNx0ew9c8QXB1x-Myu5D2sMk7QSjXVNTzqR7K7WIJpTEJX89tWg5xC7H1lkduqJDToXoOp0zlw5ArszwLYj5h0prywIxGbkarwK0zEAHKs%3Dw1280",
+    image: "/images/Cars and Machines/2ea1f7ee762bbaaa434b56d33143590f.webp",
     title: "NASA HUNCH — Magnetic Boots",
     kicker: "NASA HUNCH · STUDENT ENGINEERING",
     role: "Team Lead",
@@ -117,7 +117,7 @@ const projects = {
     links: [["NASA HUNCH project archive","https://www.nasahunch.com/"],["Original MES presentation","https://drive.google.com/open?id=1kWWs35ymY47IgBklKLPiP0Gaa6mUgs5U"]]
   },
   "iot-millipede-monitor": {
-    image: "https://sites.google.com/sitesv-images-rt/AMxu72uE7IRyV7jLfu8c47rMSsk9lcrwQyic8n7x8w9ud7YkC4EOHjgjV75nRHfDjoYFetG5oPVmsNo9Nvtc9vCJAj54RUak9SAcf0tJQViiK0CQFxQLbRGNNwzRSgr79C3dNqhqQ9KbAHnsHc1XPtAk5RKt1ujZ1sxwRxkRM0bFcktSU0Cca4iM5CJfwJELsPdLsBjeeMpqEdT7nFCZOHvhCfS6VJw8cVDdd32TtYuI%3Dw1280",
+    image: "/images/Home/d727f021d5f96238b980a330b25da90b.webp",
     title: "IoT Millipede Monitor",
     kicker: "UC BERKELEY · IOT",
     role: "Embedded / IoT Project",
@@ -142,7 +142,7 @@ const projects = {
     links: [["Final Project Report","https://drive.google.com/open?id=1StqncetTzhLofEB4IHNGd_RE-WSRPR8V_fhoEn94NMc"]]
   },
   "statistics-data-project": {
-    image: "https://sites.google.com/sitesv-images-rt/AMxu72v7B4bK5oKIHrtfGMBbrWgtaAijXDQ_PBxYuweZnmUAx0P4qoHPTM1pXW-RtDYR-6XcNi3nSM52GEBNVfMZJo_11f4I6dL2qtySnsEIqt6HGoEtAI2KbgRzJA4ip6E_KbnEq3caSba3EjAF-5GAR-Xxr7l7RjxMlT4VlKiiGJwXL2IhyhboM9m9nPq7K0TowRwI2QzAuaG9cBgudLYHW-ZP_VSDqdk9Z5GtB2AcBc%3Dw1280",
+    image: "/images/Robotic Arms/2ed803397858d570e590a832d3365844.webp",
     title: "Statistics / Data Project",
     kicker: "PROGRAMMING · DATA",
     role: "Data Analysis",
@@ -155,7 +155,7 @@ const projects = {
     links: [["Final Project Report","https://drive.google.com/open?id=1StqncetTzhLofEB4IHNGd_RE-WSRPR8V_fhoEn94NMc"]]
   },
   "robotic-arms": {
-    image: "https://sites.google.com/sitesv-images-rt/AMxu72v7B4bK5oKIHrtfGMBbrWgtaAijXDQ_PBxYuweZnmUAx0P4qoHPTM1pXW-RtDYR-6XcNi3nSM52GEBNVfMZJo_11f4I6dL2qtySnsEIqt6HGoEtAI2KbgRzJA4ip6E_KbnEq3caSba3EjAF-5GAR-Xxr7l7RjxMlT4VlKiiGJwXL2IhyhboM9m9nPq7K0TowRwI2QzAuaG9cBgudLYHW-ZP_VSDqdk9Z5GtB2AcBc%3Dw1280",
+    image: "/images/Robotic Arms/2ed803397858d570e590a832d3365844.webp",
     title: "Robotic Arms",
     kicker: "ROBOTICS · MANIPULATION",
     role: "Coursework / Research / Industry Exposure",
@@ -168,7 +168,7 @@ const projects = {
     links: [["GroceryGizmo","https://grocerygizmo.pchrisoc.com/"],["Original Robotic Arms project files","https://drive.google.com/open?id=1GsRopkHQfxFNaJGNeoxqZqlqboKadXVn"],["Original Robotic Arms video / file","https://drive.google.com/open?id=1a5LYMUZ90Gz9tzDCJB7CowEVaLreWUcM"]]
   },
   "class-projects": {
-    image: "https://sites.google.com/sitesv-images-rt/AMxu72v7B4bK5oKIHrtfGMBbrWgtaAijXDQ_PBxYuweZnmUAx0P4qoHPTM1pXW-RtDYR-6XcNi3nSM52GEBNVfMZJo_11f4I6dL2qtySnsEIqt6HGoEtAI2KbgRzJA4ip6E_KbnEq3caSba3EjAF-5GAR-Xxr7l7RjxMlT4VlKiiGJwXL2IhyhboM9m9nPq7K0TowRwI2QzAuaG9cBgudLYHW-ZP_VSDqdk9Z5GtB2AcBc%3Dw1280",
+    image: "/images/Robotic Arms/2ed803397858d570e590a832d3365844.webp",
     title: "Class Projects",
     kicker: "UC BERKELEY · COURSEWORK",
     role: "Mechanical Engineering · Robotics · Design",
@@ -182,7 +182,7 @@ const projects = {
     links: [["GroceryGizmo","https://grocerygizmo.pchrisoc.com/"],["E29 course reference","https://asme.studentorg.berkeley.edu/student-resources/course-guide/"]]
   },
   "hobbies-other": {
-    image: "https://sites.google.com/sitesv-images-rt/AMxu72vFKS5F-A0nJU3qBYodUrH4zk9o1Qtd1FiCtAB16zPVtcf7XCSnOxkZNSf_CMZzWRi4r-ICcVSp4-a1-7xkIFTPtb5RSU3wLO8H2Dgz38huIcw9Jlm9GFZ3cfG8MJWATUNx0ew9c8QXB1x-Myu5D2sMk7QSjXVNTzqR7K7WIJpTEJX89tWg5xC7H1lkduqJDToXoOp0zlw5ArszwLYj5h0prywIxGbkarwK0zEAHKs%3Dw1280",
+    image: "/images/Cars and Machines/2ea1f7ee762bbaaa434b56d33143590f.webp",
     title: "Hobbies / Other",
     kicker: "PERSONAL · MACHINES · LIFE OUTSIDE WORK",
     role: "Cars · Motorcycles · Machining · Making",
@@ -196,7 +196,7 @@ const projects = {
     links: [["Cars & Machines","/projects/cars-and-machines"]]
   },
   "cars-and-machines": {
-    image: "https://sites.google.com/sitesv-images-rt/AMxu72vFKS5F-A0nJU3qBYodUrH4zk9o1Qtd1FiCtAB16zPVtcf7XCSnOxkZNSf_CMZzWRi4r-ICcVSp4-a1-7xkIFTPtb5RSU3wLO8H2Dgz38huIcw9Jlm9GFZ3cfG8MJWATUNx0ew9c8QXB1x-Myu5D2sMk7QSjXVNTzqR7K7WIJpTEJX89tWg5xC7H1lkduqJDToXoOp0zlw5ArszwLYj5h0prywIxGbkarwK0zEAHKs%3Dw1280",
+    image: "/images/Cars and Machines/2ea1f7ee762bbaaa434b56d33143590f.webp",
     title: "Cars & Machines",
     kicker: "PERSONAL SHOP · MACHINING",
     role: "Machinist · Restorer · Lifelong Tinkerer",
