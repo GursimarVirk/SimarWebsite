@@ -82,7 +82,7 @@ const articles: MediaItem[] = [
     type: "PRESS",
     source: "BERKELEY × STANFORD",
     title: "Robot fight coverage",
-    description: "I was there competing on the Stanford–Berkeley fight night and was pulled for an interview. This links to the event's official UFB channel rather than an unrelated photographer profile while the direct Stanford post is being pinned down.",
+    description: "I was there competing on the Stanford–Berkeley fight night and was pulled for an interview. The card now links to the official UFB event archive rather than an unrelated photographer profile.",
     date: "OCT 3, 2025",
     href: "https://www.ultimatebots.com/",
     tag: "STANFORD VS BERKELEY · EVENT RECORD",
