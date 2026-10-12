@@ -335,3 +335,8 @@ main{overflow:hidden;position:relative}
 
 /* Motorcycle communications uses a presentation cover; show the whole frame. */
 .motorcycle-project img{object-fit:contain!important;object-position:center;background:#100d17;padding:8px}
+
+/* Keep the short-version photo zoomed enough to eliminate the black bars baked into the source. */
+.intro-photo img{transform:scale(2.1);transform-origin:center}
+/* Use the Meta logo as a clean brand mark in experience cards. */
+.experience-thumb[src*="Meta-Logo"]{object-fit:contain;padding:12px;background:#fff}
