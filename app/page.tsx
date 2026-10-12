@@ -158,9 +158,9 @@ export default function Home(){
     <nav className="nav">
       <a className="brand" href="#top">GURSIMAR VIRK</a>
       <div className="nav-links">
-        <a href="#projects">Projects</a><a href="#work">Work</a><a href="#about">About</a><a href="#berkeley">Past</a><a href="/media">Media</a>
-        <details className="resume-menu"><summary>Resume ↗</summary><div className="resume-popover"><Label>ONE PAGE</Label><h3>Resume</h3><p>A fast version of the engineering story, with the details recruiters actually need first.</p><a className="button-light" href={resumeUrl} target="_blank" rel="noreferrer">OPEN RESUME ↗</a><a className="button-dark" href="https://www.linkedin.com/in/gursimarvirk" target="_blank" rel="noreferrer">LINKEDIN ↗</a></div></details>
-        <a href="#contact">Contact</a>
+        <a href="/projects">Projects</a><a href="/work">Work</a><a href="/about">About</a><a href="/past">Past</a><a href="/media">Media</a>
+        <button className="resume-nav-button" type="button" onClick={()=>setResumeRequestOpen(true)}>Resume ↗</button>
+        <a href="/contact">Contact</a>
       </div>
     </nav>
 
@@ -219,7 +219,7 @@ export default function Home(){
     </section>
 
     <section className="page-width section" id="about">
-      <div className="about-grid"><div><Label>04 · OUTSIDE THE SHOP</Label><h2>Still building things when nobody asked.</h2></div><div className="about-copy"><p><strong>Cars. Motorcycles. Machining. Photography. Music.</strong> I like machines that are old enough to require a little detective work.</p><p>Six-plus years around machining, a Kawasaki Ninja 300, a C4 Corvette, a Jeep restoration, and a restored lathe are a pretty good explanation for why I prefer making things to just talking about them.</p><div className="about-facts"><span>6+<small>YEARS MACHINING</small></span><span>NINJA 300<small>MOTORCYCLE</small></span><span>BERKELEY<small>B.S. ME</small></span></div></div></div>
+      <div className="about-grid"><div><Label>04 · OUTSIDE THE SHOP</Label><h2>Still building things when nobody asked.</h2></div><div className="about-copy"><p><strong>Cars. Motorcycles. Machining. Photography. Music.</strong> I like machines that are old enough to require a little detective work.</p><p>Six-plus years around machining, a Kawasaki Ninja 300, a C4 Corvette, a Jeep restoration, and a restored lathe are a pretty good explanation for why I prefer making things to just talking about them.</p><div className="about-facts"><span>4<small>COMBAT WEIGHT CLASSES</small></span><span>1<small>RESTORED LATHE</small></span><span>∞<small>THINGS I STILL WANT TO BUILD</small></span></div></div></div>
     </section>
 
     <section className="page-width section berkeley-section" id="berkeley">
