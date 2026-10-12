@@ -19,7 +19,7 @@ const competitions=[
 
 const robots=[
   {name:"MALWARE",className:"30 LB · CRB · SCAR ELO RECORD",result:"Published SCAR Elo history: 1 win–4 losses across 5 tracked fights. Carnage at the Cube 2026: 7th place (1–2); Maker Faire Orange County 2025: 9th place (0–2).",record:"https://elo.socalattackrobots.com/class/30lb/robot/malware",video:"https://www.robotcombatevents.com/events/6695/competitions/7398"},
-  {name:"POUND TOWN",className:"15 LB · CRB",result:"15 lb robot. I could not locate a reliable public fight-history or competition-results page for this exact robot name, so I’m not assigning it an invented win–loss record. The links open the club source and a targeted event-record search.",record:"https://combatrobotics.studentorg.berkeley.edu/",video:"https://www.robotcombatevents.com/search?query=Pound%20Town"},
+  {name:"POUND TOWN",className:"15 LB · CRB",result:"15 lb robot. I could not locate a reliable public fight-history or competition-results page for this exact robot name, so I’m not assigning it an invented win–loss record. The links open the club source and a targeted event-record search.",record:"https://combatrobotics.studentorg.berkeley.edu/",video:"https://www.robotcombatevents.com/"},
   {name:"GLOBAL POUNDING",className:"12 LB · CRB · CARNAGE AT THE CUBE 2026",result:"Placed 9th in the 12 lb Hobbyweight division at Carnage at the Cube, April 25–26, 2026. I found the event placement, but not a separate SCAR Elo fight-history page for this robot.",record:"https://www.robotcombatevents.com/events/6695/competitions/7397",video:"https://www.youtube.com/results?search_query=Global+Pounding+combat+robot"},
 ];
 
