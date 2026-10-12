@@ -332,3 +332,6 @@ main{overflow:hidden;position:relative}
 .project-tile.large[href="/projects/robotic-hand"] img{height:330px}
 @media(max-width:950px){.experience-row{grid-template-columns:34px 90px minmax(0,1fr) 18px}.experience-thumb{width:90px;height:90px}}
 @media(max-width:650px){.experience-row{grid-template-columns:28px 76px minmax(0,1fr) 16px}.experience-thumb{width:76px;height:76px}.experience-main h3{font-size:26px}}
+
+/* Motorcycle communications uses a presentation cover; show the whole frame. */
+.motorcycle-project img{object-fit:contain!important;object-position:center;background:#100d17;padding:8px}
