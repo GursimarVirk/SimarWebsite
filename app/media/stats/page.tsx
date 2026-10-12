@@ -18,10 +18,9 @@ const competitions=[
 ];
 
 const robots=[
-  {name:"GLITCH",className:"250 LB · BATTLEBOTS · OFFICIAL RECORD",result:"I took the helm of GLITCH for a period, but did not make a substantial technical contribution to the heavyweight build. BattleBots lists the team robot's official career record as 7 wins, 5 losses, 12 matches, and a 58% win rate.",record:"https://battlebots.com/robot/glitch-wcvii/",video:"https://www.youtube.com/results?search_query=Glitch+Combat+Robotics+at+Berkeley+BattleBots"},
-  {name:"MALWARE",className:"30 LB · CRB",result:"Berkeley's 30 lb combat robot. MALWARE is the 30 lb machine.",record:"https://combatrobotics.studentorg.berkeley.edu/",video:"https://www.youtube.com/results?search_query=Malware+30lb+Combat+Robotics+Berkeley"},
-  {name:"POUND TOWN",className:"15 LB · CRB",result:"A 15 lb combat robot I made as part of the Berkeley combat-robotics program.",record:"https://combatrobotics.studentorg.berkeley.edu/",video:"https://www.youtube.com/results?search_query=Pound+Town+15lb+Combat+Robotics+Berkeley"},
-  {name:"GLOBAL POUNDING",className:"12 LB · CRB",result:"A 12 lb robot that competed at SCAR — Carnage at the Cube 2026.",record:"https://www.robotcombatevents.com/events/6695/competitions/7397",video:"https://www.youtube.com/results?search_query=Global+Pounding+combat+robot"},
+  {name:"MALWARE",className:"30 LB · CRB · SCAR ELO RECORD",result:"Published SCAR Elo history: 1 win–4 losses across 5 tracked fights. Carnage at the Cube 2026: 7th place (1–2); Maker Faire Orange County 2025: 9th place (0–2).",record:"https://elo.socalattackrobots.com/class/30lb/robot/malware",video:"https://www.robotcombatevents.com/events/6695/competitions/7398"},
+  {name:"POUND TOWN",className:"15 LB · CRB",result:"15 lb robot. I could not locate a reliable public fight-history or competition-results page for this exact robot name, so I’m not assigning it an invented win–loss record. The links open the club source and a targeted event-record search.",record:"https://combatrobotics.studentorg.berkeley.edu/",video:"https://www.robotcombatevents.com/search?query=Pound%20Town"},
+  {name:"GLOBAL POUNDING",className:"12 LB · CRB · CARNAGE AT THE CUBE 2026",result:"Placed 9th in the 12 lb Hobbyweight division at Carnage at the Cube, April 25–26, 2026. I found the event placement, but not a separate SCAR Elo fight-history page for this robot.",record:"https://www.robotcombatevents.com/events/6695/competitions/7397",video:"https://www.youtube.com/results?search_query=Global+Pounding+combat+robot"},
 ];
 
 const footage=[
@@ -41,10 +40,10 @@ export default function StatsPage(){
     <section className={`${styles.hero} page-width`}><p className="eyebrow">MEDIA · ROBOTICS STATS</p><h1>THE<br/><em>COMPETITION</em><br/>TRAIL</h1><p>Not just the robots I built — the competitions, teams, students, and fights around them.</p></section>
 
     <section className={`${styles.numbers} page-width`}>
-      <a href="#battlebots-record"><strong>7</strong><span>GLITCH · OFFICIAL BATTLEBOTS WINS</span></a>
-      <a href="#battlebots-record"><strong>5</strong><span>OFFICIAL BATTLEBOTS LOSSES</span></a>
-      <a href="#battlebots-record"><strong>58%</strong><span>GLITCH CAREER WIN RATE</span></a>
-      <a href="#mentoring"><strong>~120</strong><span>STUDENTS DURING MY PRESIDENCY</span></a>
+      <a href="#robots"><strong>1–4</strong><span>MALWARE · TRACKED SCAR RECORD</span></a>
+      <a href="#robots"><strong>7TH</strong><span>MALWARE · CARNAGE AT THE CUBE 2026</span></a>
+      <a href="#robots"><strong>9TH</strong><span>GLOBAL POUNDING · CARNAGE AT THE CUBE 2026</span></a>
+      <a href="#robots"><strong>15 LB</strong><span>POUND TOWN · PUBLIC RECORD NOT FOUND</span></a>
     </section>
 
     <section id="competitions" className={`${styles.section} page-width`}>
@@ -58,13 +57,13 @@ export default function StatsPage(){
     </section>
 
     <section id="battlebots-record" className={`${styles.section} page-width`}>
-      <div className={styles.heading}><div><p className="eyebrow">03 · VERIFIED RESULTS</p><h2>OFFICIAL BATTLEBOTS RECORD</h2></div><p>GLITCH is the Combat Robotics at Berkeley robot with an official BattleBots profile and published fight history. These are GLITCH's team results, not a personal win-loss record for me.</p></div>
+      <div className={styles.heading}><div><p className="eyebrow">03 · VERIFIED RESULTS</p><h2>COMPETITION RESULTS & RECORDS</h2></div><p>This section is about MALWARE, POUND TOWN, and GLOBAL POUNDING—not GLITCH. Published results are linked directly where found; an unavailable public record is labeled as unavailable rather than guessed.</p></div>
       <div className={styles.robotGrid}>
-        <article className={styles.robot}><p className="eyebrow">CAREER · OFFICIAL BATTLEBOTS</p><h3>7–5</h3><p>12 total matches · 7 wins · 5 losses · 58% win rate · 3 knockouts.</p><div><a href="https://battlebots.com/robot/glitch-wcvii/" target="_blank" rel="noreferrer">WCVII ROBOT PAGE ↗</a><a href="https://battlebots.com/robot/glitch-2021/" target="_blank" rel="noreferrer">2021 ROBOT PAGE ↗</a></div></article>
-        <article className={styles.robot}><p className="eyebrow">2021 SEASON</p><h3>7–1</h3><p>8 matches · 7 wins · 1 loss · 88% win rate · 3 knockouts.</p><div><a href="https://battlebots.com/robot/glitch-2021/" target="_blank" rel="noreferrer">OFFICIAL SEASON RECORD ↗</a></div></article>
-        <article className={styles.robot}><p className="eyebrow">WORLD CHAMPIONSHIP VII</p><h3>0–4</h3><p>4 matches · 0 wins · 4 losses. The official page includes the WCVII match-by-match results.</p><div><a href="https://battlebots.com/robot/glitch-wcvii/" target="_blank" rel="noreferrer">OFFICIAL MATCH HISTORY ↗</a></div></article>
+        <article className={styles.robot}><p className="eyebrow">MALWARE · SCAR ELO</p><h3>1–4</h3><p>5 tracked fights across two SCAR events. Carnage at the Cube 2026: 1–2, 7th place. Maker Faire Orange County 2025: 0–2, 9th place.</p><div><a href="https://elo.socalattackrobots.com/class/30lb/robot/malware" target="_blank" rel="noreferrer">FIGHT-BY-FIGHT HISTORY ↗</a><a href="https://www.robotcombatevents.com/events/6695/competitions/7398" target="_blank" rel="noreferrer">CARNAGE EVENT RESULTS ↗</a></div></article>
+        <article className={styles.robot}><p className="eyebrow">GLOBAL POUNDING · 12 LB</p><h3>9TH</h3><p>Placed 9th in the 12 lb Hobbyweight division at Carnage at the Cube, April 25–26, 2026. I found the official event listing and placement, but not a separate published cumulative win–loss record.</p><div><a href="https://www.robotcombatevents.com/events/6695/competitions/7397" target="_blank" rel="noreferrer">OFFICIAL EVENT / PLACEMENT ↗</a><a href="https://www.youtube.com/results?search_query=Global+Pounding+combat+robot" target="_blank" rel="noreferrer">FIGHT FOOTAGE SEARCH ↗</a></div></article>
+        <article className={styles.robot}><p className="eyebrow">POUND TOWN · 15 LB</p><h3>NOT VERIFIED</h3><p>I could not locate a reliable public event listing or stats page for Pound Town under that exact name. This does not mean it has no fights; it means I cannot responsibly state a record without a source.</p><div><a href="https://combatrobotics.studentorg.berkeley.edu/" target="_blank" rel="noreferrer">CRB OFFICIAL SITE ↗</a><a href="https://www.robotcombatevents.com/" target="_blank" rel="noreferrer">SEARCH ROBOT COMBAT EVENTS ↗</a></div></article>
       </div>
-      <p className={styles.sourceNote}>MALWARE, POUND TOWN, and GLOBAL POUNDING are also included in the robot list above, but I could not find official BattleBots profiles for those smaller-weight robots, so I am not inventing BattleBots win-loss stats for them.</p>
+      <p className={styles.sourceNote}>MALWARE’s SCAR Elo page lists the opponents and results for each tracked fight. SCAR Elo tracks SCAR events; it should not be presented as a complete lifetime record across every competition. GLOBAL POUNDING’s placement is from the official Robot Combat Events event listing. POUND TOWN remains unverified in public records found so far.</p>
     </section>
 
     <section className={`${styles.footage} page-width`}><div className={styles.heading}><div><p className="eyebrow">04 · FOOTAGE</p><h2>WATCH THE MACHINES</h2></div><p>Uploaded YouTube footage is prioritized, followed by the UFB 3 Twitch VOD and the UFB5 creator video. For Berkeley Bot Bash, Carnage at the Cube 2026, the Sacramento competition, and the anniversary match, links open targeted YouTube searches where I could not verify one exact upload.</p></div><div className={styles.footageList}>{footage.map(([title,source,href],i)=><a href={href} target="_blank" rel="noreferrer" key={href}><span>{String(i+1).padStart(2,"0")}</span><div><strong>{title}</strong><small>{source}</small></div><b>↗</b></a>)}</div></section>
