@@ -29,7 +29,6 @@ const personSchema = {
   url: "https://simarvirk.com",
   sameAs: [
     "https://www.linkedin.com/in/gursimarvirk",
-    "https://github.com/GursimarVirk",
   ],
   jobTitle: "Robotics Hardware Integration Engineer",
   alumniOf: "University of California, Berkeley",
