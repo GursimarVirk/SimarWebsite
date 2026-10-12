@@ -188,7 +188,7 @@ main{overflow:hidden;position:relative}
 .hero-photo img{display:block;width:100%;height:100%;object-fit:cover;filter:saturate(.9) contrast(1.03)}
 .hero-photo figcaption{position:absolute;left:0;right:0;bottom:0;padding:10px 12px;background:linear-gradient(transparent,rgba(4,3,8,.9));font-size:8px;letter-spacing:.16em;font-weight:900;color:#fff}
 .photo-b{width:310px;height:385px;left:30%;top:12%;transform:rotate(4deg);animation-delay:-3s;z-index:3}
-.photo-c{width:235px;height:300px;left:55%;top:0%;transform:rotate(8deg);animation-delay:-1.7s;z-index:5}
+.photo-c{width:300px;height:245px;left:49%;top:4%;transform:rotate(3deg);animation-delay:-1.7s;z-index:5}
 .photo-d{width:275px;height:345px;left:1%;top:48%;transform:rotate(5deg);animation-delay:-4.2s;z-index:2}
 .photo-e{width:260px;height:330px;left:31%;top:53%;transform:rotate(-5deg);animation-delay:-2.3s;z-index:6}
 .photo-f{width:215px;height:275px;left:62%;top:50%;transform:rotate(-9deg);animation-delay:-5s;z-index:4}
@@ -241,7 +241,7 @@ main{overflow:hidden;position:relative}
   .hero-name h1{font-size:clamp(68px,18vw,120px)}
   .hero-portrait{width:min(205px,58vw);height:min(265px,72vw)}
   .photo-field{position:absolute;inset:150px -14% 0 -3%;width:117%;height:650px;opacity:.95}
-  .photo-b{width:225px;height:285px;left:27%;top:8%}.photo-c{width:175px;height:225px;left:57%;top:0%}.photo-d{width:195px;height:250px;left:2%;top:48%}.photo-e{width:190px;height:245px;left:30%;top:54%}.photo-f{width:165px;height:210px;left:63%;top:50%}
+  .photo-b{width:225px;height:285px;left:27%;top:8%}.photo-c{width:220px;height:180px;left:48%;top:5%}.photo-d{width:195px;height:250px;left:2%;top:48%}.photo-e{width:190px;height:245px;left:30%;top:54%}.photo-f{width:165px;height:210px;left:63%;top:50%}
   .orbit-one{width:440px;height:440px;left:5%;top:15%}.orbit-two{width:300px;height:300px;left:28%;top:30%}
   .intro-text{grid-template-columns:1fr}.intro-photo{height:260px;max-width:260px}
   .project-tile,.project-tile.large{grid-column:span 6}.detail-hero{grid-template-columns:250px 1fr;gap:35px}
@@ -321,7 +321,7 @@ main{overflow:hidden;position:relative}
 @media(max-width:700px){.subpage-hero{padding-top:90px}.about-page-grid,.contact-grid,.about-facts-page{grid-template-columns:1fr}.about-facts-page span+span{border-left:0;border-top:1px solid var(--line);padding-left:0}.archive-row{grid-template-columns:1fr}.archive-row b{display:none}}
 
 /* Keep the teleoperated hand legible in the hero collage and project card. */
-.photo-c img{object-position:center 38%;object-fit:contain;padding:8px;background:#100c1e}
+.photo-c img{object-position:center;object-fit:contain;padding:4px;background:#100c1e}
 .project-tile[href="/projects/robotic-hand"] img{object-fit:contain;object-position:center;background:#100c1e;padding:12px}
 
 /* Experience rows now pair each role with a relevant image thumbnail. */
