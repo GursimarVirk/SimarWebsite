@@ -7,7 +7,7 @@ import { legacyPages } from "../../legacy/legacy-data";
 
 const experiences = {
   meta: {
-    image: "https://sites.google.com/sitesv-images-rt/AMxu72v7B4bK5oKIHrtfGMBbrWgtaAijXDQ_PBxYuweZnmUAx0P4qoHPTM1pXW-RtDYR-6XcNi3nSM52GEBNVfMZJo_11f4I6dL2qtySnsEIqt6HGoEtAI2KbgRzJA4ip6E_KbnEq3caSba3EjAF-5GAR-Xxr7l7RjxMlT4VlKiiGJwXL2IhyhboM9m9nPq7K0TowRwI2QzAuaG9cBgudLYHW-ZP_VSDqdk9Z5GtB2AcBc%3Dw1280",
+    image: "/images/Humanoids/ccacc1b06bfe5fd19878ae0b81668eef.webp",
     title: "Meta",
     role: "Robotics Hardware Integration Engineer",
     tag: "ROBOTICS · SYSTEMS · FLEET · TECHNICAL LEADERSHIP",
