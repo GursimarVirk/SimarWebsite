@@ -22,17 +22,19 @@ const projects = {
   },
   "15-lb-combat-robots": {
     image: "/images/15lb Robot/1a739db5b66e7a72ddd145ae4ced166e.webp",
-    title: "15 lb Combat Robots",
-    kicker: "COMBAT ROBOTICS AT BERKELEY · 15 LB",
+    title: "15/12 lb Combat Robots",
+    kicker: "COMBAT ROBOTICS AT BERKELEY · 15 / 12 LB",
     role: "Technical Lead · CAD · Manufacturing · Mentor",
-    intro: "Two competition-ready 15 lb builds became one of the clearest examples of how I like to work: CAD, analysis, fabrication, teaching, and getting the thing to actually survive.",
-    stats: [["2","robots built"],["<4 MO","concept to competition"],["FEA","weapon iteration"],["AR500","weapon material"]],
+    intro: "A combined archive of my 15 lb and 12 lb combat-robot work, including the original build photography, design and manufacturing process, and competition trail for Poundtown and Global Pounding.",
+    stats: [["15 / 12 LB","weight classes"],["CAD → SHOP","design to fabrication"],["FEA","weapon iteration"],["AR500","weapon material"]],
     sections: [
       ["Design","I drove end-to-end development in Fusion 360 and Onshape, using FEA and CAM simulation to iterate geometry before putting material on a machine."],
       ["Manufacturing","I pocketed the chassis for weight reduction, fabricated and finished the AR500 weapon, and worked through the physical details that do not show up in a CAD screenshot."],
-      ["Mentorship","The build was also a teaching project. I helped newer teammates learn how to turn a design into a manufacturable part, work through constraints, and prepare a robot for competition."],
+      ["Poundtown · 15 lb","The original 15 lb project centered on team leadership, CAD ownership, bill-of-materials management, schedule coordination, weapon fabrication, and mentoring teammates new to combat robotics. The chassis was pocketed to reduce weight, and Fusion 360 FEA informed weapon geometry and impact-load decisions."],
+      ["Global Pounding · 12 lb","Global Pounding represents the 12 lb side of the archive. Robot Combat Events lists it with Combat Robotics at Berkeley at the April 25–26, 2026 Sacramento Bot Battles event, where it placed 9th in the 12 lb Hobbyweight field. The event record is linked below; I’m keeping competition claims tied to the published record."],
+      ["Mentorship","The builds were also teaching projects. I helped newer teammates learn to design manufacturable parts, manage constraints, fabricate components, and prepare robots for competition."],
     ],
-    links: [["Combat Robotics at Berkeley","https://combatrobotics.studentorg.berkeley.edu/"],["Robot Combat Events","https://www.robotcombatevents.com/events/7353"]]
+    links: [["Combat Robotics at Berkeley","https://combatrobotics.studentorg.berkeley.edu/"],["Robot Combat Events · Berkeley Bot Bash","https://www.robotcombatevents.com/events/7353"],["Global Pounding · 12 lb event record","https://www.robotcombatevents.com/events/6695/competitions/7397"]]
   },
   "combat-box": {
     image: "/images/1b8531ca4ea42eb702b0ae7fbf321db2.webp",
@@ -238,6 +240,17 @@ const projects = {
   },
 };
 
+const legacyGallery: Record<string,string[]> = {
+  "15lb Robot":["1a739db5b66e7a72ddd145ae4ced166e.webp","5b500beba2060fac1329213b6d81ea2d.webp","64e8aeddf152c7c0f6ef86523968d7d7.webp","d2c02d2966cd48500d5198a9733b7bc4.webp"],
+  "30lb Robot":["024d3371033a659dea795ef2ed7f08cf.webp","30e9ddb3e8263200eb82535af1cc109d.webp","43fe4185e9fe830a438c397ea7cd9f5d.webp","5677c453ac313db764187b8cd6062e0f.webp","6bba6027a1b9be3118985b911144e534.webp","e6b597c12aa25fe4e8b508a74b490720.webp","ef1064ebb6ada2d31cc5062d9f54954e.webp"],
+  "Cars and Machines":["2ea1f7ee762bbaaa434b56d33143590f.webp","45e6ac408e1e9f42402510fde2280f16.webp","94e578495834318443d01ed35a10c4cd.webp","9ab0877f074aba8ce3731db3a6936262.webp","a0ad65cccb395275961bcbf88b8e791d.webp","b7e5a70686675297535fa60b2dea90bf.webp","b93b751f4450db4e21ed19e493095301.webp"],
+  "Home":["027b9604ec0a299f5ae4b6edd26c88b4.webp","0916f5e28e0a1edb3590341eb6dd5c2c.webp","1659fbdfb81da2192bf57b0d637e7928.webp","2ea1f7ee762bbaaa434b56d33143590f.webp","60a566a5a4395445cc3d781dbab4e536.webp","67c15c7a7ba0b7e2a3252cb7c0b6c6e6.webp","b5edc2802fd22f5e3d828898fd11e6f4.webp","d40fc533c4af7350b0ce95a3627f0658.webp","dcb69b8d3505bf2fbe6ff659aff682b4.webp"],
+  "Humanoids":["45a7332f8783b13b3d7e2b3f9a834515.webp","6e9f6dcd80b82da583f490dd1d4070ce.webp","a5ed269a2fa97a70ddce2992aafbb6ba.webp","ccacc1b06bfe5fd19878ae0b81668eef.webp","d7e1caeaa9364bdcbfaaac0de6823d57.webp"],
+  "Kesier Wire Raceway":["1659fbdfb81da2192bf57b0d637e7928.webp","20eb40783fd13313e90a08f66c0b7635.webp","41c365e0a36cc9a7204ba52e8c68204d.webp","713775a98ac36c0a6367270a12a24c25.webp","905d19c6b95c8f9960e0badb2f55b7db.webp","a7c13c2d2bd19eb90e68383b5a985ac4.webp","bc03775b72c8ffa7a74c2e5812b33ebd.webp","c92efdb0945b9126f716935c8128d95b.webp"],
+  "Robotic Arms":["07a3486b8df22099776ca84ff37c188e.webp","2ed803397858d570e590a832d3365844.webp","95b3ce2f73b8bec877e0fcc27428e9aa.webp","9a1205816b57cf9e2ea83a3a711fbc88.webp"],
+  "Sorcererearth":["43b4d985e231b4b733e280187b11bbf6.webp","565694279feb70b9b1dbea28f4c7b27b.webp","db2753fbabdbfd3b14d70b3f9725bee3.webp"]
+};
+
 const legacySlugByProject: Record<string,string> = {
   "30-lb-combat-robot":"30lb-robot",
   "15-lb-combat-robots":"15lb-robot",
@@ -298,6 +311,18 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
         <div className="detail-grid">
           <section className="detail-main">
             {project.sections.map(([heading,body]) => <div className="detail-section" key={heading}><h2>{heading}</h2><p>{body}</p></div>)}
+            {(() => {
+              const original = legacyPages[legacySlugByProject[slug] || slug];
+              const images = original?.imageFolder ? (legacyGallery[original.imageFolder] || []) : [];
+              return images.length > 0 ? <section className="detail-gallery">
+                <div className="detail-gallery-heading"><span className="section-label">ORIGINAL PORTFOLIO PHOTOGRAPHY</span><h2>Build gallery</h2><p>Recovered images from the original project page, preserved here alongside the write-up.</p></div>
+                <div className="detail-gallery-grid">{images.map((file) => <a href={legacyImage("/images/" + original!.imageFolder + "/" + file)} target="_blank" rel="noreferrer" key={file}><img src={legacyImage("/images/" + original!.imageFolder + "/" + file)} alt={original!.title + " — original project photo"} loading="lazy"/></a>)}</div>
+              </section> : null;
+            })()}
+            {(() => {
+              const original = legacyPages[legacySlugByProject[slug] || slug];
+              return original?.links?.length ? <div className="detail-links original-links"><span className="section-label">LINKS FROM THE ORIGINAL PORTFOLIO</span>{original.links.map((link) => <a key={link.href} href={link.href} target="_blank" rel="noreferrer">{link.label || "Original project link"} ↗</a>)}</div> : null;
+            })()}
             {project.links.length > 0 && <div className="detail-links"><span className="section-label">DOCUMENTATION / LINKS</span>{project.links.map(([label,href]) => <a key={href} href={href} target="_blank" rel="noreferrer">{label} ↗</a>)}</div>}
             {(legacyPages[legacySlugByProject[slug] || slug]) ? <div className="detail-links legacy-source-link"><span className="section-label">ORIGINAL SITE</span><a href={"/legacy/" + (legacySlugByProject[slug] || slug)}>READ THE ORIGINAL WRITING + ARCHIVE ↗</a></div> : null}
             {(legacyPages[legacySlugByProject[slug] || slug]?.embeds?.length) ? <div className="detail-embeds"><span className="section-label">ORIGINAL EMBEDS</span>{legacyPages[legacySlugByProject[slug] || slug].embeds!.map((embed) => <LegacyEmbed key={embed.src} embed={embed}/>)}</div> : null}
