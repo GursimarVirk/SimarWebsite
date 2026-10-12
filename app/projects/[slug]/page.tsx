@@ -284,6 +284,7 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
   const { slug } = await params;
   const project = projects[slug as keyof typeof projects];
   if (!project) notFound();
+  const original = legacyPages[legacySlugByProject[slug] || slug];
 
   return (
     <main className="detail-page">
