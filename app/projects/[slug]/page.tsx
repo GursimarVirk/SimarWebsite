@@ -313,10 +313,10 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
             {project.sections.map(([heading,body]) => <div className="detail-section" key={heading}><h2>{heading}</h2><p>{body}</p></div>)}
             {(() => {
               const original = legacyPages[legacySlugByProject[slug] || slug];
-              const images = original?.imageFolder ? (legacyGallery[original.imageFolder] || []) : [];
+              const images = original ? [...(original.coverImage ? [original.coverImage] : []), ...(original.imageFolder ? (legacyGallery[original.imageFolder] || []) : [])] : [];
               return images.length > 0 ? <section className="detail-gallery">
                 <div className="detail-gallery-heading"><span className="section-label">ORIGINAL PORTFOLIO PHOTOGRAPHY</span><h2>Build gallery</h2><p>Recovered images from the original project page, preserved here alongside the write-up.</p></div>
-                <div className="detail-gallery-grid">{images.map((file) => <a href={legacyImage("/images/" + original!.imageFolder + "/" + file)} target="_blank" rel="noreferrer" key={file}><img src={legacyImage("/images/" + original!.imageFolder + "/" + file)} alt={original!.title + " — original project photo"} loading="lazy"/></a>)}</div>
+                <div className="detail-gallery-grid">{images.map((file) => <a href={legacyImage(file.startsWith("/") ? file : "/images/" + original!.imageFolder + "/" + file)} target="_blank" rel="noreferrer" key={file}><img src={legacyImage(file.startsWith("/") ? file : "/images/" + original!.imageFolder + "/" + file)} alt={original!.title + " — original project photo"} loading="lazy"/></a>)}</div>
               </section> : null;
             })()}
             {(() => {
@@ -324,15 +324,26 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
               return original?.links?.length ? <div className="detail-links original-links"><span className="section-label">LINKS FROM THE ORIGINAL PORTFOLIO</span>{original.links.map((link) => <a key={link.href} href={link.href} target="_blank" rel="noreferrer">{link.label || "Original project link"} ↗</a>)}</div> : null;
             })()}
             {project.links.length > 0 && <div className="detail-links"><span className="section-label">DOCUMENTATION / LINKS</span>{project.links.map(([label,href]) => <a key={href} href={href} target="_blank" rel="noreferrer">{label} ↗</a>)}</div>}
-            {(legacyPages[legacySlugByProject[slug] || slug]) ? <div className="detail-links legacy-source-link"><span className="section-label">ORIGINAL SITE</span><a href={"/legacy/" + (legacySlugByProject[slug] || slug)}>READ THE ORIGINAL WRITING + ARCHIVE ↗</a></div> : null}
+            {original && (original.intro || original.blocks.length > 0) ? <section className="detail-section original-writing"><span className="section-label">FULL ORIGINAL PROJECT WRITE-UP</span><h2>{original.title} — Original portfolio notes</h2>{original.intro && <p>{original.intro}</p>}{original.blocks.map((block, index) => block.length < 55 && !/[.!?]$/.test(block) && !/^Twitch Link:/.test(block) && !/^https?:/.test(block) ? <h3 key={index}>{block}</h3> : <p key={index}>{block}</p>)}</section> : null}
             {(legacyPages[legacySlugByProject[slug] || slug]?.embeds?.length) ? <div className="detail-embeds"><span className="section-label">ORIGINAL EMBEDS</span>{legacyPages[legacySlugByProject[slug] || slug].embeds!.map((embed) => <LegacyEmbed key={embed.src} embed={embed}/>)}</div> : null}
           </section>
           <aside className="detail-side">
-            <span className="section-label">KEEP EXPLORING</span>
-            <a href="/#projects">Selected robotics ↗</a>
+            <span className="section-label">OTHER PROJECTS</span>
+            <a href="/projects/30-lb-combat-robot">30 lb Combat Robot ↗</a>
+            <a href="/projects/15-lb-combat-robots">15/12 lb Combat Robots ↗</a>
+            <a href="/projects/humanoid-robotics">Humanoid Robotics ↗</a>
+            <a href="/projects/grocerygizmo">GroceryGizmo ↗</a>
+            <a href="/projects/robotic-hand">Robotic Hand ↗</a>
+            <a href="/projects/robotic-arms">Robotic Arms ↗</a>
+            <a href="/projects/combat-box">Combat Box ↗</a>
+            <a href="/projects/iot-millipede-monitor">IoT Millipede Monitor ↗</a>
+            <a href="/projects/towel-holder-innovation">Towel Holder ↗</a>
+            <a href="/projects/nasa-hunch-magnetic-boots">NASA HUNCH ↗</a>
+            <a href="/projects/motorcycle-communication-system">Motorcycle Communication ↗</a>
+            <a href="/projects/keiser-wire-raceway">Keiser Wire Raceway ↗</a>
+            <a href="/projects/cars-and-machines">Cars & Machines ↗</a>
+            <a href="/projects/statistics-data-project">Statistics / Data Project ↗</a>
             <a href="/media">Media archive ↗</a>
-            <a href="/media/stats">Robot competition stats ↗</a>
-            <a href="/#contact">Contact ↗</a>
           </aside>
         </div>
       </div>
