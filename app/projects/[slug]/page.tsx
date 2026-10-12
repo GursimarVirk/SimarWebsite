@@ -210,6 +210,23 @@ const projects = {
   },
 };
 
+const legacySlugByProject: Record<string,string> = {
+  "30-lb-combat-robot":"30lb-robot",
+  "15-lb-combat-robots":"15lb-robot",
+  "humanoid-robotics":"humanoids",
+  "motorcycle-communication-system":"motorcycle-comms",
+  "nasa-hunch-magnetic-boots":"nasa-hunch",
+  "towel-holder-innovation":"towel-holder",
+  "statistics-data-project":"stats-project",
+  "hobbies-other":"hobbies-other",
+  "cars-and-machines":"cars-and-machines",
+  "robotic-hand":"robotic-hand",
+  "robotic-arms":"robotic-arms",
+  "iot-millipede-monitor":"iot-millipede-monitor",
+  "combat-box":"combat-box",
+  "class-projects":"class-projects",
+};
+
 export function generateStaticParams() {
   return Object.keys(projects).map((slug) => ({ slug }));
 }
@@ -252,8 +269,8 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
           <section className="detail-main">
             {project.sections.map(([heading,body]) => <div className="detail-section" key={heading}><h2>{heading}</h2><p>{body}</p></div>)}
             {project.links.length > 0 && <div className="detail-links"><span className="section-label">DOCUMENTATION / LINKS</span>{project.links.map(([label,href]) => <a key={href} href={href} target="_blank" rel="noreferrer">{label} ↗</a>)}</div>}
-            {legacyPages[slug] ? <div className="detail-links legacy-source-link"><span className="section-label">ORIGINAL SITE</span><a href={"/legacy/" + slug}>READ THE ORIGINAL WRITING + ARCHIVE ↗</a></div> : null}
-            {legacyPages[slug]?.embeds?.length ? <div className="detail-embeds"><span className="section-label">ORIGINAL EMBEDS</span>{legacyPages[slug].embeds.map((embed) => <LegacyEmbed key={embed.src} embed={embed}/>)}</div> : null}
+            {(legacyPages[legacySlugByProject[slug] || slug]) ? <div className="detail-links legacy-source-link"><span className="section-label">ORIGINAL SITE</span><a href={"/legacy/" + (legacySlugByProject[slug] || slug)}>READ THE ORIGINAL WRITING + ARCHIVE ↗</a></div> : null}
+            {(legacyPages[legacySlugByProject[slug] || slug]?.embeds?.length) ? <div className="detail-embeds"><span className="section-label">ORIGINAL EMBEDS</span>{legacyPages[legacySlugByProject[slug] || slug].embeds!.map((embed) => <LegacyEmbed key={embed.src} embed={embed}/>)}</div> : null}
           </section>
           <aside className="detail-side">
             <span className="section-label">KEEP EXPLORING</span>
