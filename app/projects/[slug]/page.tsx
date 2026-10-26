@@ -128,7 +128,7 @@ const projects = {
     sections: [
       ["Archive","The original Google Site included this project as a dedicated page with imagery and project documentation. The page is preserved in the new archive even where the old linked files are not currently indexed."],
     ],
-    links: [["Final E29 Group 1014 Report","https://drive.google.com/open?id=10EKXcRYNI4yIqnktIm28kWT_yl87F7WZ"]]
+    links: [["Final E29 Group 1014 Report","https://drive.google.com/open?id=10EKXcRYNI4yIqnktIm28kWT_yl87F7WZ"],["Original portfolio","https://sites.google.com/view/gvirk/home"]]
   },
   "towel-holder-innovation": {
     image: "",
@@ -154,7 +154,7 @@ const projects = {
       ["Technical work","Applied statistical methods including one-hot encoding to transform categorical variables for analysis and modeling."],
       ["Archive","The original portfolio linked the final project report because the Jupyter environment itself could not be shared publicly."],
     ],
-    links: [["Final Project Report","https://drive.google.com/open?id=1StqncetTzhLofEB4IHNGd_RE-WSRPR8V_fhoEn94NMc"]]
+    links: [["Final Project Report","https://drive.google.com/open?id=1StqncetTzhLofEB4IHNGd_RE-WSRPR8V_fhoEn94NMc"],["Original portfolio","https://sites.google.com/view/gvirk/home"]]
   },
   "robotic-arms": {
     image: "/images/Robotic Arms/9a1205816b57cf9e2ea83a3a711fbc88.webp",
@@ -216,14 +216,14 @@ const projects = {
     title: "Locomotion",
     kicker: "ROBOTICS · HARDWARE INTEGRATION",
     role: "Mechanical Systems · Integration",
-    intro: "A project entry for the locomotion-focused hardware work. The portfolio image is being reused as requested; this page keeps the description conservative until the exact project write-up and media are attached.",
-    image: "/images/Home/027b9604ec0a299f5ae4b6edd26c88b4.webp",
+    intro: "Locomotion work focused on the mechanical hardware and system integration that turn a robot into a moving platform. This page uses the same project image as the Locomotion card so the project remains visually consistent across the portfolio.",
+    image: "/images/Robotic Arms/2ed803397858d570e590a832d3365844.webp",
     stats: [["HARDWARE","mechanisms"],["INTEGRATION","system-level"],["ITERATION","build and test"],["ROBOTICS","application"]],
     sections: [
-      ["Focus","This entry highlights the mechanical and integration side of getting robotic hardware to move reliably."],
-      ["Next step","The original locomotion project images or slides can replace the placeholder cover when the specific source is identified."]
+      ["Mechanical systems","Locomotion depends on the physical system working as a whole: mechanisms, mounts, actuators, interfaces, and packaging must work together rather than as isolated parts."],
+      ["Integration and testing","The engineering focus is on bringing hardware together, checking clearances and interfaces, and iterating on the build so the robot can move reliably. This page will be expanded with project-specific technical details as the original documentation is restored."]
     ],
-    links: []
+    links: [["Original portfolio — Locomotion","https://sites.google.com/view/gvirk/home"]]
   },
   "cars-and-machines": {
     image: "/images/Cars and Machines/2ea1f7ee762bbaaa434b56d33143590f.webp",
