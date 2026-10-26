@@ -315,9 +315,9 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
             {(() => {
               const original = legacyPages[legacySlugByProject[slug] || slug];
               const uploadedImages = slug === "15-lb-combat-robots"
-                ? ["/images/15lb Robot/global-pounding-main.webp", "/images/15lb Robot/global-pounding-parts.webp", "/images/15lb Robot/global-pounding-build.webp", "/images/15lb Robot/global-pounding-fight.webp"]
+                ? ["/images/15lb Robot/global-pounding-main.webp"]
                 : slug === "robotic-hand"
-                  ? ["/images/Robotic Hand/15dof-hand-testing.webp", "/images/Robotic Hand/15dof-hand-build-annotated.webp"]
+                  ? ["/images/robotic-hand-15dof.jpg"]
                   : [];
               const images = original
                 ? [...(original.coverImage ? [original.coverImage] : []), ...uploadedImages, ...(original.imageFolder ? (legacyGallery[original.imageFolder] || []) : [])]
