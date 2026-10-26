@@ -165,9 +165,11 @@ export default function Home(){
       <div><strong>120+</strong><span>PEOPLE MANAGED & MENTORED</span></div><div><strong>30+</strong><span>ROBOTIC SYSTEMS OWNED</span></div><div><strong>ALL TYPES</strong><span>HUMANOIDS · ARMS · MOBILE · COMBAT</span></div><div><strong>26+</strong><span>TEAMS / GROUPS MENTORED</span></div><div><strong>1 → 21</strong><span>UNITS / WEEK · AMAZON</span></div><div><strong>1 → 7</strong><span>UNITS / WEEK · SORCERER</span></div>
     </section>
 
-    <section className="page-width intro-block">
-      <div><Label>THE SHORT VERSION</Label><h2>Broad enough to see the whole system. Hands-on enough to fix the part that broke.</h2></div>
-      <div className="intro-text"><div className="intro-photo"><img src={legacyImage("/images/Home/60a566a5a4395445cc3d781dbab4e536.webp")} alt="Robotics project from the original portfolio" style={{transform:"scale(1.24)",transformOrigin:"center"}}/></div><div><p>My strongest work sits at the boundaries between disciplines. I am comfortable designing mechanical hardware, making parts in a shop, wiring and debugging a robot, working with firmware and software, bringing up a new system, and figuring out how a team can build and operate it repeatedly.</p><p>I like robotics because the problems refuse to stay inside one engineering discipline.</p></div></div>
+    <section className="intro-block-section">
+      <div className="page-width intro-block">
+        <div><Label>THE SHORT VERSION</Label><h2>Broad enough to see the whole system. Hands-on enough to fix the part that broke.</h2></div>
+        <div className="intro-text"><div><p>My strongest work sits at the boundaries between disciplines. I am comfortable designing mechanical hardware, making parts in a shop, wiring and debugging a robot, working with firmware and software, bringing up a new system, and figuring out how a team can build and operate it repeatedly.</p><p>I like robotics because the problems refuse to stay inside one engineering discipline.</p></div></div>
+      </div>
     </section>
 
     <section className="skill-band"><div className="skill-track">{["MECHANICAL DESIGN","ROBOTICS INTEGRATION","ROS 2","MANUFACTURING","HARDWARE BRING-UP","TECHNICAL LEADERSHIP","FIRMWARE + SOFTWARE","FLEET OPERATIONS","MECHATRONICS","SYSTEM VALIDATION"].map((x,i)=><span key={i}>{x}</span>)}{["MECHANICAL DESIGN","ROBOTICS INTEGRATION","ROS 2","MANUFACTURING","HARDWARE BRING-UP","TECHNICAL LEADERSHIP","FIRMWARE + SOFTWARE","FLEET OPERATIONS","MECHATRONICS","SYSTEM VALIDATION"].map((x,i)=><span key={"b"+i}>{x}</span>)}</div></section>
