@@ -93,6 +93,7 @@ const projects = {
   },
   "motorcycle-communication-system": {
     image: "/images/Home/027b9604ec0a299f5ae4b6edd26c88b4.webp",
+    detailImage: "/images/Cars and Machines/b7e5a70686675297535fa60b2dea90bf.webp",
     title: "Motorcycle Communication System",
     kicker: "PRODUCT DEVELOPMENT · MOTORCYCLE",
     role: "Technical Lead · Product Development",
@@ -298,7 +299,7 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
       </nav>
       <div className="page-width">
         <a className="detail-back" href="/#projects">← ALL PROJECTS</a>
-        <header className="detail-hero" style={{ "--detail-cover": `url("${project.image ? legacyImage(project.image) : ""}")` } as React.CSSProperties}>
+        <header className="detail-hero" style={{ "--detail-cover": `url("${project.detailImage ? legacyImage(project.detailImage) : project.image ? legacyImage(project.image) : ""}")` } as React.CSSProperties}>
           <div>
             <span className="section-label">{project.kicker}</span>
             <h1>{project.title}</h1>
