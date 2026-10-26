@@ -314,11 +314,13 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
             {project.sections.map(([heading,body]) => <div className="detail-section" key={heading}><h2>{heading}</h2><p>{body}</p></div>)}
             {(() => {
               const original = legacyPages[legacySlugByProject[slug] || slug];
-              const uploadedImages = slug === "15-lb-combat-robots"
-                ? ["/images/15lb Robot/global-pounding-main.webp"]
-                : slug === "robotic-hand"
-                  ? ["/images/ChatThisOne.png"]
-                  : [];
+              const uploadedImages = slug === "30-lb-combat-robot"
+                ? ["/images/1b8531ca4ea42eb702b0ae7fbf321db2.webp"]
+                : slug === "15-lb-combat-robots"
+                  ? ["/images/15lb Robot/global-pounding-main.webp"]
+                  : slug === "robotic-hand"
+                    ? ["/images/ChatThisOne.png"]
+                    : [];
               const images = original
                 ? [...(original.coverImage ? [original.coverImage] : []), ...uploadedImages, ...(original.imageFolder ? (legacyGallery[original.imageFolder] || []) : [])]
                 : uploadedImages;
