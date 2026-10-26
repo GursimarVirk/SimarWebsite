@@ -51,7 +51,7 @@ const projects = {
     links: [["Combat Robotics at Berkeley","https://combatrobotics.studentorg.berkeley.edu/"],["Berkeley Bot Bash","https://www.robotcombatevents.com/events/7353"]]
   },
   "robotic-hand": {
-    image: "/images/robotic-hand-15dof.jpg",
+    image: "https://raw.githubusercontent.com/GursimarVirk/SimarWebsite/dda2cc5e9c813cc18e79c36dd1e896bf4639bd7c/ChatThisOne.png",
     title: "15-DOF Teleoperated Humanoid Robotic Hand",
     kicker: "UC BERKELEY · ROBOTIC HAND",
     role: "Sensor Component · Robotic Portion",
@@ -314,11 +314,13 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
             {project.sections.map(([heading,body]) => <div className="detail-section" key={heading}><h2>{heading}</h2><p>{body}</p></div>)}
             {(() => {
               const original = legacyPages[legacySlugByProject[slug] || slug];
-              const uploadedImages = slug === "15-lb-combat-robots"
-                ? ["/images/15lb Robot/global-pounding-main.webp"]
-                : slug === "robotic-hand"
-                  ? ["/images/robotic-hand-15dof.jpg"]
-                  : [];
+              const uploadedImages = slug === "30-lb-combat-robot"
+                ? ["/images/1b8531ca4ea42eb702b0ae7fbf321db2.webp"]
+                : slug === "15-lb-combat-robots"
+                  ? ["/images/15lb Robot/global-pounding-main.webp"]
+                  : slug === "robotic-hand"
+                    ? ["https://raw.githubusercontent.com/GursimarVirk/SimarWebsite/dda2cc5e9c813cc18e79c36dd1e896bf4639bd7c/ChatThisOne.png"]
+                    : [];
               const images = original
                 ? [...(original.coverImage ? [original.coverImage] : []), ...uploadedImages, ...(original.imageFolder ? (legacyGallery[original.imageFolder] || []) : [])]
                 : uploadedImages;
@@ -343,7 +345,6 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
             <a href="/projects/grocerygizmo">GroceryGizmo ↗</a>
             <a href="/projects/robotic-hand">Robotic Hand ↗</a>
             <a href="/projects/robotic-arms">Robotic Arms ↗</a>
-            <a href="/projects/combat-box">Combat Box ↗</a>
             <a href="/projects/iot-millipede-monitor">IoT Millipede Monitor ↗</a>
             <a href="/projects/towel-holder-innovation">Towel Holder ↗</a>
             <a href="/projects/nasa-hunch-magnetic-boots">NASA HUNCH ↗</a>
